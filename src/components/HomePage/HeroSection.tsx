@@ -1,15 +1,19 @@
 "use client";
 
 import React from "react";
-import Button from "../ui/Button";
 import { motion } from "framer-motion";
+
+import Button from "@/src/components/ui/Button";
+import OutlinedHeader from "@/src/components/ui/OutlinedHeader";
+import InfoCard from "@/src/components/ui/InfoCard";
 
 function HeroSection() {
   return (
     <section className="flex flex-col items-center justify-center w-full h-screen bg-slate-400">
       <Button label="let's talk" color="blue" />
       <Button label="send message" color="darkblue" />
-
+      <OutlinedHeader label="sample" color="white" weight="" />
+      <InfoCard color="darkblue" />
       {/* framer example */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
