@@ -17,15 +17,11 @@ const links: NavLinkType[] = [
   },
   {
     label: "About",
-    href: "/about",
+    href: "",
   },
   {
-    label: "Projects",
-    href: "/works",
-  },
-  {
-    label: "Contact",
-    href: "/contact",
+    label: "Services",
+    href: "",
   },
 ];
 
@@ -35,6 +31,7 @@ const Navigation = () => {
   const toggleMenu = () => {
     setMobileNav(!mobileNav);
   };
+
   return (
     <div>
       <nav className="flex justify-between items-center w-[92%] mx-auto p-3">
@@ -52,11 +49,6 @@ const Navigation = () => {
         </div>
         <div className="flex items-center gap-6">
           <Button label="Let's Chat" color="blue" />
-          {/* <IonIcon
-              icon={menuOpen ? CloseOutline : MenuOutline}
-              onClick={toggleMenu}
-              className="text-3xl cursor-pointer md:hidden"
-            /> */}
           <div className="curser-pointer md:hidden" onClick={toggleMenu}>
             {mobileNav ? <p>close</p> : <p>hamburg</p>}
           </div>
