@@ -5,7 +5,7 @@ import { cva } from "class-variance-authority";
 
 const infoCardVariants = cva(
   [
-    "w-[44.688rem] h-[29.25rem] rounded-xl flex flex-col justify-center items-start p-16 gap-[2rem]",
+    "2xl:w-[44.688rem] 2xl:h-[29.25rem] md:w-[34rem] md:h-[19rem] sm:w-[22rem] sm:h-[12rem] rounded-xl flex flex-col justify-center items-start sm:p-16 p-10 gap-[1rem]",
   ],
   {
     variants: {
@@ -26,11 +26,11 @@ const InfoCard: React.FC<infoCardProps> = ({ color }) => {
     <div className={infoCardVariants({ color })}>
       <OutlinedHeader label="why choose zenith?" color="white" weight="" />
 
-      <h2 className="text-4xl font-bold capitalize">
+      <h2 className="2xl:text-4xl lg:text-2xl font-bold capitalize">
         Hire great talent with the right attitude
       </h2>
 
-      <p className="text-sm">
+      <p className="2xl:text-sm md:text-xs text-xs">
         Selecting the right partner in business can make a difference. We, at
         Zenith Solutions, are committed to providing remarkable Workday
         consulting services tailored to the client’s need. With our proven track

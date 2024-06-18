@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import Button from "@/src/components/ui/Button";
+import { motion } from "framer-motion";
 
 type NavLinkType = {
   href: string;
@@ -42,16 +43,58 @@ const Navigation = () => {
           } md:w-auto w-full flex items-center px-5`}
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
+            {links.map((link, index) => (
+              <Link key={index} href={link.href}>
+                <span className="">{link.label}</span>
+              </Link>
+            ))}
           </ul>
         </div>
         <div className="flex items-center gap-6">
           <Button label="Let's Chat" color="blue" />
-          <div className="curser-pointer md:hidden" onClick={toggleMenu}>
-            {mobileNav ? <p>close</p> : <p>hamburg</p>}
-          </div>
+          <motion.button
+            initial="hide"
+            animate={mobileNav ? "show" : "hide"}
+            onClick={toggleMenu}
+            className="cursor-pointer md:hidden flex flex-col space-y-1"
+            aria-label="menu button"
+          >
+            <motion.span
+              variants={{
+                hide: {
+                  rotate: 0,
+                },
+                show: {
+                  rotate: 45,
+                  y: 5,
+                },
+              }}
+              className="w-6 bg-white h-[1px] block"
+            ></motion.span>
+            <motion.span
+              variants={{
+                hide: {
+                  opacity: 1,
+                },
+                show: {
+                  opacity: 0,
+                },
+              }}
+              className="w-6 bg-white h-[1px] block"
+            ></motion.span>
+            <motion.span
+              variants={{
+                hide: {
+                  rotate: 0,
+                },
+                show: {
+                  rotate: -45,
+                  y: -5,
+                },
+              }}
+              className="w-6 bg-white h-[1px] block"
+            ></motion.span>
+          </motion.button>
         </div>
       </nav>
     </div>

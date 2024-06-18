@@ -4,7 +4,7 @@ import { cva } from "class-variance-authority";
 
 const headerVariants = cva(
   [
-    "w-[13rem] h-9 text-[.9rem] rounded-full border border-orange-900 flex justify-center items-center p-4 capitalize mt-5",
+    "sm:w-[11rem] sm:h-8 w-[9rem] h-7 sm:text-[.8rem] text-[.7rem] rounded-full border border-orange-900 flex justify-center items-center p-4 capitalize mt-5",
   ],
   {
     variants: {
