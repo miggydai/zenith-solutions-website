@@ -1,11 +1,12 @@
 import HeroSection from "../components/HomePage/HeroSection";
-import FooterSection from "../components/ui/Footer/FooterSection";
-
+import InfoSection from "../components/HomePage/InfoSection";
+import ServicesSection from "../components/HomePage/ServicesSection";
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <FooterSection />
+      <InfoSection />
+      <ServicesSection />
     </main>
   );
 }
