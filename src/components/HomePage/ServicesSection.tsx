@@ -11,8 +11,7 @@ import "swiper/css/pagination";
 const ServicesSection = () => {
   return (
     <div className="w-full h-screen">
-      <ServicesCard />
-      {/* <Swiper
+      <Swiper
         direction={"vertical"}
         pagination={{
           clickable: true,
@@ -21,10 +20,16 @@ const ServicesSection = () => {
         modules={[Pagination]}
         className="mySwiper h-screen"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-      </Swiper> */}
+        <SwiperSlide>
+          <ServicesCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServicesCard />
+        </SwiperSlide>
+        <SwiperSlide>
+          <ServicesCard />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 };
