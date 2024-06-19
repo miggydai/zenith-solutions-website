@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Button from "@/src/components/ui/Button";
 import OutlinedHeader from "@/src/components/ui/OutlinedHeader";
 import InfoCard from "@/src/components/ui/InfoCard";
+import LogoMarquee from "../ui/LogoMarquee";
 
 function HeroSection() {
   return (
@@ -21,6 +22,7 @@ function HeroSection() {
         transition={{ duration: 0.8 }}
         className=" w-6 h-6 rounded-full bg-blue-200"
       ></motion.div>
+      <LogoMarquee />
     </section>
   );
 }
