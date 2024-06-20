@@ -4,7 +4,7 @@ const Stats = () => {
   return (
     <>
       {/* Out side container */}
-      <div className="flex flex-col gap-5 bg-white">
+      <div className="flex flex-col gap-5 bg-white p-20">
         {/* Header */}
         <div className="text-center text-green-400">
           <p>We are on a quest to manifest ideas to reality</p>

@@ -1,15 +1,15 @@
 import React from 'react'
-import ContactusCard from './ContactusCard'
+import ContactusCard from '../ui/ContactusCard'
 
 const FooterSection = () => {
   return (
     <div className='flex align-center justify-center flex-col relative h-[100vh] '>
-        <div className='absolute w-full top-20 z-10'>
+        <div className='absolute w-full top-10 z-10'>
         <ContactusCard />
         </div>
 
 
-        <div className='flex flex-col justify-center items-center h-[50vh] absolute w-full bottom-0 bg-green-700'>
+        <div className='flex flex-col justify-center items-center h-[50vh] pt-14 absolute w-full bottom-0 bg-green-700'>
             {/* Footer details */}
       <div className='w-3/4 flex p-5'>
         {/* Left section */}

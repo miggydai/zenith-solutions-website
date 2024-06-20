@@ -13,7 +13,7 @@ import { Scrollbar } from "swiper/modules";
 
 const ClientStories = () => {
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <div className="text-center w-3/4">
         <h1 className="text-5xl font-bold text-blue-700">
           Listen to our cleints stories
@@ -25,7 +25,7 @@ const ClientStories = () => {
             hide: true,
           }}
           modules={[Scrollbar]}
-          className="mySwiper"
+          className="bg-red-700 h-[20rem] rounded-lg"
         >
           <SwiperSlide>Slide 1</SwiperSlide>
           <SwiperSlide>Slide 2</SwiperSlide>
