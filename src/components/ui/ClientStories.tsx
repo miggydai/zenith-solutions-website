@@ -13,7 +13,7 @@ import { Scrollbar } from "swiper/modules";
 
 const ClientStories = () => {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col justify-center items-center gap-8 h-screen">
       <div className="text-center w-3/4">
         <h1 className="text-5xl font-bold text-blue-700">
           Listen to our cleints stories

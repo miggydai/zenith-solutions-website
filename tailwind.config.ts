@@ -13,6 +13,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        aquaBlue: "rgb(var(--color-aquaBlue) / <alpha-value>)",
+        smthGreen: "rgb(var(--color-smthGreen) / <alpha-value>)",
+        tan: "rgb(var(--color-tan) / <alpha-value>)",
+      },
       keyframes: {
         enterFromRight: {
           from: { opacity: "0", transform: "translateX(200px)" },

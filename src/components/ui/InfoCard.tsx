@@ -5,13 +5,13 @@ import { cva } from "class-variance-authority";
 
 const infoCardVariants = cva(
   [
-    "2xl:w-[44.688rem] 2xl:h-[29.25rem] md:w-[34rem] md:h-[19rem] sm:w-[22rem] sm:h-[12rem] rounded-xl flex flex-col justify-center items-start sm:p-16 p-10 gap-[1rem]",
+    "2xl:w-[44.688rem] 2xl:h-[29.25rem] md:w-[34rem] md:h-[19rem] sm:w-[22rem] sm:h-[12rem] rounded-xl flex flex-col justify-center items-start text-white sm:p-16 p-10 gap-[1rem]",
   ],
   {
     variants: {
       color: {
-        blue: "bg-blue-700",
-        darkblue: "bg-blue-900",
+        aquaBlue: "bg-aquaBlue",
+        smthGreen: "bg-smthGreen",
       },
     },
   }

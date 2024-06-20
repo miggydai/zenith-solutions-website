@@ -18,11 +18,11 @@ const links: NavLinkType[] = [
   },
   {
     label: "About",
-    href: "",
+    href: "/about",
   },
   {
     label: "Services",
-    href: "",
+    href: "/services",
   },
 ];
 
@@ -36,16 +36,16 @@ const Navigation = () => {
   return (
     <div>
       <nav className="flex justify-between items-center w-[92%] mx-auto p-3">
-        <div>logo</div>
+        <div className="text-aquaBlue">logo</div>
         <div
-          className={`nav-links duration-500 md:static absolute bg-black md:min-h-fit min-h-[60vh] left-0 ${
+          className={`nav-links duration-500 md:static absolute md:min-h-fit min-h-[60vh] left-0 ${
             mobileNav ? "top-[9%]" : "top-[-100%]"
           } md:w-auto w-full flex items-center px-5`}
         >
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             {links.map((link, index) => (
               <Link key={index} href={link.href}>
-                <span className="">{link.label}</span>
+                <span className="text-black">{link.label}</span>
               </Link>
             ))}
           </ul>

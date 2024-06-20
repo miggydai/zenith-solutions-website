@@ -13,7 +13,7 @@ const ServicesCard = () => {
         {/* first image col */}
         <div className="w-[40%] h-full  flex flex-col items-center justify-center gap-7">
           {/* first image */}
-          <div className="relative w-[14.5rem] h-[16.5rem] bg-green-700 rounded-md flex justify-end">
+          <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
             <Image
               src={imgSrc}
               alt="sample"
@@ -24,7 +24,7 @@ const ServicesCard = () => {
             />
           </div>
           {/* 2nd image */}
-          <div className="relative w-[14.5rem] h-[16.5rem] bg-green-700 rounded-md flex justify-end">
+          <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
             <Image
               src={imgSrc}
               alt="sample"
@@ -38,7 +38,7 @@ const ServicesCard = () => {
         {/* second image col */}
         <div className="w-[40%] h-full mt-8 flex flex-col items-center justify-center gap-7 overflow-hidden">
           {/* first image */}
-          <div className="relative w-[14.5rem] h-[16.5rem] bg-green-700 rounded-md flex justify-end">
+          <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
             <Image
               src={imgSrc}
               alt="sample"
@@ -49,7 +49,7 @@ const ServicesCard = () => {
             />
           </div>
           {/* 2nd image */}
-          <div className="relative w-[14.5rem] h-[16.5rem] bg-green-700 rounded-md flex justify-end">
+          <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
             <Image
               src={imgSrc}
               alt="sample"
@@ -62,7 +62,7 @@ const ServicesCard = () => {
         </div>
       </div>
 
-      <div className="w-[50%] h-96 bg-slate-400 flex flex-col justify-center items-start p-16 gap-[1rem]">
+      <div className="w-[50%] h-96  flex flex-col justify-center items-start p-16 gap-[1rem]">
         <motion.h6
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
@@ -77,6 +77,7 @@ const ServicesCard = () => {
           services
         </motion.h6>
         <motion.h2
+          className="text-smthGreen"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -90,6 +91,7 @@ const ServicesCard = () => {
           Tailored Solutions
         </motion.h2>
         <motion.p
+          className="text-smthGreen"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,

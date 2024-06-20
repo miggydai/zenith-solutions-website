@@ -18,11 +18,11 @@ const InfoSection = () => {
             fill
           />
         </div>
-        <InfoCard color="darkblue" />
+        <InfoCard color="aquaBlue" />
       </div>
 
       <div className="w-full h-[50%] flex justify-end gap-5">
-        <InfoCard color="blue" />
+        <InfoCard color="smthGreen" />
         <div className="w-[34rem] h-[19rem] relative rounded-md">
           <Image
             src={imgSrc}
