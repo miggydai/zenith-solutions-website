@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
+import { motion } from "framer-motion";
 
 const buttonVariants = cva(
   [
@@ -9,8 +12,8 @@ const buttonVariants = cva(
   {
     variants: {
       color: {
-        blue: "bg-blue-700 hover:bg-blue-500",
-        darkblue: "bg-blue-900 hover:bg-blue-500",
+        aquaBlue: "bg-aquaBlue",
+        smthGreen: "bg-smthGreen",
       },
     },
   }
@@ -22,7 +25,21 @@ type buttonProps = {
 } & VariantProps<typeof buttonVariants>;
 
 const Button: React.FC<buttonProps> = ({ label, color }) => {
-  return <div className={buttonVariants({ color })}>{label}</div>;
+  return (
+    <motion.div
+      initial={{ scale: 1 }}
+      whileHover={{ scale: 1.1 }}
+      transition={{
+        type: "spring",
+        stiffness: 400,
+        damping: 17,
+      }}
+      whileTap={{ scale: 0.8 }}
+      className={buttonVariants({ color })}
+    >
+      {label}
+    </motion.div>
+  );
 };
 
 export default Button;

@@ -3,12 +3,12 @@ import ContactusCard from "./ContactusCard";
 
 const FooterSection = () => {
   return (
-    <div className="flex align-center justify-center flex-col relative h-screen">
+    <div className="flex items-center justify-center flex-col relative h-screen">
       <div className="absolute w-full top-10 z-10">
         <ContactusCard />
       </div>
 
-      <div className="flex flex-col justify-center items-center h-[50vh] pt-14 absolute w-full bottom-0 bg-smthGreen">
+      <div className="flex flex-col justify-center items-center h-[60vh] pt-14 absolute w-full bottom-0 bg-smthGreen">
         {/* Footer details */}
         <div className="w-3/4 flex p-5">
           {/* Left section */}

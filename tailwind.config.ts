@@ -17,6 +17,7 @@ const config: Config = {
         aquaBlue: "rgb(var(--color-aquaBlue) / <alpha-value>)",
         smthGreen: "rgb(var(--color-smthGreen) / <alpha-value>)",
         tan: "rgb(var(--color-tan) / <alpha-value>)",
+        lightGray: "rgb(var(--color-lightGray) / <alpha-value>)",
       },
       keyframes: {
         enterFromRight: {

@@ -1,17 +1,17 @@
 "use client";
 
 import React from "react";
-
 import Image from "next/image";
 import imgSrc from "@/public/assets/images/sample2.png";
 import { motion } from "framer-motion";
+import Button from "./Button";
 
 const ServicesCard = () => {
   return (
     <div className="w-full flex h-screen flex-row justify-center items-center">
-      <div className="w-[50%] h-[37rem] flex flex-row justify-center items-center">
+      <div className="w-[50%] h-[37rem] flex flex-row justify-center items-center gap-12">
         {/* first image col */}
-        <div className="w-[40%] h-full  flex flex-col items-center justify-center gap-7">
+        <div className="w-[50%] h-full flex flex-col items-center justify-center gap-7">
           {/* first image */}
           <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
             <Image
@@ -36,7 +36,7 @@ const ServicesCard = () => {
           </div>
         </div>
         {/* second image col */}
-        <div className="w-[40%] h-full mt-8 flex flex-col items-center justify-center gap-7 overflow-hidden">
+        <div className="w-[40%] h-full mt-8 flex flex-col items-center justify-center gap-7">
           {/* first image */}
           <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
             <Image
@@ -49,7 +49,7 @@ const ServicesCard = () => {
             />
           </div>
           {/* 2nd image */}
-          <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-md flex justify-end">
+          <div className="relative w-[14.5rem] h-[16.5rem] bg-smthGreen rounded-lg flex justify-end">
             <Image
               src={imgSrc}
               alt="sample"
@@ -64,6 +64,7 @@ const ServicesCard = () => {
 
       <div className="w-[50%] h-96  flex flex-col justify-center items-start p-16 gap-[1rem]">
         <motion.h6
+          className="text-aquaBlue text-lg font-medium"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -74,10 +75,10 @@ const ServicesCard = () => {
             },
           }}
         >
-          services
+          ━━━━ Services
         </motion.h6>
         <motion.h2
-          className="text-smthGreen"
+          className="text-smthGreen text-3xl font-semibold"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -91,7 +92,7 @@ const ServicesCard = () => {
           Tailored Solutions
         </motion.h2>
         <motion.p
-          className="text-smthGreen"
+          className="text-smthGreen text-[.8rem]"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -110,6 +111,8 @@ const ServicesCard = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </motion.p>
+
+        <Button label="Learn more" color="smthGreen" />
       </div>
     </div>
   );

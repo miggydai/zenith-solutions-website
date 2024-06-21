@@ -45,13 +45,15 @@ const Navigation = () => {
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             {links.map((link, index) => (
               <Link key={index} href={link.href}>
-                <span className="text-black">{link.label}</span>
+                <span className="text-black hover:text-smthGreen transition ease-in-out duration-500 cursor-pointer">
+                  {link.label}
+                </span>
               </Link>
             ))}
           </ul>
         </div>
         <div className="flex items-center gap-6">
-          <Button label="Let's Chat" color="blue" />
+          <Button label="Let's Chat" color="smthGreen" />
           <motion.button
             initial="hide"
             animate={mobileNav ? "show" : "hide"}
