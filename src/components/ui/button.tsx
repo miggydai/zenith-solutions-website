@@ -4,6 +4,7 @@ import React from "react";
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const buttonVariants = cva(
   [
@@ -22,9 +23,10 @@ const buttonVariants = cva(
 type buttonProps = {
   label: string;
   color: string;
+  href: string;
 } & VariantProps<typeof buttonVariants>;
 
-const Button: React.FC<buttonProps> = ({ label, color }) => {
+const Button: React.FC<buttonProps> = ({ label, color, href }) => {
   return (
     <motion.div
       initial={{ scale: 1 }}
@@ -37,7 +39,7 @@ const Button: React.FC<buttonProps> = ({ label, color }) => {
       whileTap={{ scale: 0.8 }}
       className={buttonVariants({ color })}
     >
-      {label}
+      <Link href={href}>{label}</Link>
     </motion.div>
   );
 };

@@ -112,7 +112,7 @@ const ServicesCard = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </motion.p>
 
-        <Button label="Learn more" color="smthGreen" />
+        <Button href="" label="Learn more" color="smthGreen" />
       </div>
     </div>
   );

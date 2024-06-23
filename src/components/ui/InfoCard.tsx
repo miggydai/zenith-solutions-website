@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import OutlinedHeader from "@/src/components/ui/OutlinedHeader";
 import type { VariantProps } from "class-variance-authority";
 import { cva } from "class-variance-authority";
+import { motion } from "framer-motion";
 
 const infoCardVariants = cva(
   [
@@ -23,7 +26,15 @@ type infoCardProps = {
 
 const InfoCard: React.FC<infoCardProps> = ({ color }) => {
   return (
-    <div className={infoCardVariants({ color })}>
+    <motion.div
+      variants={{
+        hidden: { opacity: 0 },
+        show: {
+          opacity: 1,
+        },
+      }}
+      className={infoCardVariants({ color })}
+    >
       <OutlinedHeader label="why choose zenith?" color="white" weight="" />
 
       <h2 className="2xl:text-4xl lg:text-2xl font-bold capitalize">
@@ -38,7 +49,7 @@ const InfoCard: React.FC<infoCardProps> = ({ color }) => {
         choosing Zenith means partnering with a trusted team dedicated to your
         success.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

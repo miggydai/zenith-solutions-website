@@ -8,7 +8,19 @@ import { motion } from "framer-motion";
 const ClientStories = () => {
   return (
     <div className="flex flex-row w-full h-[70vh] relative">
-      <div className="flex flex-col bg-tan w-[70rem] h-[60vh] justify-center items-center">
+      <div className="flex flex-col bg-tan w-[70rem] h-[60vh] justify-center items-center relative">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            y: 1,
+            transition: {
+              type: "spring",
+              bounce: 0.1,
+            },
+          }}
+          className="bg-blue-600 rounded-full w-16 h-16 absolute left-20 bottom-20"
+        ></motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{
