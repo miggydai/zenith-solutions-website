@@ -4,11 +4,11 @@ import React from "react";
 import Image from "next/image";
 import imgSrc from "@/public/assets/images/sample2.png";
 import { motion } from "framer-motion";
-import Button from "./Button";
+import Button from "../Button";
 
 const ServicesCard = () => {
   return (
-    <div className="w-full flex h-screen flex-row justify-center items-center">
+    <div className="w-full flex h-screen flex-row justify-center items-center relative">
       <div className="w-[50%] h-[37rem] flex flex-row justify-center items-center gap-12">
         {/* first image col */}
         <div className="w-[50%] h-full flex flex-col items-center justify-center gap-7">

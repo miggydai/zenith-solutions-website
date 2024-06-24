@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <main>
       <Grid />
-      <MeetTheTeamSection />
+      {/* <MeetTheTeamSection /> */}
     </main>
   );
 };
