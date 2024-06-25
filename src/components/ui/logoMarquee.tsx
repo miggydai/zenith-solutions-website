@@ -34,9 +34,12 @@ const LogoMarquee: React.FC = () => {
   return (
     <div className="w-full h-auto overflow-x-hidden">
       <div className="relative flex overflow-x-hidden">
-        <div className="flex flex-row justify-center items-center py-16 animate-marquee whitespace-nowrap">
+        <div className="flex flex-row justify-center items-center py-16 animate-marquee bg-slate-200">
           {logo.map((logos, index) => (
-            <div key={index} className="relative mx-[2rem] w-[10rem] h-[2rem]">
+            <div
+              key={index}
+              className="relative mx-[2rem] w-[10rem] h-[2rem] inline-flex justify-center items-center"
+            >
               <Image
                 src={logos}
                 alt="picture"
@@ -48,9 +51,12 @@ const LogoMarquee: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-row py-16 animate-marquee whitespace-nowrap">
+        <div className="flex flex-row py-16 animate-marquee bg-yellow-400">
           {logo.map((logos, index) => (
-            <div key={index} className="relative mx-[2rem] w-[10rem] h-[2rem]">
+            <div
+              key={index}
+              className="relative mx-[2rem] w-[10rem] h-[2rem] inline-flex justify-center items-center"
+            >
               <Image
                 src={logos}
                 alt="picture"

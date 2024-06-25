@@ -4,13 +4,21 @@ import { cva } from "class-variance-authority";
 
 const headerVariants = cva(
   [
-    "sm:w-[11rem] sm:h-8 w-[9rem] h-7 sm:text-[.8rem] text-[.7rem] rounded-full border border-orange-900 flex justify-center items-center text-white p-4 capitalize mt-5",
+    "sm:w-[11rem] sm:h-8 w-[10rem] h-7 sm:text-[.8rem] text-[.7rem] rounded-full border flex justify-center items-center p-4 capitalize mt-5",
   ],
   {
     variants: {
-      color: {
+      borderColor: {
         white: "border-white",
         blue: "border-blue-900",
+      },
+      textColor: {
+        white: "text-white",
+        blue: "text-blue-900",
+      },
+      fontWeight: {
+        normal: "font-normal",
+        bold: "font-bold",
       },
     },
   }
@@ -18,12 +26,22 @@ const headerVariants = cva(
 
 type headerProps = {
   label: string;
-  weight: string;
-  color: string;
+  fontWeight: string;
+  textColor: string;
+  borderColor: string;
 } & VariantProps<typeof headerVariants>;
 
-const OutlinedHeader: React.FC<headerProps> = ({ label, color, weight }) => {
-  return <div className={headerVariants({ color })}>{label}</div>;
+const OutlinedHeader: React.FC<headerProps> = ({
+  label,
+  borderColor,
+  fontWeight,
+  textColor,
+}) => {
+  return (
+    <div className={headerVariants({ borderColor, fontWeight, textColor })}>
+      {label}
+    </div>
+  );
 };
 
 export default OutlinedHeader;

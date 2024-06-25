@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import ServicesCard from "@/src/components/ui/HomePage/ServicesCard";
+import ServicesComponent from "@/src/components/ui/Home/ServicesComponent";
 import imgSrc from "@/public/assets/images/asset1.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -34,13 +34,13 @@ const ServicesSection = () => {
           className="mySwiper h-screen"
         >
           <SwiperSlide>
-            <ServicesCard />
+            <ServicesComponent />
           </SwiperSlide>
           <SwiperSlide>
-            <ServicesCard />
+            <ServicesComponent />
           </SwiperSlide>
           <SwiperSlide>
-            <ServicesCard />
+            <ServicesComponent />
           </SwiperSlide>
         </Swiper>
       </div>

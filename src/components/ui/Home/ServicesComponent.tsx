@@ -6,7 +6,7 @@ import imgSrc from "@/public/assets/images/sample2.png";
 import { motion } from "framer-motion";
 import Button from "../Button";
 
-const ServicesCard = () => {
+const ServicesComponent = () => {
   return (
     <div className="w-full flex h-screen flex-row justify-center items-center relative">
       <div className="w-[50%] h-[37rem] flex flex-row justify-center items-center gap-12">
@@ -118,4 +118,4 @@ const ServicesCard = () => {
   );
 };
 
-export default ServicesCard;
+export default ServicesComponent;

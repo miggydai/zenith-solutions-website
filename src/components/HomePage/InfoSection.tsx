@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import InfoCard from "@/src/components/ui/HomePage/InfoCard";
+import InfoCard from "@/src/components/ui/Home/InfoCard";
 import imgSrc from "@/public/assets/images/sample.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
