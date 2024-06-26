@@ -15,7 +15,13 @@ challenges and achieve long-term growth."
       />
       <div className="w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center">
         {advisoryContent.map((a, index) => (
-          <IconCard key={index} service={a} cardColor="tan" />
+          <IconCard
+            key={index}
+            service={a}
+            cardColor="tan"
+            titleColor="black"
+            pColor="black"
+          />
         ))}
       </div>
     </section>

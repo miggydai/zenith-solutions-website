@@ -14,7 +14,13 @@ insights."
       />
       <div className="w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center">
         {analyticsContent.map((a, index) => (
-          <IconCard key={index} service={a} cardColor="blue" />
+          <IconCard
+            key={index}
+            service={a}
+            cardColor="blue"
+            titleColor="white"
+            pColor="white"
+          />
         ))}
       </div>
     </section>
