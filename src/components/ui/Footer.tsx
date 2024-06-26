@@ -8,7 +8,7 @@ const FooterSection = () => {
         <ContactusCard />
       </div>
 
-      <div className="flex flex-col justify-center items-center h-[60vh] pt-14 absolute w-full bottom-0 bg-smthGreen">
+      <div className="flex flex-col justify-center items-center h-[60vh] pt-[10rem] absolute w-full bottom-0 bg-smthGreen">
         {/* Footer details */}
         <div className="w-3/4 flex p-5">
           {/* Left section */}
