@@ -15,7 +15,13 @@ every business needs."
       />
       <div className="w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center">
         {enterpriseContent.map((a, index) => (
-          <IconCard key={index} service={a} cardColor="orange" />
+          <IconCard
+            key={index}
+            service={a}
+            cardColor="orange"
+            titleColor="white"
+            pColor="white"
+          />
         ))}
       </div>
     </section>

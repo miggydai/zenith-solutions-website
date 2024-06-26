@@ -6,7 +6,7 @@ import { cva } from "class-variance-authority";
 
 const cardVariants = cva(
   [
-    "sm:w-[254px] sm:h-[349px] w-[190px] h-[294px] rounded-lg flex flex-col justify-start items-center sm:py-12 py-6 sm:px-8 px-4",
+    "sm:w-[254px] sm:h-[349px] w-[190px] h-[294px] rounded-lg flex flex-col justify-start items-center sm:py-10 py-6 sm:px-8 px-4",
   ],
   {
     variants: {
@@ -19,12 +19,39 @@ const cardVariants = cva(
   }
 );
 
+const titleVariants = cva(["text-left mb-5 sm:text-xl text-md font-bold"], {
+  variants: {
+    titleColor: {
+      white: "text-white",
+      black: "text-black",
+    },
+  },
+});
+
+const pVariants = cva(["text-xs font-light tracking-wide"], {
+  variants: {
+    pColor: {
+      white: "text-white",
+      black: "text-black",
+    },
+  },
+});
+
 type CardProps = {
   service: ServiceType;
-  cardColor: String;
-} & VariantProps<typeof cardVariants>;
+  cardColor: string;
+  titleColor: string;
+  pColor: string;
+} & VariantProps<typeof cardVariants> &
+  VariantProps<typeof titleVariants> &
+  VariantProps<typeof pVariants>;
 
-const IconCard: React.FC<CardProps> = ({ service, cardColor }) => {
+const IconCard: React.FC<CardProps> = ({
+  service,
+  cardColor,
+  titleColor,
+  pColor,
+}) => {
   return (
     <div className={cardVariants({ cardColor })}>
       <div className="mb-4 relative sm:w-16 sm:h-16 w-8 h-8">
@@ -37,10 +64,8 @@ const IconCard: React.FC<CardProps> = ({ service, cardColor }) => {
           fill
         />
       </div>
-      <h3 className="text-left mb-5 sm:text-xl text-md font-bold">
-        {service.title}
-      </h3>
-      <p className="text-xs font-light tracking-wide">{service.description}</p>
+      <h3 className={titleVariants({ titleColor })}>{service.title}</h3>
+      <p className={pVariants({ pColor })}>{service.description}</p>
     </div>
   );
 };

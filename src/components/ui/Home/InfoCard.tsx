@@ -43,7 +43,12 @@ const InfoCard: React.FC<infoCardProps> = ({
       }}
       className={infoCardVariants({ color })}
     >
-      <OutlinedHeader label={headerLabel} color="white" weight="" />
+      <OutlinedHeader
+        label={headerLabel}
+        borderColor="white"
+        fontWeight="normal"
+        textColor="white"
+      />
 
       <h2 className="2xl:text-4xl lg:text-2xl font-bold capitalize">{title}</h2>
 

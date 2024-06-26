@@ -1,11 +1,16 @@
 import { ServiceType } from "@/lib/types/serviceTypes";
 
 import imgSrc from "@/public/assets/images/test.gif";
+import icon1 from "@/public/assets/images/wired-outline-987-accounting.gif";
+import icon2 from "@/public/assets/images/system-regular-22-build.gif";
+import icon3 from "@/public/assets/images/system-regular-199-attribution.gif";
+import icon4 from "@/public/assets/images/system-regular-82-extension.gif";
+import icon5 from "@/public/assets/images/wired-outline-2512-artificial-intelligence-ai-alt.gif";
 
 export const enterpriseContent: ServiceType[] = [
   {
     title: "Workday Financial Management",
-    iconUrl: imgSrc,
+    iconUrl: icon1,
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
@@ -17,25 +22,25 @@ export const enterpriseContent: ServiceType[] = [
   },
   {
     title: "Human Capital",
-    iconUrl: imgSrc,
+    iconUrl: icon3,
     description:
       "Your human capital is your most valuable asset. We make Workday HCM projects better for the people it’s designed to help.",
   },
   {
     title: "Machine Learning/Generative AI",
-    iconUrl: imgSrc,
+    iconUrl: icon5,
     description:
       "Unlock the potential of your data with our Machine Learning and Generative AI solutions. We design intelligent systems that fuel progress and optimize performance.",
   },
   {
     title: "Workday Extend",
-    iconUrl: imgSrc,
+    iconUrl: icon4,
     description:
       "Seamlessly integrate your systems with Workday Extend. We customize integrations to fit business requirements, ensuring a unified system.",
   },
   {
     title: "Innovation Services",
-    iconUrl: imgSrc,
+    iconUrl: icon2,
     description:
       "Empowering clients with tools and creativity streamlines projects, enhances workflows, boosts satisfaction, and fosters growth and innovation.",
   },
