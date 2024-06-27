@@ -41,7 +41,7 @@ const ZenithContainer: React.FC<containerProps> = ({
         {value}
       </h1>
 
-      <div className="ssm:-[30%] w-[80%] sm:mt-8 mt-4">
+      <div className="sm:w-[40%] w-[80%] sm:mt-8 mt-4">
         <p className="text-wrap text-center text-slate-400">{description}</p>
       </div>
     </div>

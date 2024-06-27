@@ -1,14 +1,11 @@
 import React from "react";
-import ContactusCard from "./ContactusCard";
+import ContactUsCard from "@/src/components/ui/ContactUsCard";
 
-const FooterSection = () => {
+const Footer = () => {
   return (
-    <div className="flex items-center justify-center flex-col relative h-screen">
-      <div className="absolute w-full top-10 z-10">
-        <ContactusCard />
-      </div>
-
-      <div className="flex flex-col justify-center items-center h-[60vh] pt-[10rem] absolute w-full bottom-0 bg-smthGreen">
+    <div className="w-full h-[160vh] flex flex-col justify-center items-center relative bg-slate-400">
+      <ContactUsCard />
+      <footer className="flex flex-col justify-center items-center h-[50%] pt-[10rem] absolute w-full bottom-0 bg-smthGreen">
         {/* Footer details */}
         <div className="w-3/4 flex p-5">
           {/* Left section */}
@@ -44,9 +41,9 @@ const FooterSection = () => {
           <h3>Logos</h3>
           <p>© 2024 Zenith Solutions. All rights reserved</p>
         </div>
-      </div>
+      </footer>
     </div>
   );
 };
 
-export default FooterSection;
+export default Footer;

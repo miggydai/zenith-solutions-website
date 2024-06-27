@@ -1,11 +1,10 @@
-import React from 'react'
-import Grid from '../ui/Grid'
-
+import React from "react";
+import Grid from "../ui/Grid";
 
 const AboutHeroSection = () => {
   return (
-    <div className='flex flex-col h-[100vh] p-10'>
-    <div className='flex justify-center items-center'>
+    <div className="flex flex-col h-[100vh] p-10">
+      {/* <div className='flex justify-center items-center'>
       <div className='flex flex-col gap-8  text-center w-1/2'>
       <div className='flex justify-center items-center'>
         <div className='w-[15rem] p-1 border-2 border-orange-300 rounded-2xl'>
@@ -19,12 +18,12 @@ const AboutHeroSection = () => {
       of the way.</p>
       </div>
      
-    </div>
-    <div className='p-12'>
+    </div> */}
+      <div className="p-12">
         <Grid />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutHeroSection
+export default AboutHeroSection;
