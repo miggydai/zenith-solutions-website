@@ -57,7 +57,7 @@ const IconCard: React.FC<CardProps> = ({
       <div className="mb-4 relative sm:w-16 sm:h-16 w-8 h-8">
         <Image
           src={service.iconUrl}
-          alt="git animation"
+          alt="gif animation"
           className="absolute object-cover"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
