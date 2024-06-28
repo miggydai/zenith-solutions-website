@@ -6,6 +6,7 @@ import AboutHeroSection from "@/src/components/AboutPage/AboutHeroSection";
 import ZenithSection from "@/src/components/AboutPage/ZenithSection";
 import ClientSection from "@/src/components/HomePage/ClientSection";
 import VisionSection from "@/src/components/AboutPage/VisionSection";
+import WorldSection from "@/src/components/AboutPage/WorldSection";
 
 const AboutPage = () => {
   return (
@@ -16,6 +17,7 @@ const AboutPage = () => {
       <MissionSection />
       <ZenithSection />
       <ClientSection />
+      <WorldSection />
     </main>
   );
 };

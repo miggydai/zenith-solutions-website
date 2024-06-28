@@ -20,6 +20,7 @@ const config: Config = {
         smthGreen: "rgb(var(--color-smthGreen) / <alpha-value>)",
         tan: "rgb(var(--color-tan) / <alpha-value>)",
         lightGray: "rgb(var(--color-lightGray) / <alpha-value>)",
+        orange: "rgb(var(--color-orange) / <alpha-value>)"
       },
       keyframes: {
         enterFromRight: {
