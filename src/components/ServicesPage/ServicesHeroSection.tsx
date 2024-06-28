@@ -6,7 +6,7 @@ import spiral from "@/public/assets/images/spiral.png";
 
 const ServicesHeroSection = () => {
   return (
-    <section className="w-full h-screen flex flex-col relative">
+    <section className="w-full h-full flex flex-col relative">
       <Image
         src={imgSrc}
         alt="background"
