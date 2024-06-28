@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import imgSrc from "@/public/assets/images/servicesBg.png";
+import imgSrc from "@/public/assets/images/services bg.svg";
 import mountain from "@/public/assets/images/BG mountain.png";
 import spiral from "@/public/assets/images/spiral.png";
 
 const ServicesHeroSection = () => {
   return (
-    <section className="w-full h-[80vh] flex flex-col relative">
+    <section className="w-full h-[114vh] flex flex-col relative">
       {/* <h1 className="text-4xl font-bold text-black absolute top-44 left-56 z-50">
         Text
       </h1> */}
@@ -18,8 +18,8 @@ const ServicesHeroSection = () => {
         draggable={false}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       /> */}
-      <div className="bg-tan w-full h-[80vh] relative">
-        {/* <Image
+      {/* <div className="bg-tan w-full h-[80vh] relative"> */}
+      {/* <Image
           src={mountain}
           alt="mountains"
           className="absolute object-cover bottom-0 w-full"
@@ -27,16 +27,16 @@ const ServicesHeroSection = () => {
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         /> */}
-      </div>
-      <div className="bg-blue-700 w-full h-[40vh]"></div>
-      {/* <Image
+      {/* </div> */}
+      {/* <div className="bg-blue-700 w-full h-[40vh]"></div> */}
+
+      <Image
         src={imgSrc}
         alt="background"
-        className="object-cover -z-20"
-        placeholder="blur"
+        className="object-cover"
         draggable={false}
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      /> */}
+      />
     </section>
   );
 };

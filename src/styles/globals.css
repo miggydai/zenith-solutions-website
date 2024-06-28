@@ -8,11 +8,10 @@
   --color-smthGreen: 101 204 175;
   --color-tan: 255 239 200;
   --color-lightGray: 234 234 347;
-  --color-orange: 255, 157, 50;
-  --color-orange_sgradient: 255, 185, 108;
-  --color-aquaBlue_sgradient: 65, 165, 242;
-  --color-tan_sgradient: 255, 228, 164
-
+  --color-projectOrange: 255 157 50;
+  --color-projectOrangeSgradient: 255 185 108;
+  --color-aquaBlueSgradient: 65 165 242;
+  --color-tanSgradient: 255 228 164;
 }
 
 *,

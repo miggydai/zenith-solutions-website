@@ -13,6 +13,7 @@ import resize from "@/public/assets/images/resizeFile.gif";
 
 export const valuesData = [
   {
+    id: 1,
     imageUrl: z,
     iconUrl: flag,
     value: "zeal",
@@ -20,6 +21,7 @@ export const valuesData = [
       "With a focus on quality, integrity, and personalized service, we have established ourselves as a trusted partner for both clients and candidates alike. ",
   },
   {
+    id: 2,
     imageUrl: e,
     iconUrl: heart,
     value: "existance",
@@ -27,6 +29,7 @@ export const valuesData = [
       "Our existence reflects our adherence to community involvement and inclusivity, empowering our clients and supporting a socially responsible business environment.",
   },
   {
+    id: 3,
     imageUrl: n,
     iconUrl: plant,
     value: "nature",
@@ -34,6 +37,7 @@ export const valuesData = [
       "We nurture solid and encouraging connections by embracing diversity. With this, we contribute to building a better, more interconnected world.",
   },
   {
+    id: 4,
     imageUrl: i,
     iconUrl: bulb,
     value: "idea",
@@ -41,6 +45,7 @@ export const valuesData = [
       "Our main drive is innovation, which drives us to provide unique, innovative solutions to many of your tough issues. We translate inspiring ideas into workable solutions.",
   },
   {
+    id: 5,
     imageUrl: t,
     iconUrl: resize,
     value: "transformation",
@@ -48,6 +53,7 @@ export const valuesData = [
       "We spearhead transformative change that supports the growth and success of your company. Our tactics make sure you maintain your lead in a changing market.",
   },
   {
+    id: 1,
     imageUrl: h,
     iconUrl: pray,
     value: "hope",

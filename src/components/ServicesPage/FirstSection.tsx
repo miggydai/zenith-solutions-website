@@ -19,8 +19,8 @@ every business needs."
             key={index}
             service={a}
             cardColor="orange"
-            titleColor="white"
-            pColor="white"
+            titleColor="black"
+            pColor="black"
           />
         ))}
       </div>
