@@ -12,7 +12,6 @@ const AboutPage = () => {
   return (
     <main>
       <AboutHeroSection />
-      {/* <MeetTheTeamSection /> */}
       <VisionSection />
       <MissionSection />
       <ZenithSection />

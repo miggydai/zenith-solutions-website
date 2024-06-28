@@ -3,7 +3,7 @@ import ContactUsCard from "@/src/components/ui/ContactUsCard";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[160vh] flex flex-col justify-center items-center relative bg-slate-400">
+    <div className="w-full h-[160vh] flex flex-col justify-center items-center relative">
       <ContactUsCard />
       <footer className="flex flex-col justify-center items-center h-[50%] pt-[10rem] absolute w-full bottom-0 bg-smthGreen">
         {/* Footer details */}

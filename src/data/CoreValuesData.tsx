@@ -24,7 +24,7 @@ export const valuesData = [
     id: 2,
     imageUrl: e,
     iconUrl: heart,
-    value: "existance",
+    value: "existence",
     description:
       "Our existence reflects our adherence to community involvement and inclusivity, empowering our clients and supporting a socially responsible business environment.",
   },
