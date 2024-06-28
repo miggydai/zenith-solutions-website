@@ -1,20 +1,33 @@
-import React from "react";
-import Grid from "@/src/components/ui/Grid";
-import MeetTheTeamSection from "@/src/components/AboutPage/MeetTheTeamSection";
-import MissionSection from "@/src/components/AboutPage/MissionSection";
+// app/page.tsx (or pages/index.tsx)
+"use client";
+
+import React, { useRef, useState } from "react";
 import AboutHeroSection from "@/src/components/AboutPage/AboutHeroSection";
+import VisionSection from "@/src/components/AboutPage/VisionSection";
+import MissionSection from "@/src/components/AboutPage/MissionSection";
 import ZenithSection from "@/src/components/AboutPage/ZenithSection";
 import ClientSection from "@/src/components/HomePage/ClientSection";
-import VisionSection from "@/src/components/AboutPage/VisionSection";
 import WorldSection from "@/src/components/AboutPage/WorldSection";
 
-const AboutPage = () => {
+const AboutPage: React.FC = () => {
+  const swiperRef = useRef<HTMLDivElement>(null);
+  const [slideIndex, setSlideIndex] = useState<number>(0);
+
+  const goToSlide = (index: number): void => {
+    setSlideIndex(index);
+    if (swiperRef.current) {
+      swiperRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <main>
-      <AboutHeroSection />
+      <AboutHeroSection goToSlide={goToSlide} />
       <VisionSection />
       <MissionSection />
-      <ZenithSection />
+      <div ref={swiperRef}>
+        <ZenithSection slideIndex={slideIndex} />
+      </div>
       <ClientSection />
       <WorldSection />
     </main>
