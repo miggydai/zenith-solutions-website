@@ -8,7 +8,6 @@ import Map from "../components/ui/Map";
 export default function Home() {
   return (
     <main>
-      <Map />
       <HeroSection />
       <Stats />
       <InfoSection />
