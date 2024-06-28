@@ -1,7 +1,14 @@
-import React from "react";
+// components/AboutHeroSection.tsx
+"use client";
+
+import React, { useRef, useState } from "react";
 import Grid from "../ui/Grid";
 
-const AboutHeroSection = () => {
+interface AboutHeroSectionProps {
+  goToSlide: (index: number) => void;
+}
+
+const AboutHeroSection: React.FC<AboutHeroSectionProps> = ({ goToSlide }) => {
   return (
     <div className="flex flex-col h-[100vh] p-10">
       <div className="flex justify-center items-center">
@@ -24,7 +31,7 @@ const AboutHeroSection = () => {
         </div>
       </div>
       <div className="p-12">
-        <Grid />
+        <Grid gotoSlide={goToSlide} />
       </div>
     </div>
   );
