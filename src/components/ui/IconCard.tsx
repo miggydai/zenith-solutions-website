@@ -11,7 +11,7 @@ const cardVariants = cva(
   {
     variants: {
       cardColor: {
-        orange: "bg-orange-500",
+        orange: "bg-projectOrange",
         tan: "bg-tan",
         blue: "bg-blue-700",
       },
