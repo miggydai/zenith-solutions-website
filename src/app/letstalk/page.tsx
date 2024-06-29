@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Button from "@/src/components/ui/Button";
 
 const page = () => {
   return (
@@ -17,6 +18,10 @@ const page = () => {
           We can streamline the budgeting process of your project with precise
           pricing calculations tailored specifically to your needs.
         </p>
+        <div className="w-full flex flex-row gap-5 justify-center items-center mt-3">
+          <Button label="button1" color="smthGreen" href="" />
+          <Button label="button2" color="smthGreen" href="" />
+        </div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -50 }}

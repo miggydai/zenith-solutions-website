@@ -18,7 +18,7 @@ const VisionSection = () => {
         </div>
 
         <div className="w-[40%] flex items-center">
-          <p className="text-black text-xs">
+          <p className="text-black text-sm">
             Provide clients with personalized services that maximize their
             Workday investments. With a team experienced in both implementation
             and end-user roles, Zenith understands and addresses clients&#39;

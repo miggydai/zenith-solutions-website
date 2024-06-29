@@ -6,7 +6,12 @@ import imgSrc from "@/public/assets/images/sample2.png";
 import { motion } from "framer-motion";
 import Button from "../Button";
 
-const ServicesComponent = () => {
+type ServicesProps = {
+  title: string;
+  description: string;
+};
+
+const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
   return (
     <div className="w-full flex h-screen flex-row justify-center items-center relative">
       <div className="w-[50%] h-[37rem] flex flex-row justify-center items-center gap-12">
@@ -77,6 +82,7 @@ const ServicesComponent = () => {
         >
           ━━━━ Services
         </motion.h6>
+        {/* title */}
         <motion.h2
           className="text-smthGreen text-3xl font-semibold"
           initial={{ y: 100, opacity: 0 }}
@@ -89,8 +95,9 @@ const ServicesComponent = () => {
             },
           }}
         >
-          Tailored Solutions
+          {title}
         </motion.h2>
+        {/* description */}
         <motion.p
           className="text-smthGreen text-[.8rem]"
           initial={{ y: 100, opacity: 0 }}
@@ -103,13 +110,7 @@ const ServicesComponent = () => {
             },
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          {description}
         </motion.p>
 
         <Button href="" label="Learn more" color="smthGreen" />
