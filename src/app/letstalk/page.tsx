@@ -2,9 +2,12 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Button from "@/src/components/ui/Button";
 
+import LetstalkCard from "@/src/components/ui/LetstalkCard";
 const page = () => {
   return (
+    <div>
     <div className="w-full h-screen flex flex-col justify-center items-center bg-aquaBlue relative">
       <motion.div
         initial={{ opacity: 0, y: -100 }}
@@ -17,6 +20,10 @@ const page = () => {
           We can streamline the budgeting process of your project with precise
           pricing calculations tailored specifically to your needs.
         </p>
+        <div className="w-full flex flex-row gap-5 justify-center items-center mt-3">
+          <Button label="button1" color="smthGreen" href="" />
+          <Button label="button2" color="smthGreen" href="" />
+        </div>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -24,6 +31,10 @@ const page = () => {
         transition={{ delay: 0.5, duration: 0.7 }}
         className="absolute right-60 bg-red-500 w-16 h-16 rounded-full"
       ></motion.div>
+
+      
+    </div>
+    <LetstalkCard />
     </div>
   );
 };

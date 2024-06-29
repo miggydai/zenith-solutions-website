@@ -11,9 +11,10 @@ const cardVariants = cva(
   {
     variants: {
       cardColor: {
-        orange: "bg-projectOrange",
-        tan: "bg-tan",
-        blue: "bg-blue-700",
+        orange:
+          " bg-gradient-to-b from-projectOrangeSgradient to-projectOrange",
+        tan: "bg-gradient-to-b from-tan to-tanSgradient",
+        blue: "bg-gradient-to-b from-aquaBlueSgradient to-blue-700",
       },
     },
   }
