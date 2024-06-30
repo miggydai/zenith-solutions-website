@@ -15,7 +15,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const ServicesSection = () => {
-  const matches = useMediaQuery("(min-width: 1024px)");
+  const matches = useMediaQuery("(min-width: 1025px)");
   return (
     <div className="w-full sm:h-screen h-full flex sm:justify-evenly justify-center items-center bg-lightGray">
       {matches ? (

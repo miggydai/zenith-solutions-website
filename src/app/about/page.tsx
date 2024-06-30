@@ -29,7 +29,6 @@ const AboutPage: React.FC = () => {
         <ZenithSection slideIndex={slideIndex} />
       </div>
       <ClientSection />
-      
       <WorldSection />
     </main>
   );
