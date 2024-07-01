@@ -11,10 +11,14 @@ const headerVariants = cva(
       borderColor: {
         white: "border-white",
         blue: "border-blue-900",
+        orange: "border-projectOrange",
+        black: "border-black",
       },
       textColor: {
         white: "text-white",
         blue: "text-blue-900",
+        orange: "text-projectOrange",
+        black: "text-black",
       },
       fontWeight: {
         normal: "font-normal",
@@ -26,9 +30,9 @@ const headerVariants = cva(
 
 type headerProps = {
   label: string;
-  fontWeight: string;
-  textColor: string;
-  borderColor: string;
+  fontWeight?: string;
+  textColor?: string;
+  borderColor?: string;
 } & VariantProps<typeof headerVariants>;
 
 const OutlinedHeader: React.FC<headerProps> = ({

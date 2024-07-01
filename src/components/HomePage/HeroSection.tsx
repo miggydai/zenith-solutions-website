@@ -8,7 +8,7 @@ import bg from "@/public/assets/images/zenithsvg.svg";
 function HeroSection() {
   return (
     <section className="flex flex-col w-full h-full relative">
-      <div className="absolute bg-transparent w-44 h-32 top-36 left-32 z-30 text-transparent hover:text-blue-600">
+      {/* <div className="absolute bg-transparent w-44 h-32 top-36 left-32 z-30 text-transparent hover:text-blue-600">
         zeal
       </div>
       <div className="absolute bg-transparent w-44 h-32 top-36 left-80 z-30 text-transparent hover:text-blue-600">
@@ -25,7 +25,7 @@ function HeroSection() {
       </div>
       <div className="absolute bg-transparent w-44 h-32 top-36 right-32 z-30 text-transparent hover:text-blue-600">
         h
-      </div>
+      </div> */}
       <Image
         src={bg}
         alt="bg"

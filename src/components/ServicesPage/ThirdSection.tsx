@@ -7,8 +7,11 @@ const ThirdSection = () => {
   return (
     <section className="w-full h-full flex flex-col justify-center items-center">
       <ServicesHeader
+        textColor="blue"
+        fontWeight="bold"
+        borderColor="blue"
         label="Analytics & Reporting"
-        title="Transform data into actionable insights."
+        title="Transform data into actionable insights"
         description="Our Analytics & Reporting services equip your business with thorough data analysis and personalized reporting solutions. We enable you to make well-informed decisions, enhance performance, and foster strategic growth by converting raw data into precise, actionable
 insights."
       />

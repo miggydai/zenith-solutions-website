@@ -6,7 +6,7 @@ import imgSrc from "@/public/assets/images/services bg.svg";
 
 const ServicesHeroSection = () => {
   return (
-    <section className="flex flex-col justify-center items-center gap-[4rem] mb-[7rem]">
+    <section className="flex flex-col justify-center items-center gap-[4rem] sm:mb-[7rem] mb-[10rem]">
       <div className="relative w-full">
         <div className="absolute -z-10 w-full">
           <Image
@@ -20,22 +20,13 @@ const ServicesHeroSection = () => {
       </div>
       <div className="w-full flex flex-col justify-center items-center gap-4 mt-8">
         <SectionHeader header="Enterprise Consulting" />
-        <p className="text-black text-lg">
+        <p className="text-black sm:text-lg text-base text-center">
           transform your business from the ground up.
         </p>
         <Button label="Inquire Now" color="aquaBlue" href="" />
       </div>
 
-      <div className="w-[50%] h-[20rem] bg-blue-700 rounded-xl"></div>
-      {/* <div className="w-full h-[120vh] relative"> */}
-      {/* <Image
-        src={imgSrc}
-        alt="background"
-        className="object-cover w-full h-full"
-        draggable={false}
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-      /> */}
-      {/* </div> */}
+      <div className="sm:w-[50%] w-[90%] sm:h-[20rem] h-[15rem] bg-blue-700 rounded-xl"></div>
     </section>
   );
 };
