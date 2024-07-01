@@ -12,7 +12,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
   return (
     <div className="p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-      <div className="grid grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-4">
+      <div className="grid md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2">
   <div
     className="bg-yellow-200 rounded-2xl flex text-black flex-col justify-between p-5 font-bold"
     onClick={() => gotoSlide(0)}
