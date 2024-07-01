@@ -19,7 +19,7 @@ const InfoSection = () => {
         }}
         initial="hidden"
         whileInView="show"
-        className="w-full h-[50%] flex gap-5"
+        className="w-full h-[50%] flex gap-5 sm:flex-row flex-col"
       >
         <motion.div
           variants={{
@@ -28,7 +28,7 @@ const InfoSection = () => {
               opacity: 1,
             },
           }}
-          className="2xl:w-[51rem] 2xl:h-[29rem] lg:w-[34rem] lg:h-[22rem] sm:w-[22rem] sm:h-[12rem] relative rounded-lg"
+          className="2xl:w-[51rem] 2xl:h-[29rem] lg:w-[34rem] lg:h-[22rem] sm:w-[22rem] sm:h-[12rem] w-full h-[14rem] relative rounded-lg"
         >
           <Image
             src={imgSrc}
@@ -59,7 +59,7 @@ the client’s need. With our proven track record, comprehensive approach, and e
         }}
         initial="hidden"
         whileInView="show"
-        className="w-full h-[50%] flex justify-end gap-5"
+        className="w-full h-[50%] flex justify-end gap-5 sm:flex-row flex-col"
       >
         <InfoCard
           headerLabel="about us"
@@ -78,7 +78,7 @@ of the way."
               opacity: 1,
             },
           }}
-          className="w-[34rem] h-[22rem] relative rounded-lg"
+          className="2xl:w-[51rem] 2xl:h-[29rem] lg:w-[34rem] lg:h-[22rem] sm:w-[22rem] sm:h-[12rem] w-full h-[14rem] relative rounded-lg"
         >
           <Image
             src={imgSrc}

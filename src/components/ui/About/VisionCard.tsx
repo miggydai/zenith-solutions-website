@@ -17,6 +17,7 @@ const VisionCard: React.FC<CardProps> = ({ visions }) => {
             className="absolute object-cover"
             draggable={false}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
           />
         </div>
       </div>

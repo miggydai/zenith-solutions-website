@@ -5,22 +5,28 @@ type HeaderProps = {
   title: string;
   description: string;
   label: string;
+  borderColor: string;
+  textColor: string;
+  fontWeight: string;
 };
 
 const ServicesHeader: React.FC<HeaderProps> = ({
   title,
   description,
   label,
+  borderColor,
+  textColor,
+  fontWeight,
 }) => {
   return (
     <div className="sm:w-[50%] w-[90%] h-[300px] flex flex-col justify-center items-center sm:gap-5 gap-3 sm:p-8 p-4">
       <OutlinedHeader
         label={label}
-        borderColor="blue"
-        fontWeight="bold"
-        textColor="blue"
+        borderColor={borderColor}
+        fontWeight={fontWeight}
+        textColor={textColor}
       />
-      <h3 className="text-black sm:text-2xl text-lg text-center font-bold">
+      <h3 className="text-black sm:text-2xl text-lg text-center font-bold capitalize">
         {title}
       </h3>
       <p className="text-black sm:text-sm text-xs text-center">{description}</p>

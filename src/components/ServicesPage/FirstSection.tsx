@@ -7,8 +7,11 @@ const FirstSection = () => {
   return (
     <section className="w-full h-full flex flex-col justify-center items-center">
       <ServicesHeader
+        textColor="orange"
+        fontWeight="bold"
+        borderColor="orange"
         label="Enterprise Consulting"
-        title="Transform your business from the ground up."
+        title="Transform your business from the ground up"
         description="We offer tailored consulting solutions in areas like financials, human capital, and AI to push
 for efficiency and innovation. Our expertise ensures that systems are optimized to support
 every business needs."

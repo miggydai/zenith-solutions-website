@@ -7,8 +7,11 @@ const SecondSection = () => {
   return (
     <section className="w-full h-full flex flex-col justify-center items-center">
       <ServicesHeader
+        textColor="orange"
+        fontWeight="bold"
+        borderColor="orange"
         label="Advisory"
-        title="Strategic guidance for sustainable success."
+        title="Strategic guidance for sustainable success"
         description="Our advisory services emphasizes on organizational development, communication, and
 change management. Our team provide the insights and  strategies needed to navigate
 challenges and achieve long-term growth."

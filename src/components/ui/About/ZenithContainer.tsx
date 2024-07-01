@@ -35,6 +35,7 @@ const ZenithContainer: React.FC<containerProps> = ({
           className="absolute object-cover w-[80%] h-[80%]"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
       </div>
       <h1 className="sm:text-2xl text-lg tracking-widest uppercase mt-4 text-black">

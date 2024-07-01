@@ -10,13 +10,13 @@ interface AboutHeroSectionProps {
 }
 
 const AboutHeroSection: React.FC<AboutHeroSectionProps> = ({ goToSlide }) => (
-  <div className="flex flex-col justify-center items-center w-full h-full p-10">
+  <div className="flex flex-col justify-center items-center w-full h-full p-10 mt-4">
     <div className="flex flex-col justify-center items-center w-[70%] gap-8">
       <OutlinedHeader
         label="Why Choose Zenith?"
         fontWeight="bold"
-        textColor="blue"
-        borderColor="blue"
+        textColor="orange"
+        borderColor="orange"
       />
       <h1 className="text-6xl font-bold text-blue-400">
         Rising Consulting Firm
