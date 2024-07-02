@@ -2,11 +2,11 @@ import React from "react";
 
 const ContactusCard = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start bg-blue-400 p-8 w-full md:w-[70%] md:h-[495px] md:rounded-2xl md:absolute md:z-20 md:top-36">
+    <div className="flex flex-col md:flex-row items-start bg-blue-400 p-8 w-full md:w-[70%] md:h-[495px] md:rounded-2xl md:z-20 md:top-36">
       {/* left */}
       <div className="w-full max-md:text-center md:w-1/2  flex flex-col gap-6">
         {/* Header of contacts */}
-        <h1 className="text-5xl pb-5">Contact us</h1>
+        <h1 className="sm:text-5xl text-2xl pb-5">Contact us</h1>
         {/* Email */}
         <div className="max-md:hidden">
           <h3 className="text-xs font-extralight">Email</h3>

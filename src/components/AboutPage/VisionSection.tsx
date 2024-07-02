@@ -1,6 +1,6 @@
 import React from "react";
 import { visionData } from "@/src/data/VisionData";
-import VisionCard from "../ui/About/VisionCard";
+import VisionCard from "../ui/AboutUI/VisionCard";
 
 const VisionSection = () => {
   return (
@@ -32,7 +32,7 @@ const VisionSection = () => {
 
       <div className="bg-blue-500 sm:w-[80%] w-[90%] h-[397px] rounded-xl my-4"></div>
 
-      <div className="sm:w-[80%] w-full sm:h-full h-full flex sm:flex-row flex-wrap flex-col justify-center items-center gap-2">
+      <div className="sm:w-[80%] w-full sm:h-full h-full flex sm:flex-row xl:flex-nowrap flex-wrap flex-col justify-center items-center gap-2">
         {visionData.map((vision, index) => (
           <VisionCard visions={vision} key={index} />
         ))}

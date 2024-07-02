@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import ZenithContainer from "../ui/About/ZenithContainer";
+import ZenithContainer from "../ui/AboutUI/ZenithContainer";
 import { valuesData } from "@/src/data/CoreValuesData";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,7 +28,11 @@ const ZenithSection = React.forwardRef<HTMLDivElement, SwiperComponentProps>(
       >
         <Swiper
           loop={true}
-          modules={[Pagination]}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          modules={[Pagination, Autoplay]}
           className="mySwiper"
           ref={swiperRef}
         >

@@ -1,11 +1,9 @@
 import React from "react";
-import ContactUsCard from "@/src/components/ui/ContactusCard";
 
 const Footer = () => {
   return (
-    <div className="w-full h-[160vh] flex flex-col justify-center items-center md:relative">
-      <ContactUsCard />
-      <footer className="flex flex-col justify-center items-center h-[50%] pt-[10rem] md:absolute w-full bottom-0 bg-smthGreen">
+    <div className="w-full h-[70vh] flex flex-col justify-center items-center md:relative">
+      <footer className="flex flex-col justify-center items-center h-full pt-[10rem] md:absolute w-full bottom-0 bg-smthGreen">
         {/* Footer details */}
         <div className="w-3/4 flex p-5">
           {/* Left section */}

@@ -1,14 +1,30 @@
 "use client";
 
 import React from "react";
-import InfoCard from "@/src/components/ui/Home/InfoCard";
-import imgSrc from "@/public/assets/images/sample.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import InfoCard from "@/src/components/ui/HomeUI/InfoCard";
+import Circle from "../ui/Circle";
+import imgSrc from "@/public/assets/images/sample.png";
+
 const InfoSection = () => {
   return (
-    <div className="w-full h-full flex flex-col gap-5 mb-3">
+    <div className="w-full h-full flex flex-col gap-5 pb-3 relative overflow-hidden">
+      {/* ---------------------Circols----------------------- */}
+      <div className="w-36 h-36 absolute -bottom-16">
+        <Circle color="orange" />
+      </div>
+      <div className="w-36 h-36 absolute bottom-[40%] left-[30%] -z-20">
+        <Circle color="orange" />
+      </div>
+      <div className="w-36 h-36 absolute top-0 right-[8%] -z-20">
+        <Circle color="orange" />
+      </div>
+      <div className="w-36 h-36 absolute top-[30%] right-0 -z-20">
+        <Circle color="orange" />
+      </div>
+
       <motion.div
         variants={{
           hidden: { opacity: 0 },

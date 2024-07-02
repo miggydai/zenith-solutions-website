@@ -21,7 +21,7 @@ const ClientSection = () => {
   return (
     <>
       {matches ? (
-        <section className="w-full h-screen flex flex-col justify-center items-start gap-3">
+        <section className="w-full xl:h-screen h-full flex flex-col justify-center items-start gap-3">
           <div className="w-full flex justify-center">
             <SectionHeader header="Listen to our clients' stories" />
           </div>

@@ -19,7 +19,7 @@ const ServicesHeader: React.FC<HeaderProps> = ({
   fontWeight,
 }) => {
   return (
-    <div className="sm:w-[50%] w-[90%] h-[300px] flex flex-col justify-center items-center sm:gap-5 gap-3 sm:p-8 p-4">
+    <div className="sm:w-[50%] w-[90%] h-[300px] flex flex-col justify-center items-center sm:gap-5 gap-3 sm:p-8 p-4 z-10">
       <OutlinedHeader
         label={label}
         borderColor={borderColor}

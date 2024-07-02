@@ -6,7 +6,7 @@ const Stats = () => {
       {/* Out side container */}
       <div className="flex flex-col w-full gap-5 bg-white p-20">
         {/* Header */}
-        <div className="text-center text-green-400">
+        <div className="text-center text-projectOrange">
           <p>We are on a quest to manifest ideas to reality</p>
         </div>
         {/* The stats */}

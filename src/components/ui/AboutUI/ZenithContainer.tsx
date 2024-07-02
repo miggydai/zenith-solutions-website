@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
+import Circle from "../Circle";
+import { motion } from "framer-motion";
 
 type containerProps = {
   imgSrc: StaticImageData;
@@ -16,7 +18,25 @@ const ZenithContainer: React.FC<containerProps> = ({
   description,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center">
+    <div className="w-full h-full flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="absolute sm:w-48 sm:h-48 w-24 h-24 top-[10%] right-[-5%]">
+        <Circle color="orange" />
+      </div>
+      <div className="absolute sm:w-24 w-10 sm:h-24 h-10 top-[50%] sm:right-[20%] right-[10%]">
+        <Circle color="orange" />
+      </div>
+      <div className="absolute w-12 h-12 bottom-[10%] sm:right-[8%] right-[5%]">
+        <Circle color="orange" />
+      </div>
+      <div className="absolute sm:w-48 sm:h-48 w-24 h-24 bottom-[10%] left-[-5%]">
+        <Circle color="orange" />
+      </div>
+      <div className="absolute sm:w-28 sm:h-28 w-16 h-16 top-[10%] left-[5%]">
+        <Circle color="orange" />
+      </div>
+      <div className="absolute w-16 h-16 top-[50%] left-[20%]">
+        <Circle color="orange" />
+      </div>
       <h4 className="text-black">what we value in </h4>
       <div className="relative sm:w-[60%] w-[90%] sm:h-[10rem] h-[5rem]">
         <Image

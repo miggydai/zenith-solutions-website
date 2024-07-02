@@ -2,9 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import ServicesComponent from "@/src/components/ui/Home/ServicesComponent";
+import ServicesComponent from "@/src/components/ui/HomeUI/ServicesComponent";
 import { services } from "@/src/data/ServicesData";
-import MobileServicesComponent from "../ui/Home/MobileServicesComponent";
+import MobileServicesComponent from "../ui/HomeUI/MobileServicesComponent";
 
 import useMediaQuery from "@/src/hooks/useMediaQuery";
 import imgSrc from "@/public/assets/images/asset1.png";
