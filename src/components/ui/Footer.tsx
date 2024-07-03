@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full h-[70vh] flex flex-col justify-center items-center md:relative">
-      <footer className="flex flex-col justify-center items-center max-sm:pt-[2rem] h-full max-sm:h-screen md:absolute w-full bottom-0 bg-smthGreen">
+      <footer className="pb-10 flex flex-col justify-end items-center max-sm:pt-[2rem] h-full max-sm:h-screen md:absolute w-full bottom-0 bg-smthGreen">
         {/* Footer details */}
         <div className="w-3/4 max-sm:w-full flex max-sm:flex-col p-5">
           {/* Left section */}
-          <div className="w-3/4 max-sm:w-full flex flex-col gap-4 max-sm:pt-20">
+          <div className="w-3/4  max-sm:w-full flex flex-col gap-4 max-sm:pt-20">
             <h1>Logo</h1>
-            <p className="text-sm">
+            <p className="text-sm w-3/4">
               Zenith Solutions is dedicated to connecting businesses with
               top-tier talent that not only excels in their roles but also
               embodies the right attitude to drive your company forward.
