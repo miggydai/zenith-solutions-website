@@ -29,7 +29,7 @@ const ZenithSection = React.forwardRef<HTMLDivElement, SwiperComponentProps>(
         <Swiper
           loop={true}
           autoplay={{
-            delay: 3500,
+            delay: 6500,
             disableOnInteraction: false,
           }}
           modules={[Pagination, Autoplay]}

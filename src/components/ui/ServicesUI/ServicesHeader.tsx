@@ -26,10 +26,12 @@ const ServicesHeader: React.FC<HeaderProps> = ({
         fontWeight={fontWeight}
         textColor={textColor}
       />
-      <h3 className="text-black sm:text-2xl text-lg text-center font-bold capitalize">
+      <h3 className="sm:text-2xl text-lg text-center font-bold capitalize text-darkBlue font-montserrat">
         {title}
       </h3>
-      <p className="text-black sm:text-sm text-xs text-center">{description}</p>
+      <p className="text-black sm:text-sm text-xs text-center font-montserrat">
+        {description}
+      </p>
     </div>
   );
 };

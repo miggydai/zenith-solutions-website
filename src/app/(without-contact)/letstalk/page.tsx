@@ -16,11 +16,13 @@ const page = () => {
           animate={{ opacity: 1, y: 1 }}
           className="sm:w-[50%] w-full h-auto flex flex-col gap-2 justify-center items-center"
         >
-          <h4 className="font-medium text-xl uppercase">here at zenith</h4>
-          <h1 className="sm:text-6xl text-3xl font-bold text-center capitalize">
+          <h4 className="font-medium text-xl uppercase font-sora">
+            here at zenith
+          </h4>
+          <h1 className="sm:text-6xl text-3xl font-bold text-center capitalize font-sora">
             We are here to help
           </h1>
-          <p className="text-center sm:text-base text-sm mx-5">
+          <p className="text-center sm:text-base text-sm mx-5 font-rubik">
             We can streamline the budgeting process of your project with precise
             pricing calculations tailored specifically to your needs
           </p>
@@ -33,7 +35,7 @@ const page = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 1 }}
           transition={{ delay: 0.5, duration: 0.7 }}
-          className="absolute sm:right-60 right-3 sm:w-36 sm:h-36 w-16 h-16 top-[32%]"
+          className="absolute sm:right-44 right-3 sm:w-36 sm:h-36 w-16 h-16 top-[30%]"
         >
           <Image
             src={alright}

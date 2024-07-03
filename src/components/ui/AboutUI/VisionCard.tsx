@@ -8,7 +8,7 @@ type CardProps = {
 
 const VisionCard: React.FC<CardProps> = ({ visions }) => {
   return (
-    <div className="sm:w-[285px] w-full h-[343px] bg-lightGray flex sm:flex-col flex-row justify-center items-center py-2 px-3 rounded-2xl shadow-md gap-2">
+    <div className="sm:w-[285px] w-full h-[343px] bg-whiteGray flex sm:flex-col flex-row justify-center items-center py-2 px-3 rounded-2xl shadow-md gap-2">
       <div className="sm:w-full w-[30%] h-auto flex sm:justify-end justify-center items-start">
         <div className="relative sm:w-[84px] w-[150px] sm:h-[84px] h-[150px]">
           <Image
@@ -24,8 +24,12 @@ const VisionCard: React.FC<CardProps> = ({ visions }) => {
       </div>
 
       <div className="w-full flex flex-col gap-2">
-        <h4 className="font-bold capitalize text-black">{visions.title}</h4>
-        <p className="text-sm text-black">{visions.description}</p>
+        <h4 className="font-bold capitalize text-darkBlue font-montserrat">
+          {visions.title}
+        </h4>
+        <p className="text-sm text-darkBlue font-light font-poppins">
+          {visions.description}
+        </p>
       </div>
     </div>
   );

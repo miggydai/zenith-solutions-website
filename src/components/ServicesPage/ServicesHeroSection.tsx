@@ -19,11 +19,11 @@ const ServicesHeroSection = () => {
         </div>
       </div>
       <div className="w-full flex flex-col justify-center items-center gap-4 mt-8">
-        <SectionHeader header="Enterprise Consulting" />
-        <p className="text-black sm:text-lg text-base text-center">
+        <SectionHeader header="Enterprise Consulting" color="black" />
+        <p className="text-black sm:text-lg text-base text-center font-poppins">
           transform your business from the ground up.
         </p>
-        <Button label="Inquire Now" color="aquaBlue" href="" />
+        <Button label="Inquire Now" color="skyBlue" href="" />
       </div>
 
       <div className="sm:w-[50%] w-[90%] sm:h-[20rem] h-[15rem] bg-blue-700 rounded-xl"></div>

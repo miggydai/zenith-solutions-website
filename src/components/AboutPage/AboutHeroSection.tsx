@@ -10,7 +10,7 @@ interface AboutHeroSectionProps {
 }
 
 const AboutHeroSection: React.FC<AboutHeroSectionProps> = ({ goToSlide }) => (
-  <div className="flex flex-col justify-center items-center w-full h-full sm:p-10 px-2 py-10 mt-4">
+  <div className="flex flex-col justify-center items-center w-full h-full sm:p-10 px-2 py-10">
     <div className="flex flex-col justify-center items-center sm:w-[70%] w-full gap-8">
       <OutlinedHeader
         label="Why Choose Zenith?"
@@ -18,10 +18,10 @@ const AboutHeroSection: React.FC<AboutHeroSectionProps> = ({ goToSlide }) => (
         textColor="orange"
         borderColor="orange"
       />
-      <h1 className="sm:text-6xl text-3xl font-bold text-blue-400 text-center">
+      <h1 className="sm:text-6xl text-3xl font-bold text-skyBlue text-center font-montserrat">
         Rising Consulting Firm
       </h1>
-      <p className="text-blue-800 text-center sm:text-base text-sm">
+      <p className="text-darkBlue font-light font-poppins text-center sm:text-base text-sm">
         With a focus on quality, integrity, and personalized service, we have
         established ourselves as a trusted partner for both clients and
         candidates alike. Our team of experienced recruiters is committed to

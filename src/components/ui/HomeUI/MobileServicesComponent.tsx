@@ -31,7 +31,7 @@ const MobileServicesComponent: React.FC<ServicesProps> = ({
       {/* bottom section */}
       <div className="w-full h-[50%]S flex flex-col justify-start items-start p-8 gap-3">
         <motion.h6
-          className="text-aquaBlue text-xs text-wrap font-medium"
+          className="text-skyBlue text-xs text-wrap font-medium"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -47,7 +47,7 @@ const MobileServicesComponent: React.FC<ServicesProps> = ({
 
         {/* title */}
         <motion.h2
-          className="text-smthGreen text-xl font-semibold"
+          className="text-darkBlue text-xl font-semibold"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -62,7 +62,7 @@ const MobileServicesComponent: React.FC<ServicesProps> = ({
         </motion.h2>
         {/* description */}
         <motion.p
-          className="text-smthGreen text-xs"
+          className="text-darkBlue text-xs"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -76,7 +76,7 @@ const MobileServicesComponent: React.FC<ServicesProps> = ({
           {description}
         </motion.p>
 
-        <Button href="" label="Learn more" color="smthGreen" />
+        <Button href="/services" label="Learn more" color="skyBlue" />
       </div>
     </div>
   );

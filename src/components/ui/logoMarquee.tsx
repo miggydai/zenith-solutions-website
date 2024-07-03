@@ -35,7 +35,7 @@ const LogoMarquee: React.FC = () => {
   return (
     <>
       <div className="w-full flex justify-center mt-16 mb-8">
-        <SectionHeader header="Trusted by a lot of companies" />
+        <SectionHeader header="Trusted by a lot of companies" color="orange" />
       </div>
       <div className="w-full h-auto overflow-x-hidden">
         <div className="relative flex overflow-x-hidden">

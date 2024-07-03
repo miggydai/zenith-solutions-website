@@ -37,7 +37,9 @@ const ZenithContainer: React.FC<containerProps> = ({
       <div className="absolute w-16 h-16 top-[50%] left-[20%]">
         <Circle color="orange" />
       </div>
-      <h4 className="text-black">what we value in </h4>
+      <h4 className="text-black font-poppins uppercase tracking-widest">
+        what we value in{" "}
+      </h4>
       <div className="relative sm:w-[60%] w-[90%] sm:h-[10rem] h-[5rem]">
         <Image
           src={imgSrc}
@@ -58,12 +60,14 @@ const ZenithContainer: React.FC<containerProps> = ({
           priority
         />
       </div>
-      <h1 className="sm:text-2xl text-lg tracking-widest uppercase mt-4 text-black">
+      <h1 className="sm:text-2xl text-lg tracking-widest uppercase mt-4 font-poppins text-black">
         {value}
       </h1>
 
       <div className="sm:w-[40%] w-[80%] sm:mt-8 mt-4">
-        <p className="text-wrap text-center text-slate-400">{description}</p>
+        <p className="text-wrap text-center text-slate-400 font-poppins">
+          {description}
+        </p>
       </div>
     </div>
   );

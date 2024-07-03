@@ -91,14 +91,14 @@ const ClientStories = () => {
         }}
         className="flex flex-col w-[60%] h-full justify-center items-start relative lg:gap-3 gap-1 mb-7"
       >
-        <h3 className="2xl:xl:text-2xl text-xl text-white font-bold border-l-4 border-l-white pl-4">
+        <h3 className="2xl:xl:text-2xl text-xl text-white font-semibold border-l-4 border-l-white pl-4 font-poppins">
           Patrick Matayabas
         </h3>
-        <h6 className="font-light text-white 2xl:text-lg text-sm h-10 border-l-4 border-l-white pl-4">
+        <h6 className="font-light text-white 2xl:text-lg text-sm h-10 border-l-4 border-l-white pl-4 font-poppins">
           Founder
         </h6>
 
-        <p className="lg:mt-5 mt-2 pl-4 text-white lg:mr-56 mr-32 2xl:text-sm text-xs">
+        <p className="lg:mt-5 mt-2 pl-4 text-white lg:mr-56 mr-32 2xl:text-sm text-xs font-poppins">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut

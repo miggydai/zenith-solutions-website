@@ -26,6 +26,27 @@ const config: Config = {
         aquaBlueSgradient:
           "rgb(var(--color-aquaBlueSgradient) / <alpha-value>)",
         tanSgradient: "rgb(var(--color-tanSgradient) / <alpha-value>)",
+        skyBlue: "rgb(var(--color-skyBlue) / <alpha-value>)",
+        darkBlue: "rgb(var(--color-darkBlue) / <alpha-value>)",
+        whiteGray: "rgb(var(--color-whiteGray) / <alpha-value>)",
+      },
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        poppins: ["var(--font-poppins)"],
+        sora: ["var(--font-sora)"],
+        rubik: ["var(--font-rubik)"],
+
+        sans: [
+          "Helvetica",
+          "system-ui",
+          "Segoe UI",
+          "Roboto",
+          "Arial",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+        ],
       },
       keyframes: {
         enterFromRight: {
@@ -88,8 +109,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    
-  ],
+  plugins: [],
 };
 export default config;

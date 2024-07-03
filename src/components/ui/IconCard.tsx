@@ -21,7 +21,9 @@ const cardVariants = cva(
 );
 
 const titleVariants = cva(
-  ["text-left mb-5 sm:text-xl text-md font-bold capitalize"],
+  [
+    "text-left mb-5 sm:text-xl text-md font-semibold capitalize font-montserrat",
+  ],
   {
     variants: {
       titleColor: {
@@ -32,7 +34,7 @@ const titleVariants = cva(
   }
 );
 
-const pVariants = cva(["text-xs font-light tracking-wide"], {
+const pVariants = cva(["text-xs font-light tracking-wide font-poppins"], {
   variants: {
     pColor: {
       white: "text-white",
@@ -67,6 +69,7 @@ const IconCard: React.FC<CardProps> = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           fill
           priority
+          unoptimized
         />
       </div>
       <h3 className={titleVariants({ titleColor })}>{service.title}</h3>

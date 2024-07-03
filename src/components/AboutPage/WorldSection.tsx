@@ -4,9 +4,9 @@ import SectionHeader from "../ui/SectionHeader";
 
 const WorldSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 p-10 mb-[10rem] bg-gray-100 h-screen">
+    <div className="flex flex-col justify-center items-center gap-10 p-10 mb-[10rem] h-screen">
       <div>
-        <SectionHeader header="Meet our team Worldwide" />
+        <SectionHeader header="Meet our team Worldwide" color="skyBlue" />
       </div>
       <div className="w-3/4">
         <Map />

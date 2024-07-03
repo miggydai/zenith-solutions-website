@@ -9,19 +9,19 @@ const VisionSection = () => {
         <div className="flex flex-row sm:w-[50%] w-full gap-4">
           {/* lines */}
           <div className="flex flex-col h-full gap-5">
-            <div className="w-2 h-[30%] bg-tan"></div>
-            <div className="w-2 h-[70%] bg-tan"></div>
+            <div className="w-2 h-[30%] bg-tanSgradient"></div>
+            <div className="w-2 h-[70%] bg-tanSgradient"></div>
           </div>
 
           <div className="w-[90%] flex items-center">
-            <h1 className="sm:text-5xl text-3xl font-bold text-black">
-              What is our <span className="text-orange-500">Vision?</span>
+            <h1 className="sm:text-5xl text-3xl font-bold text-black font-montserrat capitalize">
+              What is our <span className="text-projectOrange">Vision?</span>
             </h1>
           </div>
         </div>
 
         <div className="sm:w-[40%] w-full flex items-center">
-          <p className="text-black sm:text-sm text-xs">
+          <p className="text-darkBlue sm:text-sm text-xs font-light font-poppins">
             Provide clients with personalized services that maximize their
             Workday investments. With a team experienced in both implementation
             and end-user roles, Zenith understands and addresses clients&#39;

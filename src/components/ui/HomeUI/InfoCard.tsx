@@ -13,8 +13,9 @@ const infoCardVariants = cva(
   {
     variants: {
       color: {
-        aquaBlue: "bg-aquaBlue",
+        skyBlue: "bg-skyBlue",
         smthGreen: "bg-smthGreen",
+        orange: "bg-projectOrange",
       },
     },
   }
@@ -46,7 +47,7 @@ const InfoCard: React.FC<infoCardProps> = ({
       <OutlinedHeader
         label={headerLabel}
         borderColor="white"
-        fontWeight="normal"
+        fontWeight="semibold"
         textColor="white"
       />
 

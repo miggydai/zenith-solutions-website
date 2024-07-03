@@ -23,7 +23,10 @@ const ClientSection = () => {
       {matches ? (
         <section className="w-full xl:h-screen h-full flex flex-col justify-center items-start gap-3">
           <div className="w-full flex justify-center">
-            <SectionHeader header="Listen to our clients' stories" />
+            <SectionHeader
+              header="Listen to our clients' stories"
+              color="skyBlue"
+            />
           </div>
 
           <div className="flex flex-row w-full h-[60vh]">
@@ -76,7 +79,10 @@ const ClientSection = () => {
       ) : (
         <section className="w-full h-full flex flex-col items-center justify-center">
           <div className="w-full flex justify-center px-5 my-2">
-            <SectionHeader header="Listen to our clients' stories" />
+            <SectionHeader
+              header="Listen to our clients' stories"
+              color="skyBlue"
+            />
           </div>
           <Swiper
             loop={true}

@@ -13,7 +13,7 @@ const buttonVariants = cva(
   {
     variants: {
       color: {
-        aquaBlue: "bg-aquaBlue",
+        skyBlue: "bg-skyBlue",
         smthGreen: "bg-smthGreen",
       },
     },

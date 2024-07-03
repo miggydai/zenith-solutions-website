@@ -27,16 +27,16 @@ const MissionSection = () => {
 
       <div className="w-full h-[40%] flex flex-row justify-center items-center gap-5 px-3 z-10">
         <div className="flex flex-col h-full gap-5">
-          <div className="w-3 h-[30%] bg-tan"></div>
-          <div className="w-3 h-[70%] bg-tan"></div>
+          <div className="w-3 h-[30%] bg-tanSgradient"></div>
+          <div className="w-3 h-[70%] bg-tanSgradient"></div>
         </div>
 
-        <h1 className="sm:text-6xl text-4xl text-black capitalize font-bold z-10">
-          what is our <span className="text-orange-400">mission?</span>
+        <h1 className="sm:text-6xl text-4xl text-black capitalize font-montserrat font-bold z-10">
+          what is our <span className="text-projectOrange">mission?</span>
         </h1>
       </div>
       <div className="sm:w-[50%] w-full sm:px-4 px-8 z-10">
-        <p className="font-light text-black sm:text-base text-sm">
+        <p className="font-light text-darkBlue font-poppins sm:text-base text-sm">
           Our mission is to provide excellent customer service with integrity
           and accountability. We value commitment to community involvement and
           inclusivity because we believe it is crucial in today’s business

@@ -10,7 +10,7 @@ import imgSrc from "@/public/assets/images/sample.png";
 
 const InfoSection = () => {
   return (
-    <div className="w-full h-full flex flex-col gap-5 pb-3 relative overflow-hidden">
+    <div className="w-full h-full flex flex-col gap-5 pb-3 relative overflow-hidden mt-3">
       {/* ---------------------Circols----------------------- */}
       <div className="w-36 h-36 absolute -bottom-16">
         <Circle color="orange" />
@@ -61,7 +61,7 @@ const InfoSection = () => {
           title="Selecting the right partner in business can make a huge difference."
           info="Zenith Solutions is committed to providing remarkable Workday consulting services tailored to
 the client’s need. With our proven track record, comprehensive approach, and expertise of top-tier advisors, choosing Zenith means partnering with a trusted team dedicated to your success."
-          color="smthGreen"
+          color="skyBlue"
         />
       </motion.div>
 
@@ -85,7 +85,7 @@ organizations. With a focus on quality, integrity, and personalized service, we 
 ourselves as a trusted partner for both clients and candidates alike. Our team of experienced
 recruiters is committed to delivering exceptional results and exceeding expectations every step
 of the way."
-          color="aquaBlue"
+          color="orange"
         />
         <motion.div
           variants={{
