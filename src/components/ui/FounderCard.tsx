@@ -3,7 +3,7 @@ import React from 'react'
 
 const FounderCard = () => {
   return (
-    <div className='rounded-md flex flex-col gap-10 bg-white w-[60vw] p-6'>
+    <div className='rounded-md flex flex-col gap-10 bg-white w-[60vw] p-6 shadow-2xl drop-shadow-2xl w-[70vw]'>
         {/* Top section */}
         <div className='flex gap-10'>
             {/* Picture */}
@@ -12,24 +12,18 @@ const FounderCard = () => {
             </div>
             {/* Deets */}
             <div className='flex flex-col gap-4 justify-center'>
-                <h1 className='text-5xl font-bold text-black'>Diego gomez</h1>
+                <h1 className='text-5xl font-bold text-black'>Davinder Singh</h1>
                 <p className='text-gray-300'>Founder</p>
                 <p className='text-gray-300'>Icons</p>
             </div>
         </div>
         {/* Long paragraph */}
-        <div className='flex flex-col gap-10 text-black'>
-            <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eius aliquam. Fuga fugiat a reiciendis odit recusandae iure facilis, voluptates maiores accusamus voluptatibus aut quisquam tempora dolor nostrum facere blanditiis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eius aliquam. Fuga fugiat a reiciendis odit recusandae iure facilis, voluptates maiores accusamus voluptatibus aut quisquam tempora dolor nostrum facere blanditiis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eius aliquam. Fuga fugiat a reiciendis odit recusandae iure facilis, voluptates maiores accusamus voluptatibus aut quisquam tempora dolor nostrum facere blanditiis?</p>
+        <div className='flex flex-col text-lg gap-10 text-black'>
+            <div className='flex flex-col gap-4'>
+            <p>Davinder is the founder of Zenith Solutions LLC. He has over 20 years of experience in finance, accounting and technology industry. He has been in Workday ecosystem more than 8 years. He started his Workday journey with Cushman and Wakefield and worked for a Workday partner firm. </p>
+            <p>He has extensive experience in different Industries such as Retail, Real-estate, Utilities, Healthcare and Higher Education. He enjoys playing tennis and cricket. He is a great fan of Sachin Tendulkar, Roger Federer and Michal Schumacher.</p>
+            </div>
            
-            </div>
-            <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eius aliquam. Fuga fugiat a reiciendis odit recusandae iure facilis, voluptates maiores accusamus voluptatibus aut quisquam tempora dolor nostrum facere blanditiis?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eius aliquam. Fuga fugiat a reiciendis odit recusandae iure facilis, voluptates maiores accusamus voluptatibus aut quisquam tempora dolor nostrum facere blanditiis?</p>
-            
-            </div>
             
         </div>
     </div>

@@ -8,7 +8,7 @@ import MissionSection from "@/src/components/AboutPage/MissionSection";
 import ZenithSection from "@/src/components/AboutPage/ZenithSection";
 import ClientSection from "@/src/components/HomePage/ClientSection";
 import WorldSection from "@/src/components/AboutPage/WorldSection";
-
+import FounderSection from "@/src/components/AboutPage/FounderSection";
 const AboutPage: React.FC = () => {
   const swiperRef = useRef<HTMLDivElement>(null);
   const [slideIndex, setSlideIndex] = useState<number>(0);
@@ -30,6 +30,7 @@ const AboutPage: React.FC = () => {
       </div>
       <ClientSection />
       <WorldSection />
+      <FounderSection />
     </main>
   );
 };
