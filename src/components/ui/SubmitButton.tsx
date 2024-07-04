@@ -16,12 +16,14 @@ const SubmitButton = () => {
       }}
       whileTap={{ scale: 0.8 }}
       type="submit"
-      className="sm:w-[10rem] bg-skyBlue sm:h-9 w-[5] h-4 sm:text-base text-sm rounded-full inline-flex justify-center items-center p-4 transition ease-in-out duration-150 cursor-pointer capitalize"
+      className="sm:w-[10rem] bg-white sm:h-9 w-[5] h-4 sm:text-base text-sm rounded-full inline-flex justify-center items-center p-4 transition ease-in-out duration-150 cursor-pointer capitalize"
     >
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-white"></div>
+        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-darkBlue"></div>
       ) : (
-        <span>send</span>
+        <span className="text-darkBlue font-montserrat font-semibold capitalize">
+          send message
+        </span>
       )}
     </motion.button>
   );

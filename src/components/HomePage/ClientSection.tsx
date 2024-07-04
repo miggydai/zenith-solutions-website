@@ -21,7 +21,7 @@ const ClientSection = () => {
   return (
     <>
       {matches ? (
-        <section className="w-full xl:h-screen h-full flex flex-col justify-center items-start gap-3">
+        <section className="w-full md:h-[70vh] h-full flex flex-col justify-center items-center gap-3">
           <div className="w-full flex justify-center">
             <SectionHeader
               header="Listen to our clients' stories"
@@ -51,7 +51,7 @@ const ClientSection = () => {
               </Swiper>
             </div>
 
-            <div className="xl:w-[15%] w-[17%] h-full flex  justify-center items-center p-4">
+            <div className="xl:w-[15%] w-[17%] h-auto flex  justify-center items-center p-4">
               <motion.div
                 initial={{ y: 100, opacity: 0 }}
                 whileInView={{

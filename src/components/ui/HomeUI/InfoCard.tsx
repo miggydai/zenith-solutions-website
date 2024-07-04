@@ -24,6 +24,7 @@ const infoCardVariants = cva(
 type infoCardProps = {
   title: string;
   info: string;
+  info2?: string;
   color: string;
   headerLabel: string;
 } & VariantProps<typeof infoCardVariants>;
@@ -31,6 +32,7 @@ type infoCardProps = {
 const InfoCard: React.FC<infoCardProps> = ({
   title,
   info,
+  info2,
   color,
   headerLabel,
 }) => {
@@ -51,9 +53,17 @@ const InfoCard: React.FC<infoCardProps> = ({
         textColor="white"
       />
 
-      <h2 className="2xl:text-4xl lg:text-2xl font-bold capitalize">{title}</h2>
+      <h2 className="2xl:text-4xl lg:text-2xl font-bold capitalize font-montserrat">
+        {title}
+      </h2>
 
-      <p className="2xl:text-sm md:text-xs text-xs">{info}</p>
+      <p className="2xl:text-sm md:text-xs text-xs font-poppins font-light">
+        {info}
+      </p>
+
+      <p className="2xl:text-sm md:text-xs text-xs font-poppins font-light">
+        {info2}
+      </p>
     </motion.div>
   );
 };

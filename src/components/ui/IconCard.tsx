@@ -6,7 +6,7 @@ import { cva } from "class-variance-authority";
 
 const cardVariants = cva(
   [
-    "sm:w-[254px] sm:h-[349px] w-[190px] h-[294px] rounded-lg flex flex-col justify-start items-center sm:py-10 py-6 sm:px-8 px-4",
+    "sm:w-[254px] sm:h-[349px] w-[210px] h-[294px] rounded-lg flex flex-col justify-start items-center sm:py-10 py-6 sm:px-8 px-4",
   ],
   {
     variants: {
@@ -22,7 +22,7 @@ const cardVariants = cva(
 
 const titleVariants = cva(
   [
-    "text-left mb-5 sm:text-xl text-md font-semibold capitalize font-montserrat",
+    "text-left mb-5 sm:text-xl text-sm font-semibold capitalize font-montserrat",
   ],
   {
     variants: {
@@ -60,7 +60,7 @@ const IconCard: React.FC<CardProps> = ({
 }) => {
   return (
     <div className={cardVariants({ cardColor })}>
-      <div className="mb-4 relative sm:w-16 sm:h-16 w-8 h-8">
+      <div className="mb-4 relative sm:w-16 sm:h-16 w-10 h-10">
         <Image
           src={service.iconUrl}
           alt="gif animation"

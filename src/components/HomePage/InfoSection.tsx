@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import InfoCard from "@/src/components/ui/HomeUI/InfoCard";
 import Circle from "../ui/Circle";
 import imgSrc from "@/public/assets/images/sample.png";
+import imgSrc2 from "@/public/assets/images/info2.png";
 
 const InfoSection = () => {
   return (
@@ -48,7 +49,7 @@ const InfoSection = () => {
         >
           <Image
             src={imgSrc}
-            alt="sample image"
+            alt="informational image"
             className="absolute object-cover rounded-lg"
             placeholder="blur"
             draggable={false}
@@ -80,11 +81,8 @@ the client’s need. With our proven track record, comprehensive approach, and e
         <InfoCard
           headerLabel="about us"
           title="Hire Great Talent with the Right Attitude"
-          info="Zenith Solutions is a leading recruitment firm dedicated to connecting top talent with leading
-organizations. With a focus on quality, integrity, and personalized service, we have established
-ourselves as a trusted partner for both clients and candidates alike. Our team of experienced
-recruiters is committed to delivering exceptional results and exceeding expectations every step
-of the way."
+          info="Founded in 2017, Zenith specializes in Workday Independent Contracting, offering exceptional customer service to its clients. Zenith's leaders have more than 12+ years of Workday experience. They are system-agnostic and have developed a variety of Workday skills over the years."
+          info2="Zenith's vision is clear: to provide clients with personalized services that maximize their Workday investments. With a team experienced in both implementation and end-user roles, Zenith understands and addresses clients' challenges effectively."
           color="orange"
         />
         <motion.div
@@ -97,8 +95,8 @@ of the way."
           className="2xl:w-[51rem] 2xl:h-[29rem] lg:w-[34rem] lg:h-[22rem] sm:w-[22rem] sm:h-[12rem] w-full h-[14rem] relative rounded-lg"
         >
           <Image
-            src={imgSrc}
-            alt="sample image"
+            src={imgSrc2}
+            alt="informational image"
             className="absolute object-cover rounded-lg"
             placeholder="blur"
             draggable={false}

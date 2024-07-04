@@ -5,13 +5,25 @@ import Image from "next/image";
 import imgSrc from "@/public/assets/images/sample2.png";
 import { motion } from "framer-motion";
 import Button from "../Button";
+import type { StaticImageData } from "next/image";
 
 type ServicesProps = {
   title: string;
   description: string;
+  img1: StaticImageData;
+  img2: StaticImageData;
+  img3: StaticImageData;
+  img4: StaticImageData;
 };
 
-const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
+const ServicesComponent: React.FC<ServicesProps> = ({
+  title,
+  description,
+  img1,
+  img2,
+  img3,
+  img4,
+}) => {
   return (
     <div className="w-full flex h-screen flex-row justify-center items-center relative">
       <div className="w-[50%] h-[37rem] flex flex-row justify-center items-center gap-12">
@@ -20,7 +32,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
           {/* first image */}
           <div className="relative w-[14.5rem] h-[16.5rem] bg-skyBlue rounded-md flex justify-end">
             <Image
-              src={imgSrc}
+              src={img1}
               alt="sample"
               className="absolute object-cover rounded-md"
               placeholder="blur"
@@ -31,7 +43,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
           {/* 2nd image */}
           <div className="relative w-[14.5rem] h-[16.5rem] bg-skyBlue rounded-md flex justify-end">
             <Image
-              src={imgSrc}
+              src={img2}
               alt="sample"
               className="absolute object-cover rounded-md"
               placeholder="blur"
@@ -45,7 +57,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
           {/* first image */}
           <div className="relative w-[14.5rem] h-[16.5rem] bg-skyBlue rounded-md flex justify-end">
             <Image
-              src={imgSrc}
+              src={img3}
               alt="sample"
               className="absolute object-cover rounded-md"
               placeholder="blur"
@@ -56,7 +68,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
           {/* 2nd image */}
           <div className="relative w-[14.5rem] h-[16.5rem] bg-skyBlue rounded-lg flex justify-end">
             <Image
-              src={imgSrc}
+              src={img4}
               alt="sample"
               className="absolute object-cover rounded-md"
               placeholder="blur"
@@ -69,7 +81,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
 
       <div className="w-[50%] h-96  flex flex-col justify-center items-start p-16 gap-[1rem]">
         <motion.h6
-          className="text-skyBlue text-lg font-medium"
+          className="text-skyBlue text-lg font-medium font-poppins"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -84,7 +96,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
         </motion.h6>
         {/* title */}
         <motion.h2
-          className="text-darkBlue text-3xl font-semibold"
+          className="text-darkBlue text-3xl font-bold font-montserrat"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -99,7 +111,7 @@ const ServicesComponent: React.FC<ServicesProps> = ({ title, description }) => {
         </motion.h2>
         {/* description */}
         <motion.p
-          className="text-darkBlue text-[.8rem]"
+          className="text-darkBlue text-[.8rem] font-poppins"
           initial={{ y: 100, opacity: 0 }}
           whileInView={{
             opacity: 1,

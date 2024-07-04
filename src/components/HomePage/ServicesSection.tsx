@@ -7,7 +7,7 @@ import { services } from "@/src/data/ServicesData";
 import MobileServicesComponent from "../ui/HomeUI/MobileServicesComponent";
 
 import useMediaQuery from "@/src/hooks/useMediaQuery";
-import imgSrc from "@/public/assets/images/asset1.png";
+import imgSrc from "@/public/assets/images/serviceCircle2.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 
@@ -15,12 +15,12 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const ServicesSection = () => {
-  const matches = useMediaQuery("(min-width: 1025px)");
+  const matches = useMediaQuery("(min-width: 821px)");
   return (
     <div className="w-full sm:h-screen h-full flex sm:justify-evenly justify-center items-center bg-lightGray">
       {matches ? (
         <>
-          <div className="w-[6.5rem] h-[13rem] relative md:visible">
+          <div className="w-[6.5rem] h-[13rem] relative xl:flex hidden">
             <Image
               src={imgSrc}
               alt="icon"
@@ -45,6 +45,10 @@ const ServicesSection = () => {
                   <ServicesComponent
                     title={service.title}
                     description={service.description}
+                    img1={service.leftImages[0]}
+                    img2={service.leftImages[1]}
+                    img3={service.rightImages[0]}
+                    img4={service.rightImages[1]}
                   />
                 </SwiperSlide>
               ))}
@@ -67,6 +71,10 @@ const ServicesSection = () => {
                   <MobileServicesComponent
                     title={service.title}
                     description={service.description}
+                    img1={service.leftImages[0]}
+                    img2={service.leftImages[1]}
+                    img3={service.rightImages[0]}
+                    img4={service.rightImages[1]}
                   />
                 </SwiperSlide>
               ))}

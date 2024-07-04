@@ -1,6 +1,8 @@
 import React from "react";
 import { visionData } from "@/src/data/VisionData";
 import VisionCard from "../ui/AboutUI/VisionCard";
+import Image from "next/image";
+import imgSrc from "@/public/assets/images/VisionPic.png";
 
 const VisionSection = () => {
   return (
@@ -30,7 +32,16 @@ const VisionSection = () => {
         </div>
       </div>
 
-      <div className="bg-blue-500 sm:w-[80%] w-[90%] h-[397px] rounded-xl my-4"></div>
+      <div className="relative sm:w-[80%] w-[90%] h-[397px] rounded-xl my-4">
+        <Image
+          src={imgSrc}
+          alt="vision picture"
+          className="absolute object-cover"
+          placeholder="blur"
+          draggable={false}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
 
       <div className="sm:w-[80%] w-full sm:h-full h-full flex sm:flex-row xl:flex-nowrap flex-wrap flex-col justify-center items-center gap-2">
         {visionData.map((vision, index) => (

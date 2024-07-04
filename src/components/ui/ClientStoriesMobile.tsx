@@ -34,11 +34,6 @@ const ClientStoriesMobile = () => {
 
         {/* bottom portion */}
         <div className="flex flex-row w-full h-[50%] p-3">
-          {/* <div className="flex flex-col w-[4rem]  h-[100%] gap-4 justify-start items-center pt-9">
-            <div className="w-full h-[15%] bg-slate-100"></div>
-            <div className="w-full h-[30%] bg-slate-100"></div>
-          </div> */}
-
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             whileInView={{
@@ -52,13 +47,15 @@ const ClientStoriesMobile = () => {
             className="flex flex-col h-full justify-start items-start relative gap-1 mb-6 pt-9"
           >
             <div className="flex flex-col border-l-8 border-l-white pl-4">
-              <h3 className="text-lg text-white font-bold">
+              <h3 className="text-lg text-white font-bold font-poppins">
                 Patrick Matayabas
               </h3>
-              <h6 className="font-light text-white text-sm">Founder</h6>
+              <h6 className="font-light text-white text-sm font-poppins">
+                Founder
+              </h6>
             </div>
 
-            <p className="mt-3 pl-4 text-white text-xs border-l-8 border-l-white">
+            <p className="mt-3 pl-4 text-white text-xs border-l-8 border-l-white font-poppins">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris

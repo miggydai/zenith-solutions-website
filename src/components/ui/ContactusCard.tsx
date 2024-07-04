@@ -7,20 +7,22 @@ import { sendEmail } from "@/actions/sendEmail";
 
 const ContactusCard = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start bg-blue-400 p-8 w-full md:w-[70%] md:h-[495px] md:rounded-2xl md:z-20 md:top-36">
+    <div className="flex flex-col md:flex-row items-start bg-skyBlue p-8 w-full md:w-[70%] md:h-[495px] md:rounded-2xl md:z-20 md:top-36">
       {/* left */}
       <div className="w-full max-md:text-center md:w-1/2  flex flex-col gap-6">
         {/* Header of contacts */}
-        <h1 className="sm:text-5xl text-2xl pb-5">Contact us</h1>
+        <h1 className="sm:text-5xl text-2xl pb-5 font-sora capitalize">
+          Contact us
+        </h1>
         {/* Email */}
         <div className="max-md:hidden">
-          <h3 className="text-xs font-extralight">Email</h3>
-          <p>enquiry@znthsolutions.com</p>
+          <h3 className="text-xs font-extralight font-sora">Email</h3>
+          <p className="font-sora">enquiry@znthsolutions.com</p>
         </div>
         {/* Mobile number */}
         <div className="hidden md:block">
-          <h3 className="text-xs font-extralight">Mobile</h3>
-          <p>+6392736849234</p>
+          <h3 className="text-xs font-extralight font-sora">Mobile</h3>
+          <p className="font-sora">+6392736849234</p>
         </div>
         {/* Icons */}
         <div className="hidden md:block">
@@ -39,8 +41,6 @@ const ContactusCard = () => {
             toast.error(error, {
               style: {
                 padding: "16px",
-                color: "white",
-                backgroundColor: "#191917",
               },
             });
             return;
@@ -48,11 +48,9 @@ const ContactusCard = () => {
           toast.success("Email sent Successfully", {
             style: {
               padding: "16px",
-              color: "white",
-              backgroundColor: "#191917",
             },
             iconTheme: {
-              primary: "#c084fc",
+              primary: "#79C1F8",
               secondary: "#FFFAEE",
             },
           });
@@ -62,22 +60,25 @@ const ContactusCard = () => {
         {/* Text field */}
 
         <div className="flex flex-col w-full gap-8">
-          <label className="text-sm font-extralight capitalize">
+          <label className="text-sm font-extralight capitalize font-sora">
             Full name
           </label>
           <input
             type="text"
-            name="fullname"
+            name="name"
             className="w-full bg-transparent border-0 border-b-2 outline-none"
           />
         </div>
 
         <div className="flex flex-col w-full gap-8">
-          <label className="text-sm font-extralight capitalize">Email</label>
+          <label className="text-sm font-extralight capitalize font-sora">
+            Email
+          </label>
           <input
             type="email"
             name="email"
             className="w-full bg-transparent border-0 border-b-2 outline-none"
+            required
           />
         </div>
 
@@ -87,6 +88,7 @@ const ContactusCard = () => {
             type="text"
             name="message"
             className="w-full bg-transparent border-0 border-b-2 outline-none"
+            required
           />
         </div>
 

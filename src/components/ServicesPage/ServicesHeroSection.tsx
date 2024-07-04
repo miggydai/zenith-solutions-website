@@ -3,6 +3,7 @@ import Image from "next/image";
 import SectionHeader from "../ui/SectionHeader";
 import Button from "../ui/Button";
 import imgSrc from "@/public/assets/images/services bg.svg";
+import imgSrc2 from "@/public/assets/images/servicesHeaderPic.png";
 
 const ServicesHeroSection = () => {
   return (
@@ -26,7 +27,16 @@ const ServicesHeroSection = () => {
         <Button label="Inquire Now" color="skyBlue" href="" />
       </div>
 
-      <div className="sm:w-[50%] w-[90%] sm:h-[20rem] h-[15rem] bg-blue-700 rounded-xl"></div>
+      <div className="sm:w-[50%] w-[90%] sm:h-[20rem] h-[15rem] relative rounded-xl">
+        <Image
+          src={imgSrc2}
+          alt="Header Picture"
+          className="object-cover absolute"
+          placeholder="blur"
+          draggable={false}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </div>
     </section>
   );
 };
