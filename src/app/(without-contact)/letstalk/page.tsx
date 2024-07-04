@@ -9,7 +9,8 @@ import alright from "@/public/assets/images/alryt.gif";
 
 const page = () => {
   return (
-    <section className="w-full h-[170vh] flex flex-col justify-start items-center relative">
+    <div>
+    <section className="w-full md:h-[170vh] flex flex-col justify-start items-center relative">
       <div className="w-full h-screen flex flex-col justify-center items-center bg-aquaBlue relative">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
@@ -47,11 +48,15 @@ const page = () => {
             priority
           />
         </motion.div>
-        <div className="absolute -bottom-96 w-3/4 flex justify-center items-center">
+        <div className="max-md:hidden absolute -bottom-96 w-3/4 md:flex justify-center items-center">
           <LetstalkCard />
         </div>
       </div>
     </section>
+    <div className="md:hidden">
+      <LetstalkCard />
+    </div>
+    </div>
   );
 };
 
