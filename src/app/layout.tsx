@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat, Poppins, Sora, Rubik } from "next/font/google";
 import "../styles/globals.css";
 import Navigation from "../components/ui/Navigation";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${montserrat.variable} ${poppins.variable} ${sora.variable} ${rubik.variable} bg-white text-white pt-16`}
       >
+        <Toaster />
         <Navigation />
         {children}
       </body>

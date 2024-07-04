@@ -1,4 +1,9 @@
+"use client";
+
 import React from "react";
+import SubmitButton from "./SubmitButton";
+import toast from "react-hot-toast";
+import { sendEmail } from "@/actions/sendEmail";
 
 const ContactusCard = () => {
   return (
@@ -26,7 +31,34 @@ const ContactusCard = () => {
       {/* right */}
       {/* Email form */}
 
-      <form className="flex justify-left items-end w-full md:w-1/2 h-full flex-col gap-4 px-4 pt-16">
+      <form
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+
+          if (error) {
+            toast.error(error, {
+              style: {
+                padding: "16px",
+                color: "white",
+                backgroundColor: "#191917",
+              },
+            });
+            return;
+          }
+          toast.success("Email sent Successfully", {
+            style: {
+              padding: "16px",
+              color: "white",
+              backgroundColor: "#191917",
+            },
+            iconTheme: {
+              primary: "#c084fc",
+              secondary: "#FFFAEE",
+            },
+          });
+        }}
+        className="flex justify-left items-end w-full md:w-1/2 h-full flex-col gap-4 px-4 pt-16"
+      >
         {/* Text field */}
 
         <div className="flex flex-col w-full gap-8">
@@ -35,6 +67,7 @@ const ContactusCard = () => {
           </label>
           <input
             type="text"
+            name="fullname"
             className="w-full bg-transparent border-0 border-b-2 outline-none"
           />
         </div>
@@ -43,16 +76,22 @@ const ContactusCard = () => {
           <label className="text-sm font-extralight capitalize">Email</label>
           <input
             type="email"
+            name="email"
             className="w-full bg-transparent border-0 border-b-2 outline-none"
           />
         </div>
 
         <div className="flex flex-col w-full gap-8">
-          <label className="text-sm font-extralight capitalize">Mobile</label>
+          <label className="text-sm font-extralight capitalize">Message</label>
           <input
             type="text"
+            name="message"
             className="w-full bg-transparent border-0 border-b-2 outline-none"
           />
+        </div>
+
+        <div className="mt-3">
+          <SubmitButton />
         </div>
       </form>
     </div>
