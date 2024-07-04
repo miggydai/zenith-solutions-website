@@ -60,7 +60,7 @@ const Navigation = () => {
           <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
             {links.map((link, index) => (
               <motion.li
-                whileTap={{ scale: 0.5 }}
+                whileTap={{ scale: 0.9 }}
                 transition={{
                   type: "spring",
                   stiffness: 400,
