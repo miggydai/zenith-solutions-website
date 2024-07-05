@@ -3,14 +3,30 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Button from "@/src/components/ui/Button";
-import LetstalkCard from "@/src/components/ui/LetstalkCard";
+import TalentCard from "@/src/components/ui/TalentCard";
 import Image from "next/image";
 import alright from "@/public/assets/images/alryt.gif";
+import { useState } from "react";
+import ClientCard from "@/src/components/ui/ClientCard";
 
-const page = () => {
+const LetsTalkPage = () => {
+  const [client, setClient] = useState("client");
+
+  const clientCard = () => {
+    setClient("client");
+    console.log("client");
+  };
+
+  const talentCard = () => {
+    setClient("talent");
+    console.log("talent");
+  };
+
+  const buttonStyle =
+    "w-[10rem] h-10 font-montserrat capitalize hover:bg-darkBlue border border-white rounded-full text-white transition ease-in-out duration-300";
+
   return (
-    <div>
-    <section className="w-full md:h-[170vh] flex flex-col justify-start items-center relative">
+    <section className="w-full md:h-[170vh] h-[200vh] flex flex-col justify-start items-center relative">
       <div className="w-full h-screen flex flex-col justify-center items-center bg-aquaBlue relative">
         <motion.div
           initial={{ opacity: 0, y: -100 }}
@@ -27,9 +43,15 @@ const page = () => {
             We can streamline the budgeting process of your project with precise
             pricing calculations tailored specifically to your needs
           </p>
-          <div className="w-full flex flex-row gap-5 justify-center items-center mt-3">
-            <Button label="button1" color="smthGreen" href="" />
-            <Button label="button2" color="smthGreen" href="" />
+          <div className="w-full flex flex-row gap-5 justify-center items-center mt-7">
+            {/* <Button label="client" color="smthGreen" href="" />
+            <Button label="talent" color="smthGreen" href="" /> */}
+            <button onClick={clientCard} className={buttonStyle}>
+              client
+            </button>
+            <button onClick={talentCard} className={buttonStyle}>
+              talent
+            </button>
           </div>
         </motion.div>
         <motion.div
@@ -49,15 +71,14 @@ const page = () => {
           />
         </motion.div>
         <div className="max-md:hidden absolute -bottom-96 w-3/4 md:flex justify-center items-center">
-          <LetstalkCard />
+          {client == "client" ? <ClientCard /> : <TalentCard />}
         </div>
       </div>
+      {/* <div className="md:hidden w-full h-[30vh] justify-center items-center">
+        <TalentCard />
+      </div> */}
     </section>
-    <div className="md:hidden">
-      <LetstalkCard />
-    </div>
-    </div>
   );
 };
 
-export default page;
+export default LetsTalkPage;

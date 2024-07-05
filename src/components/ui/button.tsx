@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const buttonVariants = cva(
   [
-    "sm:w-[10rem] sm:h-9 w-[5] h-4 sm:text-base text-sm rounded-full inline-flex justify-center items-center p-4 transition ease-in-out duration-150 cursor-pointer capitalize",
+    "sm:w-[10rem] sm:h-9 w-[5rem] h-4 sm:text-base text-sm rounded-full inline-flex justify-center items-center p-4 transition ease-in-out duration-150 cursor-pointer capitalize",
   ],
   {
     variants: {
