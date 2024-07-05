@@ -4,12 +4,14 @@ import React from "react";
 import SubmitButton from "./SubmitButton";
 import toast from "react-hot-toast";
 import { sendEmail } from "@/actions/sendEmail";
-
+import Image from "next/image";
+import mountaingimg from "@/public/assets/images/BG mountain.png"
 const ContactusCard = () => {
   return (
-    <div className="flex flex-col md:flex-row items-start bg-skyBlue p-8 w-full md:w-[70%] md:h-[495px] md:rounded-2xl md:z-20 md:top-36">
-      {/* left */}
-      <div className="w-full max-md:text-center md:w-1/2  flex flex-col gap-6">
+    <div className="flex items-start bg-skyBlue w-full md:w-[70%] md:h-[495px] relative md:rounded-2xl md:z-20 md:top-30">
+      {/* left */} 
+      <div className="w-full  p-8 flex max-md:flex-col z-20 ">
+      <div className="w-full max-md:text-center md:w-1/2 flex flex-col gap-6">
         {/* Header of contacts */}
         <h1 className="sm:text-5xl text-2xl pb-5 font-sora capitalize">
           Contact us
@@ -96,6 +98,14 @@ const ContactusCard = () => {
           <SubmitButton />
         </div>
       </form>
+      </div>
+      <Image
+        src={mountaingimg}
+        alt="bg"
+        className="absolute z-10 bottom-0"
+        draggable={false}
+        
+      />
     </div>
   );
 };
