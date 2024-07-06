@@ -14,16 +14,19 @@ const LetsTalkPage = () => {
 
   const clientCard = () => {
     setClient("client");
-    console.log("client");
   };
 
   const talentCard = () => {
     setClient("talent");
-    console.log("talent");
   };
 
-  const buttonStyle =
-    "w-[10rem] h-10 font-montserrat capitalize hover:bg-darkBlue border border-white rounded-full text-white transition ease-in-out duration-300";
+  const buttonStyleClient = `w-[10rem] h-10 font-montserrat capitalize hover:bg-darkBlue ${
+    client == "client" ? "bg-darkBlue" : "bg-transparent"
+  } border border-white rounded-full text-white transition ease-in-out duration-300`;
+
+  const buttonStyleTalent = `w-[10rem] h-10 font-montserrat capitalize hover:bg-darkBlue ${
+    client == "talent" ? "bg-darkBlue" : "bg-transparent"
+  } border border-white rounded-full text-white transition ease-in-out duration-300`;
 
   return (
     <section className="w-full md:h-[170vh] h-[200vh] flex flex-col justify-start items-center relative">
@@ -44,12 +47,10 @@ const LetsTalkPage = () => {
             pricing calculations tailored specifically to your needs
           </p>
           <div className="w-full flex flex-row gap-5 justify-center items-center mt-7">
-            {/* <Button label="client" color="smthGreen" href="" />
-            <Button label="talent" color="smthGreen" href="" /> */}
-            <button onClick={clientCard} className={buttonStyle}>
+            <button onClick={clientCard} className={buttonStyleClient}>
               client
             </button>
-            <button onClick={talentCard} className={buttonStyle}>
+            <button onClick={talentCard} className={buttonStyleTalent}>
               talent
             </button>
           </div>
@@ -74,9 +75,9 @@ const LetsTalkPage = () => {
           {client == "client" ? <ClientCard /> : <TalentCard />}
         </div>
       </div>
-      {/* <div className="md:hidden w-full h-[30vh] justify-center items-center">
-        <TalentCard />
-      </div> */}
+      <div className="md:hidden w-full h-[140vh] justify-center items-center">
+        {client == "client" ? <ClientCard /> : <TalentCard />}
+      </div>
     </section>
   );
 };
