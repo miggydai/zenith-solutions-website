@@ -6,15 +6,6 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import pinImg from "@/public/assets/images/pin.png";
 
-delete L.Icon.Default.prototype._getIconUrl;
-
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png",
-  iconUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png",
-  shadowUrl: "https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png",
-});
-
 const customIcon = new L.Icon({
   iconUrl: pinImg.src,
   iconSize: [38, 38],
@@ -22,7 +13,13 @@ const customIcon = new L.Icon({
   popupAnchor: [0, -38],
 });
 
-const markers = [
+type MarkerData = {
+  geocode: [number, number];
+  popupText: string;
+  place: string;
+};
+
+const markers: MarkerData[] = [
   {
     geocode: [48.86, 2.3522],
     popupText: "Hello from Paris!",
@@ -55,7 +52,7 @@ const markers = [
   },
 ];
 
-const Map = () => {
+const Map: React.FC = () => {
   return (
     <div>
       <MapContainer
@@ -71,8 +68,6 @@ const Map = () => {
         {markers.map((marker, index) => (
           <Marker key={index} position={marker.geocode} icon={customIcon}>
             <Popup>
-              {/* {marker.popupText} */}
-
               <div className="flex gap-7">
                 <div className="bg-orange-400 w-[2rem]"></div>
                 <div>
