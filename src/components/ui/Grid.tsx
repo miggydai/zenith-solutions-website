@@ -12,16 +12,16 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
   return (
     <div className="p-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-      <div className="grid md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2">
+      <div className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2">
       <div
-  className="relative group bg-yellow-200 rounded-2xl flex text-black flex-col justify-between p-5 font-bold transition ease-out duration-600"
+  className="relative max-sm:justify-center max-sm:items-center group bg-yellow-200 rounded-2xl flex text-black flex-col justify-between p-5 font-bold transition ease-out duration-600"
   onClick={() => gotoSlide(0)}
 >
   <div>
     <p>Project Ready</p>
   </div>
   <div>
-    <p className="text-5xl">10k</p>
+    <p className="text-[3vw] max-sm">10k+</p>
   </div>
 
   {/* Overlay */}
@@ -30,7 +30,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
   </div>
 </div>
 
-<div className="relative group w-full" onClick={() => gotoSlide(1)}>
+<div className="relative group w-full max-sm:hidden" onClick={() => gotoSlide(1)}>
   <Image src={imgsrc} alt="grid1" className="rounded-2xl" />
 
  
@@ -53,7 +53,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
 
         <div className="col-span-2">
             <div
-      className="relative group w-full h-full flex items-center justify-center bg-green-700 rounded-2xl"
+      className="relative group w-full h-full flex items-center justify-center bg-green-700 rounded-2xl max-sm:hidden"
       onClick={() => gotoSlide(3)}
     >
       <p className="font-bold">650x211 Picture</p>

@@ -22,6 +22,7 @@ function HeroSection() {
       <Image 
       src={gifSrc}
       className="w-full h-[90vh]"
+      alt="gif"
       />
       </div>
       </div>
