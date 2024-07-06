@@ -58,6 +58,7 @@ const ZenithContainer: React.FC<containerProps> = ({
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
+          unoptimized
         />
       </div>
       <h1 className="sm:text-2xl text-lg tracking-widest uppercase mt-4 font-poppins text-black">
