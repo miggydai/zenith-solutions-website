@@ -3,7 +3,11 @@
 import React, { useEffect, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
-const AnimatedNumber = ({ number }) => {
+interface AnimatedNumberProps {
+  number: number;
+}
+
+const AnimatedNumber: React.FC<AnimatedNumberProps> = ({ number }) => {
   const [reset, setReset] = useState(false);
 
   const props = useSpring({
@@ -20,7 +24,7 @@ const AnimatedNumber = ({ number }) => {
   return <animated.div>{props.number.to((n) => n.toFixed(0))}</animated.div>;
 };
 
-const Stats = () => {
+const Stats: React.FC = () => {
   return (
     <>
       {/* Outside container */}
