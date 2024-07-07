@@ -1,6 +1,11 @@
+// WorldSection.tsx
+
 import React from "react";
-import Map from "../ui/Map";
+import dynamic from "next/dynamic";
 import SectionHeader from "../ui/SectionHeader";
+
+
+const DynamicMap = dynamic(() => import("../ui/Map"), { ssr: false });
 
 const WorldSection = () => {
   return (
@@ -9,7 +14,8 @@ const WorldSection = () => {
         <SectionHeader header="Meet our team Worldwide" color="skyBlue" />
       </div>
       <div className="w-3/4">
-        <Map />
+       
+        <DynamicMap />
       </div>
     </div>
   );

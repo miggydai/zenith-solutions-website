@@ -1,4 +1,4 @@
-"use client";
+// Map.tsx
 
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -72,12 +72,7 @@ const Map: React.FC = () => {
                 <div className="bg-orange-400 w-[2rem]"></div>
                 <div>
                   <h1 className="text-2xl font-semibold">{marker.place}</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Illum maiores animi libero saepe dolorem, delectus amet quod
-                    repellendus accusantium, architecto nostrum alias ducimus
-                    veritatis neque magnam. Esse alias neque corrupti!
-                  </p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam modi dicta molestias, porro excepturi earum nesciunt iste ipsa animi sit sunt architecto. Consectetur incidunt commodi eum reiciendis tempora! Perferendis.</p>
                 </div>
               </div>
             </Popup>

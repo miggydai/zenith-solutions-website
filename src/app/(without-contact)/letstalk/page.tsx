@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "@/src/components/ui/Button";
+
 import TalentCard from "@/src/components/ui/TalentCard";
 import Image from "next/image";
 import alright from "@/public/assets/images/alryt.gif";
