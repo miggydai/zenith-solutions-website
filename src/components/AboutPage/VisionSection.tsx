@@ -6,7 +6,7 @@ import imgSrc from "@/public/assets/images/VisionPic.png";
 
 const VisionSection = () => {
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center mb-3">
+    <section className="w-full h-full flex flex-col justify-center items-center mb-3 sm:gap-[2.6rem] gap-2">
       <div className="flex sm:flex-row flex-col w-[80%] h-[30vh] sm:justify-between justify-evenly">
         <div className="flex flex-row sm:w-[50%] w-full gap-4">
           {/* lines */}
@@ -32,7 +32,7 @@ const VisionSection = () => {
         </div>
       </div>
 
-      <div className="relative sm:w-[80%] w-[90%] h-[397px] rounded-xl my-4">
+      <div className="relative sm:w-[80%] w-[90%] sm:h-[397px] h-[200px] rounded-xl my-4 flex justify-center items-center">
         <Image
           src={imgSrc}
           alt="vision picture"

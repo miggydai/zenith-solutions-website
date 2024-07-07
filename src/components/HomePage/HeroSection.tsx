@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "@/public/assets/images/zenithbgtransparent.svg";
+import bg from "@/public/assets/images/alterbg.svg";
 import gifSrc from "@/public/assets/images/bgvidnew.gif";
 import cloud from "@/public/assets/images/cloud 1.png";
 import cloud2 from "@/public/assets/images/colud 2.png";
@@ -15,7 +15,7 @@ function HeroSection() {
         <Image
           src={bg}
           alt="bg"
-          className="object-contain"
+          className="object-cover"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
