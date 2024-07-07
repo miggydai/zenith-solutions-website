@@ -1,4 +1,3 @@
-// app/page.tsx (or pages/index.tsx)
 "use client";
 
 import React, { useRef, useState } from "react";
@@ -9,6 +8,7 @@ import ZenithSection from "@/src/components/AboutPage/ZenithSection";
 import ClientSection from "@/src/components/HomePage/ClientSection";
 import WorldSection from "@/src/components/AboutPage/WorldSection";
 import FounderSection from "@/src/components/AboutPage/FounderSection";
+
 const AboutPage: React.FC = () => {
   const swiperRef = useRef<HTMLDivElement>(null);
   const [slideIndex, setSlideIndex] = useState<number>(0);

@@ -22,9 +22,15 @@ const ServicesHeader: React.FC<HeaderProps> = ({
     <div className="sm:w-[50%] w-[90%] h-[300px] flex flex-col justify-center items-center sm:gap-5 gap-3 sm:p-8 p-4 z-10">
       <OutlinedHeader
         label={label}
-        borderColor={borderColor}
-        fontWeight={fontWeight}
-        textColor={textColor}
+        borderColor={
+          (borderColor as "white") || "blue" || "orange" || "black" || undefined
+        }
+        fontWeight={
+          (fontWeight as "normal") || "bold" || "semibold" || undefined
+        }
+        textColor={
+          (textColor as "white") || "blue" || "orange" || "black" || undefined
+        }
       />
       <h3 className="sm:text-2xl text-lg text-center font-bold capitalize text-darkBlue font-montserrat">
         {title}
