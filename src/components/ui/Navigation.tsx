@@ -73,7 +73,7 @@ const Navigation = () => {
               >
                 <Link
                   href={link.href}
-                  className={`group md:hover:text-skyBlue transition ease-in-out duration-500 cursor-pointer ${
+                  className={`group font-montserrat md:hover:text-skyBlue transition ease-in-out duration-500 cursor-pointer ${
                     pathaName === link.href
                       ? "md:text-skyBlue text-projectOrange"
                       : "md:text-black text-white"

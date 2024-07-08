@@ -10,7 +10,7 @@ interface AboutHeroSectionProps {
 }
 
 const AboutHeroSection: React.FC<AboutHeroSectionProps> = ({ goToSlide }) => (
-  <div className="flex flex-col justify-center items-center w-full h-full sm:p-10 px-2 py-10 space-y-6">
+  <div className="flex flex-col justify-center items-center w-full h-full sm:p-10 px-2 py-10 space-y-10">
     <div className="flex flex-col justify-center items-center max-sm:w-[70%] w-full gap-8">
       <div className="w-full flex justify-center items-center">
         <OutlinedHeader
