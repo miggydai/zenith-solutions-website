@@ -5,12 +5,11 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import bg from "@/public/assets/images/alterbg.svg";
 import gifSrc from "@/public/assets/images/zencombg.gif";
-import cloud from "@/public/assets/images/cloud 1.png";
-import cloud2 from "@/public/assets/images/colud 2.png";
+import Button from "../ui/Button";
 
 function HeroSection() {
   return (
-    <section className="flex flex-col w-full h-full relative">
+    <section className="flex flex-col w-full h-full relative justify-center items-center">
       <div className="z-20">
         <Image
           src={bg}
@@ -20,7 +19,7 @@ function HeroSection() {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <div className="absolute top-0 flex justify-center items-center w-full  -z-10">
+      <div className="absolute top-0 flex justify-center items-center w-full -z-10">
         <Image
           src={gifSrc}
           alt="hays patrick"
@@ -30,38 +29,20 @@ function HeroSection() {
           unoptimized
         />
       </div>
-
-      <div className="w-[25%]  h-auto overflow-x-hidden absolute z-20 top-0 right-0">
-        <div className="relative flex overflow-x-hidden">
-          <div className="flex flex-row justify-end items-end py-16 animate-marquee2">
-            <div className="relative w-[10rem] h-[2rem] inline-flex justify-center items-center">
-              <Image
-                src={cloud2}
-                alt="picture"
-                className="absolute object-cover"
-                draggable={false}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-[20%] h-auto overflow-x-hidden absolute z-20 top-0">
-        <div className="relative flex overflow-x-hidden">
-          <div className="flex flex-row justify-start items-start py-16 animate-marquee">
-            <div className="relative w-[10rem] h-[2rem] inline-flex justify-center items-center">
-              <Image
-                src={cloud}
-                alt="picture"
-                className="absolute object-cover"
-                draggable={false}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 1 }}
+        transition={{ duration: 0.5 }}
+        className="absolute bottom-[35%] z-50"
+      >
+        <Button
+          label="consult now"
+          color="white"
+          href="/letstalk"
+          textColor="darkBlue"
+          textFont="bold"
+        />
+      </motion.div>
     </section>
   );
 }

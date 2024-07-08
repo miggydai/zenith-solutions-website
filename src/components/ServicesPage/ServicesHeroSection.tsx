@@ -24,7 +24,13 @@ const ServicesHeroSection = () => {
         <p className="text-black sm:text-lg text-base text-center font-poppins">
           transform your business from the ground up.
         </p>
-        <Button label="Inquire Now" color="skyBlue" href="" />
+        <Button
+          label="Inquire Now"
+          color="skyBlue"
+          href=""
+          textColor="white"
+          textFont="normal"
+        />
       </div>
 
       <div className="sm:w-[50%] w-[90%] sm:h-[20rem] h-[15rem] relative rounded-xl">

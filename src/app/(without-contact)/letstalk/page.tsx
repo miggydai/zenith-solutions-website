@@ -69,6 +69,7 @@ const LetsTalkPage = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             fill
             priority
+            unoptimized
           />
         </motion.div>
         <div className="max-md:hidden absolute -bottom-96 w-3/4 md:flex justify-center items-center">

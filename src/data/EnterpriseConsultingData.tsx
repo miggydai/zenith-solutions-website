@@ -1,11 +1,11 @@
 import { ServiceType } from "@/lib/types/serviceTypes";
 
-import imgSrc from "@/public/assets/images/test.gif";
+import imgSrc from "@/public/assets/images/ec assign.gif";
 import icon1 from "@/public/assets/images/ec calcu.gif";
-import icon2 from "@/public/assets/images/system-regular-22-build.gif";
-import icon3 from "@/public/assets/images/system-regular-199-attribution.gif";
-import icon4 from "@/public/assets/images/system-regular-82-extension.gif";
-import icon5 from "@/public/assets/images/wired-outline-2512-artificial-intelligence-ai-alt.gif";
+import icon2 from "@/public/assets/images/ec build.gif";
+import icon3 from "@/public/assets/images/ec person.gif";
+import icon4 from "@/public/assets/images/ec puzzle.gif";
+import icon5 from "@/public/assets/images/ec ai.gif";
 
 export const enterpriseContent: ServiceType[] = [
   {

@@ -96,7 +96,13 @@ const Navigation = () => {
         </div>
         {/* button and hamburger */}
         <div className="flex items-center gap-6">
-          <Button href="/letstalk" label="Let's Chat" color="skyBlue" />
+          <Button
+            href="/letstalk"
+            label="Let's Chat"
+            color="skyBlue"
+            textColor="white"
+            textFont="normal"
+          />
           <motion.button
             initial="hide"
             animate={mobileNav ? "show" : "hide"}

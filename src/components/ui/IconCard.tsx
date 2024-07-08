@@ -6,7 +6,7 @@ import { cva } from "class-variance-authority";
 
 const cardVariants = cva(
   [
-    "sm:w-[254px] sm:h-[349px] w-[210px] h-[294px] rounded-lg flex flex-col justify-start items-center sm:py-10 py-6 sm:px-8 px-4",
+    "sm:w-[254px] sm:h-[369px] w-[210px] h-[294px] rounded-lg flex flex-col justify-start items-center sm:py-10 py-6 sm:px-8 px-4",
   ],
   {
     variants: {

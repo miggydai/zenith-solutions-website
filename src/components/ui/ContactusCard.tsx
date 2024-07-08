@@ -4,10 +4,11 @@ import React from "react";
 import SubmitButton from "./SubmitButton";
 import toast from "react-hot-toast";
 import { sendEmail } from "@/actions/sendEmail";
-import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedinIn, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 import mountaingimg from "@/public/assets/images/mountains for contact us .svg";
 import dots from "@/public/assets/images/contact dots.svg";
+import { motion } from "framer-motion";
 
 const ContactusCard = () => {
   return (
@@ -31,9 +32,21 @@ const ContactusCard = () => {
           </div>
           {/* Icons */}
           <div className="flex flex-row gap-3">
-          <div><FaFacebookSquare /></div>
-          <div><FaLinkedin /></div>
-         
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              className="cursor-pointer"
+            >
+              <FaFacebook />
+            </motion.div>
+
+            <motion.div
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              className="cursor-pointer"
+            >
+              <FaLinkedinIn />
+            </motion.div>
           </div>
         </div>
 

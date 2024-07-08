@@ -1,102 +1,175 @@
-'use client';
+"use client";
 
-import React from 'react';
-import imgsrc from '@/public/assets/images/gridasset1.jpg';
-import Image from 'next/image';
+import React from "react";
+import imgsrc from "@/public/assets/images/gridasset1.jpg";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface Props {
   gotoSlide: (index: number) => void;
 }
 
+const gridContainerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const gridVariants = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
+
 const Grid: React.FC<Props> = ({ gotoSlide }) => {
   return (
-    <div className="p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-      <div className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2">
-      <div
-  className="relative max-sm:justify-center max-sm:items-center group bg-yellow-200 rounded-2xl flex text-black flex-col justify-between p-5 font-bold transition ease-out duration-600"
-  onClick={() => gotoSlide(0)}
->
-  <div>
-    <p>Project Ready</p>
-  </div>
-  <div>
-    <p className="text-[3vw] max-sm">10k+</p>
-  </div>
-
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-orange-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-white text-6xl">Zeal</p>
-  </div>
-</div>
-
-<div className="relative group w-full h-full flex items-center justify-center  bg-blue-400 rounded-2xl" onClick={() => gotoSlide(1)}>
-  <p className="font-bold text-[2vw]  max-sm:txt-5xl">Inclusivity</p>
-
- 
-  <div className="absolute inset-0 bg-purple-800 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-white text-4xl font-bold">Existence</p>
-  </div>
-</div>
-</div>
-
-
-<div className="relative group col-span-2 row-span-2" onClick={() => gotoSlide(2)}>
-  <Image src={imgsrc} alt="grid1" className="rounded-2xl" />
-
-  
-  <div className="absolute inset-0 bg-green-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-white text-6xl font-bold">Nature</p>
-  </div>
-</div>
-
-
-        <div className="col-span-2">
-            <div
-      className="relative group w-full h-full flex items-center justify-center  bg-yellow-200 rounded-2xl"
-      onClick={() => gotoSlide(3)}
+    <motion.div
+      variants={gridContainerVariants}
+      initial="hidden"
+      animate="show"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 p-4"
     >
-      <p className="font-bold text-[3vw] text-black max-sm:txt-2xl">Community Services</p>
+      <motion.div
+        variants={gridVariants}
+        className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2"
+      >
+        {/* first block */}
+        <motion.div
+          variants={gridVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className="relative cursor-pointer max-sm:justify-center max-sm:items-center group bg-tanSgradient rounded-2xl flex text-black flex-col justify-between p-5 font-bold transition ease-out duration-600"
+          onClick={() => gotoSlide(0)}
+        >
+          <p className="font-montserrat sm:text-lg text-sm">Project Ready</p>
 
-      
-      <div className="absolute inset-0 bg-sky-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-        <p className="text-white text-6xl font-bold">Idea</p>
-      </div>
-</div>
+          <p className="sm:text-2xl text-base font-montserrat">10k+</p>
 
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-projectOrange bg-opacity-100 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+            <p className="text-white sm:text-2xl text-base uppercase tracking-wide font-montserrat">
+              Zeal
+            </p>
+          </div>
+        </motion.div>
+
+        {/* 2nd block */}
+        <motion.div
+          variants={gridVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className="relative cursor-pointer group w-full h-full flex items-center justify-center bg-blue-400 rounded-2xl"
+          onClick={() => gotoSlide(1)}
+        >
+          <p className="font-bold sm:text-lg text-sm font-montserrat uppercase tracking-wide">
+            Diversity
+          </p>
+
+          <div className="absolute inset-0 bg-[#C0B8FF] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+            <p className="text-white sm:text-2xl text-base tracking-wide uppercase font-montserrat font-bold">
+              Existence
+            </p>
+          </div>
+        </motion.div>
+      </motion.div>
+
+      {/* picture */}
+      <motion.div
+        variants={gridVariants}
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.9 }}
+        className="relative group col-span-2 row-span-2 cursor-pointer"
+        onClick={() => gotoSlide(2)}
+      >
+        <Image
+          src={imgsrc}
+          alt="grid1"
+          className="rounded-2xl"
+          placeholder="blur"
+          draggable={false}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+
+        <div className="absolute inset-0 bg-[#53C651] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+          <p className="text-white sm:text-4xl text-base font-montserrat uppercase tracking-wide font-bold">
+            Nature
+          </p>
         </div>
+      </motion.div>
 
-        <div className="grid grid-cols-2 col-span-2 gap-4">
-        <div
-  className="relative group bg-blue-400 rounded-2xl flex text-white flex-col justify-between p-5 font-bold"
-  onClick={() => gotoSlide(4)}
->
-  <div>
-    <p>Years of Experience</p>
-  </div>
-  <div className="text-5xl">+12 Years</div>
+      {/* third section */}
+      <motion.div variants={gridVariants} className="col-span-2">
+        {/* 4th block */}
+        <motion.div
+          variants={gridVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className="relative group w-full cursor-pointer h-full flex items-center justify-center  bg-tanSgradient rounded-2xl"
+          onClick={() => gotoSlide(3)}
+        >
+          <p className="font-bold sm:text-xl text-[.6rem] uppercase tracking-wide text-black font-montserrat">
+            Community Services
+          </p>
 
-  
-  <div className="absolute inset-0 bg-red-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-white text-3xl font-bold">Transformation</p>
-  </div>
-</div>
+          <div className="absolute inset-0 bg-[#59D4D4] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+            <p className="text-white sm:text-2xl text-sm font-montserrat tracking-wide uppercase font-bold">
+              Idea
+            </p>
+          </div>
+        </motion.div>
+      </motion.div>
 
-<div
-  className="relative group bg-blue-400 flex justify-center items-center font-bold rounded-2xl"
-  onClick={() => gotoSlide(5)}
->
-<p className="font-bold text-[2vw]  max-sm:txt-2xl">Inclusivity</p>
+      {/* bottom row */}
+      <motion.div
+        variants={gridVariants}
+        className="grid grid-cols-2 col-span-2 gap-4"
+      >
+        {/* 5th block */}
+        <motion.div
+          variants={gridVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className="relative group bg-skyBlue cursor-pointer rounded-2xl flex text-white flex-col justify-between p-5 font-bold"
+          onClick={() => gotoSlide(4)}
+        >
+          <p className="font-montserrat sm:text-sm text-[.4rem]">
+            Years of Experience
+          </p>
 
- 
-  <div className="absolute inset-0 bg-blue-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-white text-5xl font-bold">Hope</p>
-  </div>
-</div>
+          <h6 className="font-montserrat sm:text-3xl text-[.5rem]">
+            +12 Years
+          </h6>
 
-        </div>
-      </div>
-    </div>
+          <div className="absolute inset-0 bg-[#FF756C] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+            <p className="text-white sm:text-base text-sm font-montserrat uppercase tracking-wide font-bold">
+              Transformation
+            </p>
+          </div>
+        </motion.div>
+
+        {/* last block */}
+        <motion.div
+          variants={gridVariants}
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className="relative group cursor-pointer bg-skyBlue flex justify-center items-center font-bold rounded-2xl"
+          onClick={() => gotoSlide(5)}
+        >
+          <p className="font-bold sm:text-xl text-[.5rem] font-montserrat uppercase">
+            Inclusivity
+          </p>
+
+          <div className="absolute inset-0 bg-[#6CA7FF] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+            <p className="text-white sm:text-base text-sm uppercase font-montserrat tracking-wide font-bold">
+              Hope
+            </p>
+          </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 };
 
