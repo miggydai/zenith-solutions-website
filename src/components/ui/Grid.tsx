@@ -26,16 +26,16 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
 
   {/* Overlay */}
   <div className="absolute inset-0 bg-orange-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-orange-900 text-6xl">Zeal</p>
+    <p className="text-white text-6xl">Zeal</p>
   </div>
 </div>
 
-<div className="relative group w-full max-sm:hidden" onClick={() => gotoSlide(1)}>
-  <Image src={imgsrc} alt="grid1" className="rounded-2xl" />
+<div className="relative group w-full h-full flex items-center justify-center  bg-blue-400 rounded-2xl" onClick={() => gotoSlide(1)}>
+  <p className="font-bold text-[2vw]  max-sm:txt-5xl">Inclusivity</p>
 
  
-  <div className="absolute inset-0 bg-purple-300 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-purple-900 text-4xl font-bold">Existence</p>
+  <div className="absolute inset-0 bg-purple-800 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
+    <p className="text-white text-4xl font-bold">Existence</p>
   </div>
 </div>
 </div>
@@ -46,21 +46,21 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
 
   
   <div className="absolute inset-0 bg-green-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-green-900 text-6xl font-bold">Nature</p>
+    <p className="text-white text-6xl font-bold">Nature</p>
   </div>
 </div>
 
 
         <div className="col-span-2">
             <div
-      className="relative group w-full h-full flex items-center justify-center bg-green-700 rounded-2xl max-sm:hidden"
+      className="relative group w-full h-full flex items-center justify-center  bg-yellow-200 rounded-2xl"
       onClick={() => gotoSlide(3)}
     >
-      <p className="font-bold">650x211 Picture</p>
+      <p className="font-bold text-[3vw] text-black max-sm:txt-2xl">Community Services</p>
 
       
       <div className="absolute inset-0 bg-sky-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-        <p className="text-sky-900 text-6xl font-bold">Idea</p>
+        <p className="text-white text-6xl font-bold">Idea</p>
       </div>
 </div>
 
@@ -78,19 +78,19 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
 
   
   <div className="absolute inset-0 bg-red-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-red-900 text-3xl font-bold">Transformation</p>
+    <p className="text-white text-3xl font-bold">Transformation</p>
   </div>
 </div>
 
 <div
-  className="relative group bg-red-700 flex justify-center items-center font-bold rounded-2xl"
+  className="relative group bg-blue-400 flex justify-center items-center font-bold rounded-2xl"
   onClick={() => gotoSlide(5)}
 >
-  252x188 Picture
+<p className="font-bold text-[2vw]  max-sm:txt-2xl">Inclusivity</p>
 
  
   <div className="absolute inset-0 bg-blue-500 bg-opacity-75 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-    <p className="text-blue-900 text-5xl font-bold">Hope</p>
+    <p className="text-white text-5xl font-bold">Hope</p>
   </div>
 </div>
 
