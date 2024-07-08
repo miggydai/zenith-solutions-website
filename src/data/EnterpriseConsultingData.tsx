@@ -1,7 +1,7 @@
 import { ServiceType } from "@/lib/types/serviceTypes";
 
 import imgSrc from "@/public/assets/images/test.gif";
-import icon1 from "@/public/assets/images/wired-outline-987-accounting.gif";
+import icon1 from "@/public/assets/images/ec calcu.gif";
 import icon2 from "@/public/assets/images/system-regular-22-build.gif";
 import icon3 from "@/public/assets/images/system-regular-199-attribution.gif";
 import icon4 from "@/public/assets/images/system-regular-82-extension.gif";

@@ -35,8 +35,8 @@ insights."
             key={index}
             service={a}
             cardColor="blue"
-            titleColor="white"
-            pColor="white"
+            titleColor="black"
+            pColor="black"
           />
         ))}
       </div>

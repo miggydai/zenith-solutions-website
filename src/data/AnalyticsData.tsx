@@ -1,13 +1,13 @@
 import { ServiceType } from "@/lib/types/serviceTypes";
 
 import imgSrc from "@/public/assets/images/test.gif";
-import icon1 from "@/public/assets/images/wired-outline-2513-data.gif";
-import icon2 from "@/public/assets/images/wired-outline-976-web-analytics (1).gif";
-import icon3 from "@/public/assets/images/wired-outline-1660-noticeboard (1).gif";
-import icon4 from "@/public/assets/images/wired-outline-163-graph-line-chart (1).gif";
-import icon5 from "@/public/assets/images/wired-outline-724-diamond-luxury-precious (1).gif";
-import icon6 from "@/public/assets/images/wired-outline-645-people-handshake-transaction.gif";
-import icon7 from "@/public/assets/images/system-regular-17-assignment.gif";
+import icon1 from "@/public/assets/images/black data.gif";
+import icon2 from "@/public/assets/images/ar data analtics.gif";
+import icon3 from "@/public/assets/images/ar board.gif";
+import icon4 from "@/public/assets/images/ar graph.gif";
+import icon5 from "@/public/assets/images/ar diamond.gif";
+import icon6 from "@/public/assets/images/ar handshake.gif";
+import icon7 from "@/public/assets/images/ar todo.gif";
 
 export const analyticsContent: ServiceType[] = [
   {

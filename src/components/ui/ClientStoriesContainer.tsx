@@ -5,12 +5,12 @@ import Image from "next/image";
 import dots1 from "@/public/assets/images/dots&circle.png";
 import dots2 from "@/public/assets/images/bg dots1.png";
 import dots3 from "@/public/assets/images/bg dots2.png";
-import imgSrc from "@/public/assets/images/sample person.jpg";
+import imgSrc from "@/public/assets/images/davinder_pic.jpg";
 import { motion } from "framer-motion";
 
 const ClientStories = () => {
   return (
-    <div className="flex sm:flex-row flex-col w-full 2xl:h-[50vh] xl:h-[60vh] h-[30vh] bg-projectOrange relative">
+    <div className="flex sm:flex-row flex-col w-full 2xl:h-[50vh] xl:h-[60vh] h-[30vh] bg-skyBlue relative">
       {/* bottom dots */}
       <motion.div
         initial={{ x: 100, opacity: 0 }}
@@ -91,21 +91,18 @@ const ClientStories = () => {
         }}
         className="flex flex-col w-[60%] h-full justify-center items-start relative lg:gap-3 gap-1 mb-7"
       >
-        <h3 className="2xl:xl:text-2xl text-xl text-white font-semibold border-l-4 border-l-white pl-4 font-poppins">
+        {/* <h3 className="2xl:xl:text-2xl text-xl text-white font-semibold border-l-4 border-l-white pl-4 font-poppins">
           Patrick Matayabas
         </h3>
         <h6 className="font-light text-white 2xl:text-lg text-sm h-10 border-l-4 border-l-white pl-4 font-poppins">
           Founder
-        </h6>
+        </h6> */}
 
-        <p className="lg:mt-5 mt-2 pl-4 text-white lg:mr-56 mr-32 2xl:text-sm text-xs font-poppins">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in{" "}
-        </p>
+        <h5 className="lg:mt-5 mt-2 pl-4 text-white lg:mr-56 mr-32 text-xl font-poppins">
+          Zenith Solutions believes in maintaining a positive mindset, creating
+          partnerships with a purpose, and always striving for significant
+          outcomes.
+        </h5>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 100 }}

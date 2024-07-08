@@ -3,13 +3,13 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
 import Image from "next/image";
-import imgSrc from "@/public/assets/images/sample person.jpg";
+import imgSrc from "@/public/assets/images/davinder_pic.jpg";
 import { motion } from "framer-motion";
 
 const ClientStoriesMobile = () => {
   return (
     <section className="w-full h-full flex flex-col justify-start items-center gap-4">
-      <div className="w-full h-full bg-projectOrange flex flex-col">
+      <div className="w-full h-full bg-skyBlue flex flex-col">
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{
@@ -46,24 +46,20 @@ const ClientStoriesMobile = () => {
             }}
             className="flex flex-col h-full justify-start items-start relative gap-1 mb-6 pt-9"
           >
-            <div className="flex flex-col border-l-8 border-l-white pl-4">
+            {/* <div className="flex flex-col border-l-8 border-l-white pl-4">
               <h3 className="text-lg text-white font-bold font-poppins">
                 Patrick Matayabas
               </h3>
               <h6 className="font-light text-white text-sm font-poppins">
                 Founder
               </h6>
-            </div>
+            </div> */}
 
-            <p className="mt-3 pl-4 text-white text-xs border-l-8 border-l-white font-poppins">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in{" "}
-            </p>
+            <h5 className="mt-3 pl-4 text-white text-2xl border-l-8 border-l-white font-poppins">
+              Zenith Solutions believes in maintaining a positive mindset,
+              creating partnerships with a purpose, and always striving for
+              significant outcomes.
+            </h5>
           </motion.div>
         </div>
       </div>

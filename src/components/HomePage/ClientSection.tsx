@@ -7,13 +7,6 @@ import useMediaQuery from "@/src/hooks/useMediaQuery";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import dots from "@/public/assets/images/dots&circle2.png";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
 import ClientStoriesMobile from "../ui/ClientStoriesMobile";
 
 const ClientSection = () => {
@@ -21,7 +14,7 @@ const ClientSection = () => {
   return (
     <>
       {matches ? (
-        <section className="w-full md:h-[70vh] h-full flex flex-col justify-center items-center gap-3">
+        <section className="w-full md:h-[70vh] h-full flex flex-col justify-center items-center gap-3 mt-5">
           <div className="w-full flex justify-center">
             <SectionHeader
               header="Listen to our clients' stories"
@@ -31,24 +24,7 @@ const ClientSection = () => {
 
           <div className="flex flex-row w-full h-[60vh]">
             <div className="w-[80%] h-[60vh]">
-              <Swiper
-                loop={true}
-                modules={[Pagination]}
-                className="mySwiper w-full h-[70vh]"
-              >
-                <SwiperSlide>
-                  {" "}
-                  <ClientStories />{" "}
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <ClientStories />{" "}
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <ClientStories />{" "}
-                </SwiperSlide>
-              </Swiper>
+              <ClientStories />
             </div>
 
             <div className="xl:w-[15%] w-[17%] h-auto flex  justify-center items-center p-4">
@@ -77,31 +53,14 @@ const ClientSection = () => {
           </div>
         </section>
       ) : (
-        <section className="w-full h-full flex flex-col items-center justify-center">
+        <section className="w-full h-full flex flex-col items-center justify-center mt-4">
           <div className="w-full flex justify-center px-5 my-2">
             <SectionHeader
               header="Listen to our clients' stories"
               color="skyBlue"
             />
           </div>
-          <Swiper
-            loop={true}
-            modules={[Pagination]}
-            className="mySwiper w-full h-[full]"
-          >
-            <SwiperSlide>
-              {" "}
-              <ClientStoriesMobile />{" "}
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <ClientStoriesMobile />{" "}
-            </SwiperSlide>
-            <SwiperSlide>
-              {" "}
-              <ClientStoriesMobile />{" "}
-            </SwiperSlide>
-          </Swiper>
+          <ClientStoriesMobile />
         </section>
       )}
     </>
