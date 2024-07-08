@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import bg from "@/public/assets/images/alterbg.svg";
-import gifSrc from "@/public/assets/images/bgvidnew.gif";
+import gifSrc from "@/public/assets/images/zencombg.gif";
 import cloud from "@/public/assets/images/cloud 1.png";
 import cloud2 from "@/public/assets/images/colud 2.png";
 

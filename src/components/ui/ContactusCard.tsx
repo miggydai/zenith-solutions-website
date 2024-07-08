@@ -4,6 +4,7 @@ import React from "react";
 import SubmitButton from "./SubmitButton";
 import toast from "react-hot-toast";
 import { sendEmail } from "@/actions/sendEmail";
+import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import Image from "next/image";
 import mountaingimg from "@/public/assets/images/mountains for contact us .svg";
 import dots from "@/public/assets/images/contact dots.svg";
@@ -29,8 +30,10 @@ const ContactusCard = () => {
             <p className="font-sora">+6392736849234</p>
           </div>
           {/* Icons */}
-          <div className="hidden md:block">
-            <p>Icons</p>
+          <div className="flex flex-row gap-3">
+          <div><FaFacebookSquare /></div>
+          <div><FaLinkedin /></div>
+         
           </div>
         </div>
 
