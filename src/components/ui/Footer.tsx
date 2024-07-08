@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 type NavLinkType = {
   href: string;
   label: string;
@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="w-3/4 max-sm:w-full flex max-sm:flex-col p-5">
         {/* Left section */}
         <div className="w-3/4  max-sm:w-full flex flex-col gap-4 max-sm:pt-20">
-          <h1>Logo</h1>
+          
           <p className="text-sm w-3/4 font-montserrat">
             Zenith Solutions is dedicated to connecting businesses with top-tier
             talent that not only excels in their roles but also embodies the
@@ -66,7 +66,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="p-5 w-3/4 sm:border-t-2 flex sm:justify-between justify-start">
-        <h3 className="max-sm:hidden">Logos</h3>
+        <h3 className="max-sm:hidden"><div className="flex flex-row gap-3">
+          <div><FaFacebookSquare /></div>
+          <div><FaLinkedin /></div>
+         
+          </div></h3>
         <p className="font-montserrat font-light">
           © 2024 Zenith Solutions. All rights reserved
         </p>
