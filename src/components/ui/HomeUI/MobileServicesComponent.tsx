@@ -121,7 +121,13 @@ const MobileServicesComponent: React.FC<ServicesProps> = ({
           {description}
         </motion.p>
 
-        <Button href="/services" label="Learn more" color="skyBlue" />
+        <Button
+          href="/services"
+          label="Learn more"
+          color="skyBlue"
+          textColor="white"
+          textFont="normal"
+        />
       </div>
     </div>
   );
