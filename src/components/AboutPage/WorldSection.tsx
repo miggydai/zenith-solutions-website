@@ -13,7 +13,7 @@ const WorldSection = () => {
       <div>
         <SectionHeader header="Meet our team Worldwide" color="skyBlue" />
       </div>
-      <div className="w-3/4">
+      <div className="w-screen flex justify-center ">
        
         <DynamicMap />
       </div>

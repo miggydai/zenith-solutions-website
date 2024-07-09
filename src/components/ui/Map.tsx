@@ -45,12 +45,12 @@ const markers: MarkerData[] = [
 
 const Map: React.FC = () => {
   return (
-    <div>
+    <div className="w-3/4">
       <MapContainer
         center={[51.505, -0.09]}
         zoom={1.5}
         scrollWheelZoom={false}
-        className="md:h-[80vh] rounded-3xl "
+        className="md:h-[80vh] max-md:h-[80vh] rounded-3xl"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
