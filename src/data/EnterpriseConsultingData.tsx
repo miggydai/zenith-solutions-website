@@ -9,7 +9,7 @@ import icon5 from "@/public/assets/images/ec ai.gif";
 
 export const enterpriseContent: ServiceType[] = [
   {
-    title: "Workday Financial Management",
+    title: "Streamline Financial Management",
     iconUrl: icon1,
     description:
       "treamline financial operations with Workday Financials. We optimize financial processes to enhance efficiency and accuracy.",
@@ -21,7 +21,7 @@ export const enterpriseContent: ServiceType[] = [
       "Plan for the future with confidence using Adaptive Planning. Our expertise ensures your planning processes are flexible and responsive.",
   },
   {
-    title: "Human Capital",
+    title: "Human Capital Management",
     iconUrl: icon3,
     description:
       "Your human capital is your most valuable asset. We make Workday HCM projects better for the people it’s designed to help.",

@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "@/public/assets/images/zench1.svg";
+import bg from "@/public/assets/images/zench2.svg";
 import gifSrc from "@/public/assets/images/hqgif.gif";
 import Button from "../ui/Button";
 
@@ -33,7 +33,7 @@ function HeroSection() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 1 }}
         transition={{ duration: 0.5 }}
-        className="absolute bottom-[35%] z-50"
+        className="absolute bottom-[35%] z-30"
       >
         <Button
           label="consult now"

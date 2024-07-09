@@ -39,7 +39,7 @@ const ZenithContainer: React.FC<containerProps> = ({
   bgColor,
 }) => {
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center relative overflow-hidden">
+    <div className="w-full h-full flex flex-col justify-center items-center relative overflow-hidden 2xl:space-y-12 lg:space-y-4 space-y-2">
       <div className="absolute sm:w-48 sm:h-48 w-24 h-24 top-[10%] right-[-5%]">
         <Circle color="orange" />
       </div>

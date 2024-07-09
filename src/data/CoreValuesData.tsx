@@ -35,7 +35,7 @@ export const valuesData = [
     imageUrl: n,
     iconUrl: plant,
     color: "green",
-    value: "nature",
+    value: "nurture",
     description:
       "We nurture solid and encouraging connections by embracing diversity. With this, we contribute to building a better, more interconnected world.",
   },
