@@ -121,6 +121,18 @@ const TalentCard = () => {
           className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"
         />
       </div>
+
+      {/* Message */}
+      <div className="flex flex-col w-full mt-3 gap-3">
+        <label className="text-black font-medium capitalize">
+          Message (optional)
+        </label>
+        <input
+          type="text"
+          name="message"
+          className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"
+        />
+      </div>
       {/* Submit Button */}
       <div className="flex flex-col w-full mt-8 justify-center items-center">
         {/* <motion.button

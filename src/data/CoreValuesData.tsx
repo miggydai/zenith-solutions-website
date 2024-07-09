@@ -16,14 +16,16 @@ export const valuesData = [
     id: 1,
     imageUrl: z,
     iconUrl: flag,
+    color: "orange",
     value: "zeal",
     description:
-      "With a focus on quality, integrity, and personalized service, we have established ourselves as a trusted partner for both clients and candidates alike. ",
+      "Each project is approached by our team with unparalleled enthusiasm and commitment. This eagerness ensures that we consistently provide outstanding results.",
   },
   {
     id: 2,
     imageUrl: e,
     iconUrl: heart,
+    color: "gray",
     value: "existence",
     description:
       "Our existence reflects our adherence to community involvement and inclusivity, empowering our clients and supporting a socially responsible business environment.",
@@ -32,6 +34,7 @@ export const valuesData = [
     id: 3,
     imageUrl: n,
     iconUrl: plant,
+    color: "green",
     value: "nature",
     description:
       "We nurture solid and encouraging connections by embracing diversity. With this, we contribute to building a better, more interconnected world.",
@@ -40,6 +43,7 @@ export const valuesData = [
     id: 4,
     imageUrl: i,
     iconUrl: bulb,
+    color: "lightBlue",
     value: "idea",
     description:
       "Our main drive is innovation, which drives us to provide unique, innovative solutions to many of your tough issues. We translate inspiring ideas into workable solutions.",
@@ -48,6 +52,7 @@ export const valuesData = [
     id: 5,
     imageUrl: t,
     iconUrl: resize,
+    color: "red",
     value: "transformation",
     description:
       "We spearhead transformative change that supports the growth and success of your company. Our tactics make sure you maintain your lead in a changing market.",
@@ -56,6 +61,7 @@ export const valuesData = [
     id: 1,
     imageUrl: h,
     iconUrl: pray,
+    color: "normalBlue",
     value: "hope",
     description:
       "Our dedication to inclusion and social responsibility inspires hope and confidence as we lead clients toward a prosperous future, supporting both them and their communities.",

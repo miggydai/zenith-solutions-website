@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import imgSrc from "@/public/assets/images/sample2.png";
 import { motion } from "framer-motion";
 import Button from "../Button";
 import type { StaticImageData } from "next/image";

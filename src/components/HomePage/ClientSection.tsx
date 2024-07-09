@@ -15,13 +15,6 @@ const ClientSection = () => {
     <>
       {matches ? (
         <section className="w-full md:h-[70vh] h-full flex flex-col justify-center items-center gap-3 mt-5">
-          <div className="w-full flex justify-center">
-            <SectionHeader
-              header="Listen to our clients' stories"
-              color="skyBlue"
-            />
-          </div>
-
           <div className="flex flex-row w-full h-[60vh]">
             <div className="w-[80%] h-[60vh]">
               <ClientStories />
@@ -54,12 +47,6 @@ const ClientSection = () => {
         </section>
       ) : (
         <section className="w-full h-full flex flex-col items-center justify-center mt-4">
-          <div className="w-full flex justify-center px-5 my-2">
-            <SectionHeader
-              header="Listen to our clients' stories"
-              color="skyBlue"
-            />
-          </div>
           <ClientStoriesMobile />
         </section>
       )}

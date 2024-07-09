@@ -14,7 +14,7 @@ const cardVariants = cva(
         orange:
           " bg-gradient-to-b from-projectOrangeSgradient to-projectOrange",
         tan: "bg-gradient-to-b from-tan to-tanSgradient",
-        blue: "bg-gradient-to-b from-aquaBlueSgradient to-blue-700",
+        blue: "bg-gradient-to-b from-[#8FCFFF] to-[#55B5FF]",
       },
     },
   }
@@ -22,7 +22,7 @@ const cardVariants = cva(
 
 const titleVariants = cva(
   [
-    "text-left mb-5 sm:text-xl text-sm font-semibold capitalize font-montserrat",
+    "text-left mb-5 sm:text-lg text-sm font-semibold capitalize font-montserrat",
   ],
   {
     variants: {

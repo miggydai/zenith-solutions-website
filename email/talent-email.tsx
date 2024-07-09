@@ -20,6 +20,7 @@ type ContactFormEmailProps = {
   job: string;
   experience: number;
   country: string;
+  message?: string;
 };
 
 export default function TalentEmail({
@@ -30,6 +31,7 @@ export default function TalentEmail({
   experience,
   country,
   email,
+  message,
 }: ContactFormEmailProps) {
   return (
     <Html>
@@ -46,6 +48,7 @@ export default function TalentEmail({
               <Text>Yrs of Experience: {experience}</Text>
               <Text>Country: {country}</Text>
               <Text>Phone Number: {phonenumber}</Text>
+              <Text>Message: {message}</Text>
               <Hr />
               <Text>The sender's email is: {email}</Text>
             </Section>

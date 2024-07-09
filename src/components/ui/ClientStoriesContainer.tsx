@@ -91,13 +91,6 @@ const ClientStories = () => {
         }}
         className="flex flex-col w-[60%] h-full justify-center items-start relative lg:gap-3 gap-1 mb-7"
       >
-        {/* <h3 className="2xl:xl:text-2xl text-xl text-white font-semibold border-l-4 border-l-white pl-4 font-poppins">
-          Patrick Matayabas
-        </h3>
-        <h6 className="font-light text-white 2xl:text-lg text-sm h-10 border-l-4 border-l-white pl-4 font-poppins">
-          Founder
-        </h6> */}
-
         <h5 className="lg:mt-5 mt-2 pl-4 text-white lg:mr-56 mr-32 text-xl font-poppins">
           Zenith Solutions believes in maintaining a positive mindset, creating
           partnerships with a purpose, and always striving for significant

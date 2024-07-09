@@ -15,6 +15,7 @@ export const sendEmailTalent = async (formData: FormData) => {
   const job = formData.get("job");
   const experience = formData.get("experience");
   const country = formData.get("country");
+  const message = formData.get("message");
 
   if (!validateString(firstname)) {
     return {
@@ -52,6 +53,12 @@ export const sendEmailTalent = async (formData: FormData) => {
     };
   }
 
+  // if (!validateString(message)) {
+  //   return {
+  //     error: "Invalid Email",
+  //   };
+  // }
+
   let data;
   try {
     data = await resend.emails.send({
@@ -68,6 +75,7 @@ export const sendEmailTalent = async (formData: FormData) => {
         job: job as string,
         country: country as string,
         experience: experience as unknown as number,
+        message: message as string,
       }),
     });
   } catch (error: unknown) {

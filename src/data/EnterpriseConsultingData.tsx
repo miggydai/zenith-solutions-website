@@ -12,7 +12,7 @@ export const enterpriseContent: ServiceType[] = [
     title: "Workday Financial Management",
     iconUrl: icon1,
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "treamline financial operations with Workday Financials. We optimize financial processes to enhance efficiency and accuracy.",
   },
   {
     title: "Adaptive Planning",

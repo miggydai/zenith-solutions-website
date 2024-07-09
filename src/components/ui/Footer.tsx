@@ -75,15 +75,9 @@ const Footer = () => {
               whileTap={{ scale: 0.8 }}
               className="cursor-pointer"
             >
-              <FaFacebook />
-            </motion.div>
-
-            <motion.div
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
-              className="cursor-pointer"
-            >
-              <FaLinkedinIn />
+              <a href="https://www.linkedin.com/company/zenith-solutions-llc/">
+                <FaLinkedinIn />
+              </a>
             </motion.div>
           </div>
         </h3>

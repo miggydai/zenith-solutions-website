@@ -2,20 +2,41 @@ import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
 import Circle from "../Circle";
-import { motion } from "framer-motion";
+import type { VariantProps } from "class-variance-authority";
+import { cva } from "class-variance-authority";
+
+const boxVariants = cva(
+  [
+    "sm:w-[180px] sm:h-[180px] w-[100px] h-[100px] rounded-[66px] relative flex justify-center items-center",
+  ],
+  {
+    variants: {
+      bgColor: {
+        orange: "bg-[#FFF0E3]",
+        green: "bg-[#E2FFE1]",
+        red: "bg-[#FFD4D1]",
+        lightBlue: "bg-[#E3FCF8]",
+        normalBlue: "bg-[#D2E3FD]",
+        gray: "bg-[#E6E3FC]",
+      },
+    },
+  }
+);
 
 type containerProps = {
   imgSrc: StaticImageData;
   iconSrc: StaticImageData;
   value: string;
   description: string;
-};
+  bgColor: string;
+} & VariantProps<typeof boxVariants>;
 
 const ZenithContainer: React.FC<containerProps> = ({
   imgSrc,
   iconSrc,
   value,
   description,
+  bgColor,
 }) => {
   return (
     <div className="w-full h-full flex flex-col justify-center items-center relative overflow-hidden">
@@ -50,7 +71,7 @@ const ZenithContainer: React.FC<containerProps> = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <div className="sm:w-[180px] sm:h-[180px] w-[100px] h-[100px] rounded-[66px] bg-slate-200 relative flex justify-center items-center">
+      <div className={boxVariants({ bgColor })}>
         <Image
           src={iconSrc}
           alt="icon"

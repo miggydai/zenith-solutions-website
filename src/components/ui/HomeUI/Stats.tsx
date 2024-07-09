@@ -37,25 +37,27 @@ const Stats: React.FC = () => {
         <div className="flex justify-center gap-[10vw] text-center">
           <div>
             <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue flex">
-              <AnimatedNumber number={100} />
+              <AnimatedNumber number={10} />
               <p>k</p>
             </h3>
-            <p className="text-black sm:text-base text-xs font-poppins">
-              Business transformed
+            <p className="text-black sm:text-base text-xs font-poppins capitalize">
+              Processes transformed
             </p>
           </div>
           <div>
             <h3 className="sm:text-6xl text-3xl flex justify-center font-bold text-skyBlue">
-              <AnimatedNumber number={12} /><p>+</p>
+              <AnimatedNumber number={12} />
+              <p>+</p>
             </h3>
             <p className="text-black sm:text-base text-xs font-poppins">
               Years of experience
             </p>
           </div>
-         
+
           <div>
             <h3 className="sm:text-6xl flex text-3xl font-bold text-skyBlue">
-              <AnimatedNumber number={90} /><p>%</p>
+              <AnimatedNumber number={90} />
+              <p>%</p>
             </h3>
             <p className="text-black sm:text-base text-xs font-poppins">
               Satisfaction rating

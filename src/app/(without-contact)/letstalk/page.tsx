@@ -72,7 +72,7 @@ const LetsTalkPage = () => {
             unoptimized
           />
         </motion.div>
-        <div className="max-md:hidden absolute -bottom-96 w-3/4 md:flex justify-center items-center">
+        <div className="max-md:hidden absolute -bottom-[65%] w-3/4 md:flex justify-center items-center">
           {client == "client" ? <ClientCard /> : <TalentCard />}
         </div>
       </div>

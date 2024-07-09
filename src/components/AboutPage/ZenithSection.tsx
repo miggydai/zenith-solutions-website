@@ -39,6 +39,15 @@ const ZenithSection = React.forwardRef<HTMLDivElement, SwiperComponentProps>(
           {valuesData.map((value, index) => (
             <SwiperSlide key={index}>
               <ZenithContainer
+                bgColor={
+                  value.color as
+                    | "orange"
+                    | "gray"
+                    | "green"
+                    | "lightBlue"
+                    | "red"
+                    | "normalBlue"
+                }
                 imgSrc={value.imageUrl}
                 iconSrc={value.iconUrl}
                 value={value.value}
