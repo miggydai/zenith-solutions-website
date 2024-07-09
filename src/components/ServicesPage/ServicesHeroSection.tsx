@@ -7,18 +7,17 @@ import imgSrc2 from "@/public/assets/images/servicesHeaderPic.png";
 
 const ServicesHeroSection = () => {
   return (
-    <section className="flex flex-col justify-center items-center gap-[4rem] sm:mb-[7rem] mb-[10rem]">
-      <div className="relative w-full">
-        <div className="absolute -z-10 w-full">
-          <Image
-            src={imgSrc}
-            alt="background"
-            className="object-cover w-full h-[120vh]"
-            draggable={false}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          />
-        </div>
+    <section className="flex flex-col justify-center relative w-full items-center gap-[4rem] sm:mb-[7rem] mb-[10rem] h-screen">
+      <div className="absolute -z-10 w-full">
+        <Image
+          src={imgSrc}
+          alt="background"
+          className="object-cover w-full h-screen"
+          draggable={false}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
+
       <div className="w-full flex flex-col justify-center items-center gap-4 mt-8">
         <SectionHeader header="Enterprise Consulting" color="black" />
         <p className="text-black sm:text-lg text-base text-center font-poppins">

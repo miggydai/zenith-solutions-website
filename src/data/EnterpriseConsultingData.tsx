@@ -9,10 +9,10 @@ import icon5 from "@/public/assets/images/ec ai.gif";
 
 export const enterpriseContent: ServiceType[] = [
   {
-    title: "Streamline Financial Management",
+    title: "Financial Management",
     iconUrl: icon1,
     description:
-      "treamline financial operations with Workday Financials. We optimize financial processes to enhance efficiency and accuracy.",
+      "Streamline financial operations with Workday Financials. We optimize financial processes to enhance efficiency and accuracy.",
   },
   {
     title: "Adaptive Planning",
