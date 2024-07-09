@@ -39,12 +39,12 @@ const markers: MarkerData[] = [
     title: "Accounts Officer",
     place: "Xave",
   },
-  // {
-  //   geocode: [8.1907, 125.4553],
-  //   title: "Text",
-  //   popupText: "Hello from New Delhi!",
-  //   place: "New Delhi",
-  // },
+  {
+    geocode: [8.1907, 125.4553],
+    title: "Talent Associate",
+    popupText: "As a Talent Associate, Anna plays a role in finding and welcoming new talent to our team. She focuses on improving efficiency and accuracy in recruitment and is dedicated to bringing in skilled individuals who align with our company's goals and values, helping us build a strong and diverse team. She enjoys thrifting, and loves to travel which reflects her curiosity for a lot of things.",
+    place: "Anna",
+  },
   
 ];
 
