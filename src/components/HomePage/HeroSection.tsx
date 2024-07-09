@@ -3,8 +3,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "@/public/assets/images/alterbg.svg";
-import gifSrc from "@/public/assets/images/zencombg.gif";
+import bg from "@/public/assets/images/zench1.svg";
+import gifSrc from "@/public/assets/images/hqgif.gif";
 import Button from "../ui/Button";
 
 function HeroSection() {
