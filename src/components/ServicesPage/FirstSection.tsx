@@ -33,7 +33,7 @@ for efficiency and innovation. Our expertise ensures that systems are optimized 
 every business needs."
       />
       {/* cards */}
-      <div className="w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center z-10">
+      <div className="2xl:w-[50%] w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center z-10">
         {enterpriseContent.map((a, index) => (
           <IconCard
             key={index}

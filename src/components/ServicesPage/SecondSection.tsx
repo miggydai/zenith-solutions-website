@@ -27,7 +27,7 @@ const SecondSection = () => {
 change management. Our team provide the insights and  strategies needed to navigate
 challenges and achieve long-term growth."
       />
-      <div className="w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center z-10">
+      <div className="2xl:w-[50%] w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center z-10">
         {advisoryContent.map((a, index) => (
           <IconCard
             key={index}

@@ -29,7 +29,7 @@ const ThirdSection = () => {
         description="Our Analytics & Reporting services equip your business with thorough data analysis and personalized reporting solutions. We enable you to make well-informed decisions, enhance performance, and foster strategic growth by converting raw data into precise, actionable
 insights."
       />
-      <div className="w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center z-10">
+      <div className="2xl:w-[50%] w-[70%] flex flex-row flex-wrap gap-6 items-center justify-center z-10">
         {analyticsContent.map((a, index) => (
           <IconCard
             key={index}
