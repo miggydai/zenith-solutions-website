@@ -3,18 +3,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "@/public/assets/images/zench2.svg";
+import bg from "@/public/assets/images/Zenright.svg";
 import gifSrc from "@/public/assets/images/hqgif.gif";
 import Button from "../ui/Button";
 
 function HeroSection() {
   return (
     <section className="flex flex-col w-full h-full relative justify-center items-center">
-      <div className="z-20">
+      <div className="z-20 w-full">
         <Image
           src={bg}
           alt="bg"
-          className="object-cover"
+          className="object-cover w-full"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />

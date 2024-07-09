@@ -95,7 +95,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
 
         <div className="absolute inset-0 bg-[#53C651] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
           <p className="text-white sm:text-4xl text-base font-montserrat uppercase tracking-wide font-bold">
-            Nature
+            Nurture
           </p>
         </div>
       </motion.div>
