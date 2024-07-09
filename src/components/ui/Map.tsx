@@ -33,18 +33,18 @@ const markers: MarkerData[] = [
     title: "Founder",
     place: "Davinder Singh",
   },
-  {
-    geocode: [7.1907, 125.4553],
-    popupText: "Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience. She has a proven track record of identifying bottlenecks in processes and implementing effective solutions to overcome them. Xave is adept at streamlining workflows to increase efficiency and accuracy. In her spare time, she enjoys reading and cooking, which reflects her meticulous attention to detail and creativity both professionally and personally.",
-    title: "Accounts Officer",
-    place: "Xave",
-  },
-  {
-    geocode: [8.1907, 125.4553],
-    title: "Talent Associate",
-    popupText: "As a Talent Associate, Anna plays a role in finding and welcoming new talent to our team. She focuses on improving efficiency and accuracy in recruitment and is dedicated to bringing in skilled individuals who align with our company's goals and values, helping us build a strong and diverse team. She enjoys thrifting, and loves to travel which reflects her curiosity for a lot of things.",
-    place: "Anna",
-  },
+  // {
+  //   geocode: [7.1907, 125.4553],
+  //   popupText: "Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience. She has a proven track record of identifying bottlenecks in processes and implementing effective solutions to overcome them. Xave is adept at streamlining workflows to increase efficiency and accuracy. In her spare time, she enjoys reading and cooking, which reflects her meticulous attention to detail and creativity both professionally and personally.",
+  //   title: "Accounts Officer",
+  //   place: "Xave",
+  // },
+  // {
+  //   geocode: [8.1907, 125.4553],
+  //   title: "Talent Associate",
+  //   popupText: "As a Talent Associate, Anna plays a role in finding and welcoming new talent to our team. She focuses on improving efficiency and accuracy in recruitment and is dedicated to bringing in skilled individuals who align with our company's goals and values, helping us build a strong and diverse team. She enjoys thrifting, and loves to travel which reflects her curiosity for a lot of things.",
+  //   place: "Anna",
+  // },
   
 ];
 
@@ -75,6 +75,26 @@ const Map: React.FC = () => {
             </Popup>
           </Marker>
         ))}
+        <Marker position={[8.1907, 125.4553]} icon={customIcon}>
+            <Popup>
+              <div className="flex gap-7">
+                <div className="bg-orange-400 w-[2rem]"></div>
+                <div>
+                  <div>
+                  <h1 className="text-2xl font-semibold">Xavierich Castañeda</h1>
+                  <p className="text-gray-300">Accounts Officer</p>
+                  <p>Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience.</p>
+                  </div>
+                 
+                  <div>
+                  <h1 className="text-2xl font-semibold">Anna Luisa Yap</h1>
+                  <p className="text-gray-300">Talent Associate</p>
+                  <p>As a Talent Associate, Anna plays a role in finding and welcoming new talent to our team.</p>
+                  </div>
+                </div>
+              </div>
+            </Popup>
+          </Marker>
       </MapContainer>
     </div>
   );
