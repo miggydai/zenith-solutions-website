@@ -3,13 +3,11 @@ import React from "react";
 
 const FounderCard = () => {
   return (
-    <div className="rounded-xl flex flex-col gap-10 bg-white p-6 shadow-2xl drop-shadow-2xl w-[70vw]">
+    <div className="rounded-xl flex flex-col gap-10 bg-white p-10 shadow-2xl drop-shadow-2xl w-[70vw]">
       {/* Top section */}
       <div className="flex gap-10">
         {/* Picture */}
-        <div className="bg-gray-500 w-[15rem] h-[15rem]">
-          <h1>Picture</h1>
-        </div>
+        
         {/* Deets */}
         <div className="flex flex-col gap-4 justify-center">
           <h1 className="text-5xl font-bold text-black font-montserrat capitalize">
@@ -18,7 +16,7 @@ const FounderCard = () => {
           <p className="text-gray-300 font-poppins text-xs capitalize">
             Founder
           </p>
-          <p className="text-gray-300">Icons</p>
+          
         </div>
       </div>
       {/* Long paragraph */}

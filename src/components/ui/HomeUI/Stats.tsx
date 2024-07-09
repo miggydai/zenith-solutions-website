@@ -34,7 +34,7 @@ const Stats: React.FC = () => {
           <p>"We are on a quest to manifest ideas to reality"</p>
         </div>
         {/* The stats */}
-        <div className="flex justify-center gap-10 text-center">
+        <div className="flex justify-center gap-[10vw] text-center">
           <div>
             <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue flex">
               <AnimatedNumber number={100} />
@@ -45,24 +45,17 @@ const Stats: React.FC = () => {
             </p>
           </div>
           <div>
-            <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue">
-              <AnimatedNumber number={12} />
+            <h3 className="sm:text-6xl text-3xl flex justify-center font-bold text-skyBlue">
+              <AnimatedNumber number={12} /><p>+</p>
             </h3>
             <p className="text-black sm:text-base text-xs font-poppins">
               Years of experience
             </p>
           </div>
+         
           <div>
-            <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue">
-              <AnimatedNumber number={30} />
-            </h3>
-            <p className="text-black sm:text-base text-xs font-poppins">
-              Trusted partners
-            </p>
-          </div>
-          <div>
-            <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue">
-              <AnimatedNumber number={90} />
+            <h3 className="sm:text-6xl flex text-3xl font-bold text-skyBlue">
+              <AnimatedNumber number={90} /><p>%</p>
             </h3>
             <p className="text-black sm:text-base text-xs font-poppins">
               Satisfaction rating
