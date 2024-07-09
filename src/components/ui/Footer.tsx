@@ -30,7 +30,7 @@ const links: NavLinkType[] = [
 
 const Footer = () => {
   return (
-    <footer className="w-full pb-10 flex flex-col justify-end items-center sm:h-[70vh] h-[140vh] bg-projectOrange">
+    <footer className="w-full md:pb-10 flex flex-col md:justify-end items-center max-sm:h-full h-[140vh] bg-projectOrange">
       {/* Footer details */}
       <div className="w-3/4 max-sm:w-full flex max-sm:flex-col p-5">
         {/* Left section */}

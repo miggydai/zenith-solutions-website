@@ -13,7 +13,7 @@ import Link from "next/link";
 
 const ContactusCard = () => {
   return (
-    <div className="flex items-start bg-skyBlue w-full md:w-[70%] md:h-[495px] relative md:rounded-2xl md:z-20 md:top-30">
+    <div className="flex items-start bg-skyBlue w-full md:w-[70rem] md:h-[495px] relative md:rounded-2xl md:z-20 md:top-30">
       {/* left */}
       <div className="w-full  p-8 flex max-md:flex-col z-20 ">
         <div className="w-full max-md:text-center md:w-1/2 flex flex-col gap-6">
@@ -32,7 +32,7 @@ const ContactusCard = () => {
             <p className="font-sora">+6392736849234</p>
           </div>
           {/* Icons */}
-          <div className="flex flex-row gap-3">
+          <div className="flex flex-row gap-3 max-md:hidden">
             <motion.div
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}

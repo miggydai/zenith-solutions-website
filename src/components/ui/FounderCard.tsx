@@ -10,7 +10,7 @@ const FounderCard = () => {
         
         {/* Deets */}
         <div className="flex flex-col gap-4 justify-center">
-          <h1 className="text-5xl font-bold text-black font-montserrat capitalize">
+          <h1 className="md:text-5xl font-bold text-black font-montserrat max-md:text-xl ">
             Davinder Singh
           </h1>
           <p className="text-gray-300 font-poppins text-xs capitalize">
@@ -20,7 +20,7 @@ const FounderCard = () => {
         </div>
       </div>
       {/* Long paragraph */}
-      <div className="flex flex-col text-lg gap-10 text-black">
+      <div className="flex flex-col md:text-lg gap-10 text-black max-md:text-sm">
         <div className="flex flex-col gap-4">
           <p className="font-poppins">
             Davinder is the founder of Zenith Solutions LLC. He has over 20

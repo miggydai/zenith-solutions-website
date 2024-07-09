@@ -27,12 +27,7 @@ const markers: MarkerData[] = [
     title: "IT Technology Officer",
     place: "Prabjyot Kaur",
   },
-  {
-    geocode: [40.0583, -74.4057],
-    popupText: "Davinder is the founder of Zenith Solutions LLC. He has over 20 years of experience in finance, accounting and technology industry. He has been in Workday ecosystem more than 8 years. He started his Workday journey with Cushman and Wakefield and worked for a Workday partner firm. He has extensive experience in different Industries such as Retail, Real-estate, Utilities, Healthcare and Higher Education. He enjoys playing tennis and cricket. He is a great fan of Sachin Tendulkar, Roger Federer and Michal Schumacher.",
-    title: "Founder",
-    place: "Davinder Singh",
-  },
+  
   // {
   //   geocode: [7.1907, 125.4553],
   //   popupText: "Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience. She has a proven track record of identifying bottlenecks in processes and implementing effective solutions to overcome them. Xave is adept at streamlining workflows to increase efficiency and accuracy. In her spare time, she enjoys reading and cooking, which reflects her meticulous attention to detail and creativity both professionally and personally.",
@@ -55,7 +50,7 @@ const Map: React.FC = () => {
         center={[51.505, -0.09]}
         zoom={1.5}
         scrollWheelZoom={false}
-        className="h-[80vh] rounded-3xl"
+        className="md:h-[80vh] rounded-3xl "
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
