@@ -16,18 +16,19 @@ const customIcon = new L.Icon({
 type MarkerData = {
   geocode: [number, number];
   popupText: string;
-  title:string;
+  title: string;
   place: string;
 };
 
 const markers: MarkerData[] = [
   {
-    geocode: [-33.865143, 151.209900],
-    popupText: "Prabjyot Kaur leverages over 20 years of expertise in financial technologies and SaaS products to deliver cutting edge solutions for the banking and finance sector. Proficient in driving product development from ideation to implementation with rich user experience.She possesses strong leadership skills by leading team of various sized, handling multifunctional team collaboration and maintain strong relationship with key stakeholders.",
+    geocode: [-33.865143, 151.2099],
+    popupText:
+      "Prabjyot Kaur leverages over 20 years of expertise in financial technologies and SaaS products to deliver cutting edge solutions for the banking and finance sector. Proficient in driving product development from ideation to implementation with rich user experience.She possesses strong leadership skills by leading team of various sized, handling multifunctional team collaboration and maintain strong relationship with key stakeholders.",
     title: "IT Technology Officer",
     place: "Prabjyot Kaur",
   },
-  
+
   // {
   //   geocode: [7.1907, 125.4553],
   //   popupText: "Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience. She has a proven track record of identifying bottlenecks in processes and implementing effective solutions to overcome them. Xave is adept at streamlining workflows to increase efficiency and accuracy. In her spare time, she enjoys reading and cooking, which reflects her meticulous attention to detail and creativity both professionally and personally.",
@@ -40,12 +41,11 @@ const markers: MarkerData[] = [
   //   popupText: "As a Talent Associate, Anna plays a role in finding and welcoming new talent to our team. She focuses on improving efficiency and accuracy in recruitment and is dedicated to bringing in skilled individuals who align with our company's goals and values, helping us build a strong and diverse team. She enjoys thrifting, and loves to travel which reflects her curiosity for a lot of things.",
   //   place: "Anna",
   // },
-  
 ];
 
 const Map: React.FC = () => {
   return (
-    <div className="w-3/4">
+    <div className="sm:w-3/4 w-full">
       <MapContainer
         center={[51.505, -0.09]}
         zoom={1.5}
@@ -71,25 +71,35 @@ const Map: React.FC = () => {
           </Marker>
         ))}
         <Marker position={[8.1907, 125.4553]} icon={customIcon}>
-            <Popup>
-              <div className="flex gap-7">
-                <div className="bg-orange-400 w-[2rem]"></div>
+          <Popup>
+            <div className="flex gap-7">
+              <div className="bg-orange-400 w-[2rem]"></div>
+              <div>
                 <div>
-                  <div>
-                  <h1 className="text-2xl font-semibold">Xavierich Castañeda</h1>
+                  <h1 className="text-2xl font-semibold">
+                    Xavierich Castañeda
+                  </h1>
                   <p className="text-gray-300">Accounts Officer</p>
-                  <p>Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience.</p>
-                  </div>
-                 
-                  <div>
+                  <p>
+                    Xave is a Certified Public Accountant with over four years
+                    of experience in financial accounting and reporting,
+                    auditing, and process improvement, with a strong focus on
+                    enhancing Workday end-user experience.
+                  </p>
+                </div>
+
+                <div>
                   <h1 className="text-2xl font-semibold">Anna Luisa Yap</h1>
                   <p className="text-gray-300">Talent Associate</p>
-                  <p>As a Talent Associate, Anna plays a role in finding and welcoming new talent to our team.</p>
-                  </div>
+                  <p>
+                    As a Talent Associate, Anna plays a role in finding and
+                    welcoming new talent to our team.
+                  </p>
                 </div>
               </div>
-            </Popup>
-          </Marker>
+            </div>
+          </Popup>
+        </Marker>
       </MapContainer>
     </div>
   );

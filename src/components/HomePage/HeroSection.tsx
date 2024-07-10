@@ -17,16 +17,18 @@ function HeroSection() {
           className="object-cover w-full"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
       </div>
       <div className="absolute top-0 flex justify-center items-center w-full -z-10">
         <Image
           src={gifSrc}
-          alt="hays patrick"
+          alt="video"
           className="w-full h-full"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           unoptimized
+          priority
         />
       </div>
       <motion.div

@@ -38,7 +38,10 @@ const ContactusCard = () => {
               whileTap={{ scale: 0.8 }}
               className="cursor-pointer"
             >
-              <a href="https://www.linkedin.com/company/zenith-solutions-llc/">
+              <a
+                href="https://www.linkedin.com/company/zenith-solutions-llc/"
+                aria-label="linkedIn"
+              >
                 <FaLinkedinIn />
               </a>
             </motion.div>
@@ -75,10 +78,14 @@ const ContactusCard = () => {
           {/* Text field */}
 
           <div className="flex flex-col w-full gap-8">
-            <label className="text-sm font-extralight capitalize font-sora">
+            <label
+              htmlFor="name"
+              className="text-sm font-extralight capitalize font-sora"
+            >
               Full name
             </label>
             <input
+              id="name"
               type="text"
               name="name"
               className="w-full bg-transparent border-0 border-b-2 outline-none"
@@ -86,10 +93,14 @@ const ContactusCard = () => {
           </div>
 
           <div className="flex flex-col w-full gap-8">
-            <label className="text-sm font-extralight capitalize font-sora">
+            <label
+              htmlFor="email"
+              className="text-sm font-extralight capitalize font-sora"
+            >
               Email
             </label>
             <input
+              id="email"
               type="email"
               name="email"
               className="w-full bg-transparent border-0 border-b-2 outline-none"
@@ -98,10 +109,14 @@ const ContactusCard = () => {
           </div>
 
           <div className="flex flex-col w-full gap-8">
-            <label className="text-sm font-extralight capitalize">
+            <label
+              htmlFor="message"
+              className="text-sm font-extralight capitalize"
+            >
               Message
             </label>
             <input
+              id="message"
               type="text"
               name="message"
               className="w-full bg-transparent border-0 border-b-2 outline-none"

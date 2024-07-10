@@ -27,7 +27,7 @@ const ServicesHeroSection = () => {
         <Button
           label="Inquire Now"
           color="skyBlue"
-          href=""
+          href="/letstalk"
           textColor="white"
           textFont="normal"
         />
@@ -41,6 +41,7 @@ const ServicesHeroSection = () => {
           placeholder="blur"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
       </div>
     </section>

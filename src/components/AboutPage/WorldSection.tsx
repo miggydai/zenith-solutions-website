@@ -4,7 +4,6 @@ import React from "react";
 import dynamic from "next/dynamic";
 import SectionHeader from "../ui/SectionHeader";
 
-
 const DynamicMap = dynamic(() => import("../ui/Map"), { ssr: false });
 
 const WorldSection = () => {
@@ -13,8 +12,7 @@ const WorldSection = () => {
       <div>
         <SectionHeader header="Meet our team Worldwide" color="skyBlue" />
       </div>
-      <div className="w-screen flex justify-center ">
-       
+      <div className="w-full flex justify-center ">
         <DynamicMap />
       </div>
     </div>

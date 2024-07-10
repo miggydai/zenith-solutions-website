@@ -39,10 +39,14 @@ const ClientCard = () => {
         <div className="flex md:flex-row flex-col w-full gap-4">
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
             {/* first name */}
-            <label className="text-black font-medium capitalize">
+            <label
+              htmlFor="firstname"
+              className="text-black font-medium capitalize"
+            >
               First Name
             </label>
             <input
+              id="firstname"
               type="text"
               name="firstname"
               required
@@ -51,10 +55,14 @@ const ClientCard = () => {
           </div>
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
             {/* last name */}
-            <label className="text-black font-medium capitalize">
+            <label
+              htmlFor="lastname"
+              className="text-black font-medium capitalize"
+            >
               last Name
             </label>
             <input
+              id="lastname"
               type="text"
               name="lastname"
               required
@@ -66,8 +74,11 @@ const ClientCard = () => {
         <div className="flex md:flex-row flex-col w-full gap-4">
           {/* email */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium">Email Address *</label>
+            <label htmlFor="email" className="text-black font-medium">
+              Email Address *
+            </label>
             <input
+              id="email"
               type="email"
               name="email"
               required
@@ -76,8 +87,11 @@ const ClientCard = () => {
           </div>
           {/* phone # */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium">Phone Number *</label>
+            <label htmlFor="phone" className="text-black font-medium">
+              Phone Number *
+            </label>
             <input
+              id="phone"
               type="text"
               name="phonenumber"
               required
@@ -89,8 +103,11 @@ const ClientCard = () => {
         <div className="flex md:flex-row flex-col w-full gap-4">
           {/* Company Name */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium">Company Name*</label>
+            <label htmlFor="company" className="text-black font-medium">
+              Company Name*
+            </label>
             <input
+              id="company"
               type="text"
               name="company"
               className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"
@@ -98,10 +115,14 @@ const ClientCard = () => {
           </div>
           {/* Country */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium capitalize">
+            <label
+              htmlFor="country"
+              className="text-black font-medium capitalize"
+            >
               country*
             </label>
             <input
+              id="country"
               type="text"
               name="country"
               required
@@ -113,8 +134,11 @@ const ClientCard = () => {
 
       {/* Message */}
       <div className="flex flex-col w-full mt-3 gap-3">
-        <label className="text-black font-medium capitalize">Message*</label>
+        <label htmlFor="message" className="text-black font-medium capitalize">
+          Message*
+        </label>
         <input
+          id="message"
           type="text"
           name="message"
           className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"

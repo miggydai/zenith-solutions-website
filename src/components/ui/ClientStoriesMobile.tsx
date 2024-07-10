@@ -11,20 +11,15 @@ const ClientStoriesMobile = () => {
     <section className="w-full h-full flex flex-col justify-start items-center gap-4">
       <div className="w-full h-full bg-skyBlue flex flex-col">
         <motion.div
-          initial={{ opacity: 0, x: 100 }}
+          initial={{ opacity: 0 }}
           whileInView={{
             opacity: 1,
-            x: 1,
-            transition: {
-              type: "spring",
-              bounce: 0.1,
-            },
           }}
-          className="bg-white w-full h-[70%] rounded-bl-[8.4rem] flex justify-center items-center right-0 z-10 pb-4"
+          className="bg-white w-full h-[70%] rounded-bl-[8.4rem] flex justify-center items-center z-10 pb-4"
         >
           <Image
             src={imgSrc}
-            alt="sample person"
+            alt="nyc image"
             className="object-cover rounded-l-[8rem] rounded-r-xl w-[90%] h-[90%]"
             placeholder="blur"
             draggable={false}
@@ -35,14 +30,9 @@ const ClientStoriesMobile = () => {
         {/* bottom portion */}
         <div className="flex flex-row w-full h-[50%] p-3">
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0 }}
             whileInView={{
               opacity: 1,
-              x: 1,
-              transition: {
-                type: "spring",
-                bounce: 0.1,
-              },
             }}
             className="flex flex-col h-full justify-start items-start relative gap-1 mb-6 pt-9"
           >

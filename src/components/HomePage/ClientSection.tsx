@@ -46,7 +46,7 @@ const ClientSection = () => {
           </div>
         </section>
       ) : (
-        <section className="w-full h-full flex flex-col items-center justify-center mt-4">
+        <section className="w-full h-full flex items-center justify-center mt-4">
           <ClientStoriesMobile />
         </section>
       )}

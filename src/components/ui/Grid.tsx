@@ -91,6 +91,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           placeholder="blur"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          priority
         />
 
         <div className="absolute inset-0 bg-[#53C651] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">

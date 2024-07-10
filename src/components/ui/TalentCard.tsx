@@ -38,10 +38,14 @@ const TalentCard = () => {
         <div className="flex md:flex-row flex-col w-full gap-4">
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
             {/* first name */}
-            <label className="text-black font-medium capitalize">
+            <label
+              htmlFor="firstname"
+              className="text-black font-medium capitalize"
+            >
               First Name
             </label>
             <input
+              id="firstname"
               type="text"
               name="firstname"
               required
@@ -50,10 +54,14 @@ const TalentCard = () => {
           </div>
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
             {/* last name */}
-            <label className="text-black font-medium capitalize">
+            <label
+              htmlFor="lastname"
+              className="text-black font-medium capitalize"
+            >
               last Name
             </label>
             <input
+              id="lastname"
               type="text"
               name="lastname"
               required
@@ -65,8 +73,11 @@ const TalentCard = () => {
         <div className="flex md:flex-row flex-col w-full gap-4">
           {/* email */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium">Email Address *</label>
+            <label htmlFor="email" className="text-black font-medium">
+              Email Address *
+            </label>
             <input
+              id="email"
               type="email"
               name="email"
               required
@@ -75,8 +86,11 @@ const TalentCard = () => {
           </div>
           {/* phone # */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium">Phone Number *</label>
+            <label htmlFor="phone" className="text-black font-medium">
+              Phone Number *
+            </label>
             <input
+              id="phone"
               type="text"
               name="phonenumber"
               required
@@ -88,10 +102,11 @@ const TalentCard = () => {
         <div className="flex md:flex-row flex-col w-full gap-4">
           {/* Job Title */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium capitalize">
+            <label htmlFor="job" className="text-black font-medium capitalize">
               Job title*
             </label>
             <input
+              id="job"
               type="text"
               name="job"
               className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"
@@ -99,10 +114,11 @@ const TalentCard = () => {
           </div>
           {/* experience */}
           <div className="flex flex-col justify-start gap-2 mt-4 md:w-[50%] w-full">
-            <label className="text-black font-medium capitalize">
+            <label htmlFor="exp" className="text-black font-medium capitalize">
               Years of experience*
             </label>
             <input
+              id="exp"
               type="number"
               name="experience"
               required
@@ -114,8 +130,11 @@ const TalentCard = () => {
 
       {/* country */}
       <div className="flex flex-col md:w-[50%] w-full mt-3 gap-3">
-        <label className="text-black font-medium capitalize">Country*</label>
+        <label htmlFor="country" className="text-black font-medium capitalize">
+          Country*
+        </label>
         <input
+          id="country"
           type="text"
           name="country"
           className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"
@@ -124,10 +143,11 @@ const TalentCard = () => {
 
       {/* Message */}
       <div className="flex flex-col w-full mt-3 gap-3">
-        <label className="text-black font-medium capitalize">
+        <label htmlFor="message" className="text-black font-medium capitalize">
           Message (optional)
         </label>
         <input
+          id="message"
           type="text"
           name="message"
           className="border-b-2 border-black bg-transparent text-gray-700 placeholder-gray-500 p-2 focus:outline-none focus:ring-0 focus:border-blue-500"
