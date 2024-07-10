@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bg from "@/public/assets/images/Zenright.svg";
+import bg from "@/public/assets/images/workday.svg";
 import gifSrc from "@/public/assets/images/hqgif.gif";
 import Button from "../ui/Button";
 

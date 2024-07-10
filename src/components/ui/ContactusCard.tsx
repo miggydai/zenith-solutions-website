@@ -29,7 +29,8 @@ const ContactusCard = () => {
           {/* Mobile number */}
           <div className="hidden md:block">
             <h3 className="text-xs font-extralight font-sora">Mobile</h3>
-            <p className="font-sora">+6392736849234</p>
+            <p className="font-sora">+1 856-392-5119</p>
+            <p className="font-sora">+1 856-336-4863</p>
           </div>
           {/* Icons */}
           <div className="flex flex-row gap-3 max-md:hidden">

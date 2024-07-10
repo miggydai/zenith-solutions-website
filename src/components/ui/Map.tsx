@@ -73,6 +73,7 @@ const Map: React.FC = () => {
               </div>
             </Popup>
           </Marker>
+
         ))}
         <Marker position={[8.1907, 125.4553]} icon={customIcon}>
           <Popup>
@@ -110,6 +111,9 @@ const Map: React.FC = () => {
             </div>
           </Popup>
         </Marker>
+        <Marker position={[40.0583, -74.4057]} icon={customIcon} />
+
+
       </MapContainer>
     </div>
   );
