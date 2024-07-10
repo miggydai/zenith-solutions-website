@@ -60,11 +60,15 @@ const Map: React.FC = () => {
           <Marker key={index} position={marker.geocode} icon={customIcon}>
             <Popup>
               <div className="flex gap-7">
-                <div className="bg-orange-400 w-[2rem]"></div>
+                <div className="bg-projectOrange w-[2rem]"></div>
                 <div>
-                  <h1 className="text-2xl font-semibold">{marker.place}</h1>
-                  <p className="text-gray-300">{marker.title}</p>
-                  {marker.popupText}
+                  <h1 className="text-2xl font-semibold font-montserrat capitalize">
+                    {marker.place}
+                  </h1>
+                  <p className="text-gray-300 font-poppins capitalize">
+                    {marker.title}
+                  </p>
+                  <p className="font-poppins">{marker.popupText}</p>
                 </div>
               </div>
             </Popup>
@@ -76,11 +80,13 @@ const Map: React.FC = () => {
               <div className="bg-orange-400 w-[2rem]"></div>
               <div>
                 <div>
-                  <h1 className="text-2xl font-semibold">
+                  <h1 className="text-2xl font-semibold font-montserrat capitalize">
                     Xavierich Castañeda
                   </h1>
-                  <p className="text-gray-300">Accounts Officer</p>
-                  <p>
+                  <p className="text-gray-300 font-poppins capitalize">
+                    Accounts Officer
+                  </p>
+                  <p className="font-poppins">
                     Xave is a Certified Public Accountant with over four years
                     of experience in financial accounting and reporting,
                     auditing, and process improvement, with a strong focus on
@@ -89,9 +95,13 @@ const Map: React.FC = () => {
                 </div>
 
                 <div>
-                  <h1 className="text-2xl font-semibold">Anna Luisa Yap</h1>
-                  <p className="text-gray-300">Talent Associate</p>
-                  <p>
+                  <h1 className="text-2xl font-semibold font-montserrat capitalize">
+                    Anna Luisa Yap
+                  </h1>
+                  <p className="text-gray-300 font-poppins capitalize">
+                    Talent Associate
+                  </p>
+                  <p className="font-poppins">
                     As a Talent Associate, Anna plays a role in finding and
                     welcoming new talent to our team.
                   </p>

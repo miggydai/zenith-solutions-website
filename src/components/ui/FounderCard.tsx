@@ -1,22 +1,27 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 const FounderCard = () => {
   return (
-    <div className="rounded-xl flex flex-col gap-10 bg-white p-10 shadow-2xl drop-shadow-2xl w-[70vw]">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 1 }}
+      transition={{ duration: 0.5 }}
+      className="rounded-3xl flex flex-col gap-10 bg-white p-10 shadow-2xl drop-shadow-2xl w-[70vw]"
+    >
       {/* Top section */}
       <div className="flex gap-10">
         {/* Picture */}
-        
+
         {/* Deets */}
         <div className="flex flex-col gap-4 justify-center">
-          <h1 className="md:text-5xl font-bold text-black font-montserrat max-md:text-xl ">
+          <h1 className="md:text-5xl font-bold text-black font-montserrat max-md:text-xl capitalize">
             Davinder Singh
           </h1>
           <p className="text-gray-300 font-poppins text-xs capitalize">
             Founder
           </p>
-          
         </div>
       </div>
       {/* Long paragraph */}
@@ -34,7 +39,7 @@ const FounderCard = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
