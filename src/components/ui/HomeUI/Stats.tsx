@@ -36,7 +36,7 @@ const Stats: React.FC = () => {
         {/* The stats */}
         <div className="flex justify-center gap-[10vw] text-center">
           <div>
-            <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue text-center flex">
+            <h3 className="sm:text-6xl text-3xl font-bold text-skyBlue flex justify-center">
               <AnimatedNumber number={10} />
               <p>k</p>
             </h3>

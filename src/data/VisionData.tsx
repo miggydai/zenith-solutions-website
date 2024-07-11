@@ -10,7 +10,7 @@ export const visionData: ServiceType[] = [
     iconUrl: science,
     title: "Customized Solutions",
     description:
-      "We understand that every client is unique, which is why we tailor our services to meet your specific needs and objectives. Whether you;re a small startup or a large corporation, we have the expertise and flexibility to deliver the right solutions for you.",
+      "We understand that every client is unique, which is why we tailor our services to meet your specific needs and objectives. Whether you're a small startup or a large corporation, we have the expertise and flexibility to deliver the right solutions for you.",
   },
   {
     iconUrl: factory,

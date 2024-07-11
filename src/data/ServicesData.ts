@@ -19,28 +19,28 @@ export const services = [
   {
     title: "Tailored Solutions",
     description:
-      "We are committed to offering solutions, specifically tailored to every need to produce positive outcomes. Our staff takes the time to comprehend your unique needs and goals, whether you’re a small startup or a large global organization.",
+      "We are committed to understanding client’s challenges and offering solutions, specifically tailored to every need to produce positive outcomes. Our staff takes the time to comprehend your unique needs and goals, whether you're a small startup or a large global organization.",
     leftImages: [ts1, ts2],
     rightImages: [ts3, ts4],
   },
   {
     title: "Industry Expertise",
     description:
-      "With years of experience in the recruitment industry, we have developed expertise across a wide range of sectors, including Finance & Accounting, Information Technology, and Life Sciences. Our team of recruiters possess in-depth knowledge of their respective fields, enabling us to effectively navigate through complexities identify top talent.",
+      "With years of experience in the Workday space, we have developed expertise across a wide range of sectors, including Financial Services, Healthcare, Higher Education, Real Estate, Energy & Utilities, and Recruitment. Our team of Workday experts possess in-depth knowledge of their respective fields, enabling us to effectively navigate through complexities identify top talent.",
     leftImages: [ie1, ie2],
     rightImages: [ie3, ie4],
   },
   {
     title: "Top-Tier Advisors",
     description:
-      "Zenith Solutions is proud to have a team of top-tier advisors allows us to stay ahead of the curve and offer innovative solutions that drive success. Our advisors are industry leaders and experts in their respective fields, providing invaluable insights and guidance to our clients and candidates alike.",
+      "Zenith Solutions is proud to have a team of top-tier advisors allows us to stay ahead of the curve and offer innovative solutions that drive success. From initial consultation and solution design to implementation and ongoing support – We got you!",
     leftImages: [tta1, tta2],
     rightImages: [tta3, tta4],
   },
   {
     title: "Commitment to Quality",
     description:
-      "Quality is the core of what we do. From rigorous candidate selecting to our ongoing support and communication, we commit to delivering excellence in all aspects of our service.",
+      "Quality is the core of what we do. It is more than a business strategy; it's a mindset that permeates every facet of our organization. By placing quality at the forefront of our endeavors, we strengthen connections with our clients and lay the foundation for sustainable growth and success.",
     leftImages: [ctc1, ctc2],
     rightImages: [ctc3, ctc4],
   },
