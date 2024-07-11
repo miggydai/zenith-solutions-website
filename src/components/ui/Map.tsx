@@ -73,7 +73,6 @@ const Map: React.FC = () => {
               </div>
             </Popup>
           </Marker>
-
         ))}
         <Marker position={[8.1907, 125.4553]} icon={customIcon}>
           <Popup>
@@ -82,7 +81,7 @@ const Map: React.FC = () => {
               <div>
                 <div>
                   <h1 className="text-2xl font-semibold font-montserrat capitalize">
-                    Xavierich Castañeda
+                    {/* Xavierich Castañeda */} Xave
                   </h1>
                   <p className="text-gray-300 font-poppins capitalize">
                     Accounts Officer
@@ -90,7 +89,8 @@ const Map: React.FC = () => {
                   <p className="font-poppins">
                     Xave is a Certified Public Accountant with over four years
                     of experience in financial accounting and reporting,
-                    auditing, and process improvement, with a strong focus on
+                    auditing, and process improvement for companies in the US,
+                    the Philippines and Australia. She has a strong focus on
                     enhancing Workday end-user experience.
                   </p>
                 </div>
@@ -112,8 +112,6 @@ const Map: React.FC = () => {
           </Popup>
         </Marker>
         <Marker position={[40.0583, -74.4057]} icon={customIcon} />
-
-
       </MapContainer>
     </div>
   );
