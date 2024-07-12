@@ -35,7 +35,7 @@ function HeroSection() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 1 }}
         transition={{ duration: 0.5 }}
-        className="absolute bottom-[35%] z-30"
+        className="absolute sm:bottom-[40%] bottom-[30%] 2xl:right-[26%] md:right-[25%] right-[15%] z-30"
       >
         <Button
           label="consult now"
