@@ -120,7 +120,7 @@ const Navigation = () => {
                   y: 5,
                 },
               }}
-              className="w-6 bg-smthGreen h-[1px] block"
+              className="w-6 bg-skyBlue h-[1px] block"
             ></motion.span>
             <motion.span
               variants={{
@@ -131,7 +131,7 @@ const Navigation = () => {
                   opacity: 0,
                 },
               }}
-              className="w-6 bg-smthGreen h-[1px] block"
+              className="w-6 bg-skyBlue h-[1px] block"
             ></motion.span>
             <motion.span
               variants={{
@@ -143,7 +143,7 @@ const Navigation = () => {
                   y: -5,
                 },
               }}
-              className="w-6 bg-smthGreen h-[1px] block"
+              className="w-6 bg-skyBlue h-[1px] block"
             ></motion.span>
           </motion.button>
         </div>

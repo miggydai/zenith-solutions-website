@@ -145,7 +145,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           </h6>
 
           <div className="absolute inset-0 bg-[#FF756C] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
-            <p className="text-white sm:text-base text-sm font-montserrat uppercase tracking-wide font-bold">
+            <p className="text-white sm:text-base text-[.5rem] font-montserrat uppercase tracking-wide font-bold">
               Transformation
             </p>
           </div>
