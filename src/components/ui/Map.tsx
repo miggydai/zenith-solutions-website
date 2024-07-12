@@ -89,8 +89,8 @@ const Map: React.FC = () => {
                   <p className="font-poppins">
                     Xave is a Certified Public Accountant with over four years
                     of experience in financial accounting and reporting,
-                    auditing, and process improvement for companies in the US,
-                    the Philippines and Australia. She has a strong focus on
+                    auditing, and process improvement for companies in US,
+                    Philippines and Australia. She has a strong focus on
                     enhancing Workday end-user experience.
                   </p>
                 </div>

@@ -31,7 +31,7 @@ const AboutHeroSection: React.FC<AboutHeroSectionProps> = ({ goToSlide }) => (
         the way.
       </p>
     </div>
-    <div className="p-12">
+    <div className="p-2 w-full h-screen flex justify-center items-center">
       <Grid gotoSlide={goToSlide} />
     </div>
   </div>

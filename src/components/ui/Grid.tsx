@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import imgsrc from "@/public/assets/images/gridasset1.jpg";
+import imgsrc from "@/public/assets/images/abtGrid.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -30,11 +30,11 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
       variants={gridContainerVariants}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 p-4"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 sm:p-4 p-1 h-screen"
     >
       <motion.div
         variants={gridVariants}
-        className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2"
+        className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2 h-full"
       >
         {/* first block */}
         <motion.div
@@ -61,7 +61,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           variants={gridVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="relative cursor-pointer group w-full h-full flex items-center justify-center bg-blue-400 rounded-2xl"
+          className="relative cursor-pointer group w-full h-full flex items-center justify-center bg-skyBlue rounded-2xl"
           onClick={() => gotoSlide(1)}
         >
           <p className="font-bold sm:text-lg text-sm font-montserrat uppercase tracking-wide">
@@ -81,13 +81,13 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
         variants={gridVariants}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
-        className="relative group col-span-2 row-span-2 cursor-pointer"
+        className="relative group col-span-2 row-span-2 cursor-pointer h-full"
         onClick={() => gotoSlide(2)}
       >
         <Image
           src={imgsrc}
           alt="grid1"
-          className="rounded-2xl"
+          className="rounded-2xl absolute object-cover h-full"
           placeholder="blur"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -141,7 +141,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           </p>
 
           <h6 className="font-montserrat sm:text-3xl text-[.5rem]">
-            +12 Years
+            12+ Years
           </h6>
 
           <div className="absolute inset-0 bg-[#FF756C] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">

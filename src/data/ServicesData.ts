@@ -26,14 +26,14 @@ export const services = [
   {
     title: "Industry Expertise",
     description:
-      "With years of experience in the Workday space, we have developed expertise across a wide range of sectors, including Financial Services, Healthcare, Higher Education, Real Estate, Energy & Utilities, and Recruitment. Our team of Workday experts possess in-depth knowledge of their respective fields, enabling us to effectively navigate through complexities identify top talent.",
+      "With years of experience in the Workday space, we have developed expertise across a wide range of sectors, including Financial Services, Healthcare, Higher Education, Real Estate, Energy & Utilities, and Recruitment. Our team of Workday experts possess in-depth knowledge of their respective fields, enabling us to effectively navigate through complexities.",
     leftImages: [ie1, ie2],
     rightImages: [ie3, ie4],
   },
   {
     title: "Top-Tier Advisors",
     description:
-      "Zenith Solutions is proud to have a team of top-tier advisors allows us to stay ahead of the curve and offer innovative solutions that drive success. From initial consultation and solution design to implementation and ongoing support – We got you!",
+      "Zenith Solutions is proud to have a team of top-tier advisors which allows us to stay ahead of the curve and offer innovative solutions that drive success. From initial consultation and solution design to implementation and ongoing support – We got you!",
     leftImages: [tta1, tta2],
     rightImages: [tta3, tta4],
   },
