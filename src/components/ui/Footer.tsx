@@ -41,7 +41,7 @@ const Footer = () => {
             right attitude to drive your company forward.
           </p>
           <h4 className="sm:hidden font-bold font-montserrat">Contact us</h4>
-          <p className="text-sm font-montserrat">Eqnuiry@znthsolutions</p>
+          <p className="text-sm font-montserrat">enquiry@znthsolutions.com</p>
           <p className="text-sm font-montserrat">Egg Harbor City, NJ 08215</p>
         </div>
         {/* Right section */}
