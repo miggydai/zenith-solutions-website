@@ -30,11 +30,11 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
       variants={gridContainerVariants}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 sm:p-4 p-1 h-screen"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 2xl:grid-cols-7 gap-4 sm:p-4 p-1 h-screen"
     >
       <motion.div
         variants={gridVariants}
-        className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 max-md:grid-cols-2 max-md:col-span-2 h-full"
+        className="grid max-sm:grid-cols-1 md:grid-rows-2 md:row-span-2 gap-4 2xl:grid-cols-1 2xl:col-span-2 max-md:grid-cols-2 max-md:col-span-2  h-full"
       >
         {/* first block */}
         <motion.div
@@ -102,7 +102,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
       </motion.div>
 
       {/* third section */}
-      <motion.div variants={gridVariants} className="col-span-2">
+      <motion.div variants={gridVariants} className="2xl:col-span-3 col-span-2">
         {/* 4th block */}
         <motion.div
           variants={gridVariants}
@@ -126,7 +126,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
       {/* bottom row */}
       <motion.div
         variants={gridVariants}
-        className="grid grid-cols-2 col-span-2 gap-4"
+        className="grid 2xl:grid-cols-2 2xl:col-span-2 grid-cols-2 col-span-2 gap-4 bg-slate-400"
       >
         {/* 5th block */}
         <motion.div
