@@ -30,7 +30,7 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
       variants={gridContainerVariants}
       initial="hidden"
       animate="show"
-      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 sm:p-4 p-1 h-screen"
+      className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4 sm:p-4 p-1 h-screen"
     >
       <motion.div
         variants={gridVariants}
@@ -81,13 +81,13 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
         variants={gridVariants}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
-        className="relative group col-span-2 row-span-2 cursor-pointer h-full"
+        className="relative group col-span-3 row-span-2 cursor-pointer h-full"
         onClick={() => gotoSlide(2)}
       >
         <Image
           src={imgsrc}
           alt="grid1"
-          className="rounded-2xl absolute object-cover h-full"
+          className="rounded-2xl w-full absolute object-cover h-full"
           placeholder="blur"
           draggable={false}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
