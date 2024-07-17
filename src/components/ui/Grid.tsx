@@ -173,20 +173,20 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
     //   </motion.div>
     // </motion.div>
     <>
-    <div className="flex gap-4">
+    <div className="flex max-md:flex-col gap-4">
       {/* First set */}
-      <div className="flex flex-col gap-4  h-screen">
+      <div className="flex md:flex-col gap-4 h-full">
         {/* Zeal Block */}
       <motion.div
           variants={gridVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="relative h-[25%] w-full  cursor-pointer max-sm:justify-center max-sm:items-center group bg-tanSgradient rounded-2xl flex text-black flex-col justify-between p-5 font-bold transition ease-out duration-600"
+          className="relative md:h-[30vh] w-full  cursor-pointer max-sm:gap-7 max-sm:justify-center max-sm:items-center group bg-tanSgradient rounded-2xl flex text-black flex-col justify-between p-5 font-bold transition ease-out duration-600"
           onClick={() => gotoSlide(0)}
         >
-          <p className="font-montserrat sm:text-lg text-sm">Project Ready</p>
+          <p className="font-montserrat text-lg w-full">Project Ready</p>
 
-          <p className="sm:text-2xl text-base font-montserrat">10k+</p>
+          <p className="text-lg text-base md:text-3xl font-montserrat w-full">10k+</p>
 
           {/* Overlay */}
           <div className="absolute inset-0 bg-projectOrange bg-opacity-100 flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
@@ -200,10 +200,10 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           variants={gridVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="h-[25%] relative cursor-pointer group w-full h-full flex items-center justify-center bg-skyBlue rounded-2xl"
+          className="h-[15vh] md:h-[34vh] relative cursor-pointer group w-full h-full flex items-center justify-center bg-skyBlue rounded-2xl"
           onClick={() => gotoSlide(1)}
         >
-          <p className="font-bold sm:text-lg text-sm font-montserrat uppercase tracking-wide">
+          <p className="font-bold text-lg  font-montserrat uppercase tracking-wide">
             Diversity
           </p>
 
@@ -216,12 +216,12 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
 
       </div>
       {/* Second set */}
-      <div className="w-[40vw] h-screen">
+      <div className=" w-full md:w-[40vw] h-[40vh] md:h-screen">
       <motion.div
         variants={gridVariants}
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
-        className="relative group h-[52%] cursor-pointer h-full"
+        className="relative group md:h-[66%] cursor-pointer h-full"
         onClick={() => gotoSlide(2)}
       >
         <Image
@@ -244,16 +244,16 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
       </div>
       {/* Third set */}
       <div className="flex flex-col gap-3">
-      <motion.div variants={gridVariants}>
+      <motion.div variants={gridVariants} className="md:h-[42vh]">
          {/* 4th block */}
         <motion.div
           variants={gridVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="relative h-[27vh] group w-full cursor-pointer h-full flex items-center justify-center  bg-tanSgradient rounded-2xl"
+          className="relative h-full group w-full cursor-pointer max-md:p-3 flex items-center justify-center  bg-tanSgradient rounded-2xl"
           onClick={() => gotoSlide(3)}
         >
-          <p className="font-bold sm:text-xl text-[.6rem] uppercase tracking-wide text-black font-montserrat">
+          <p className="font-bold text-xl  uppercase tracking-wide text-black font-montserrat">
             Community Services
           </p>
 
@@ -275,15 +275,15 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           variants={gridVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="relative h-[35%] group bg-skyBlue cursor-pointer rounded-2xl flex text-white flex-col justify-between p-5 font-bold"
+          className="relative max-md:gap-10 h-full md:h-[52%] group bg-skyBlue cursor-pointer rounded-2xl flex text-white flex-col justify-between p-5 font-bold"
           onClick={() => gotoSlide(4)}
         >
-          <p className="font-montserrat sm:text-sm text-[.4rem]">
+          <p className="font-montserrat  text-xl">
             Years of Experience
           </p>
 
-          <h6 className="font-montserrat sm:text-3xl text-[.5rem]">
-            12+ Years
+          <h6 className="font-montserrat text-md md:text-4xl ">
+            +12 Years
           </h6>
 
           <div className="absolute inset-0 bg-[#FF756C] flex items-center justify-center opacity-0 group-hover:opacity-100 transition ease-out duration-600 rounded-2xl">
@@ -298,10 +298,10 @@ const Grid: React.FC<Props> = ({ gotoSlide }) => {
           variants={gridVariants}
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
-          className="relative group p-3 h-[35%] cursor-pointer bg-skyBlue flex justify-center items-center font-bold rounded-2xl"
+          className="relative group p-3 md:h-[52%] cursor-pointer bg-skyBlue flex justify-center items-center font-bold rounded-2xl"
           onClick={() => gotoSlide(5)}
         >
-          <p className="font-bold sm:text-xl text-[.5rem] font-montserrat uppercase">
+          <p className="font-bold sm:text-xl text-md font-montserrat uppercase">
             Inclusivity
           </p>
 
