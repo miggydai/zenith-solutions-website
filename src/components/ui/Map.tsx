@@ -81,7 +81,7 @@ const Map: React.FC = () => {
               <div>
                 <div>
                   <h1 className="text-2xl font-semibold font-montserrat capitalize">
-                    {/* Xavierich Castañeda */} Xave
+                    {/* Xavierich Castañeda */} Xave Castañeda
                   </h1>
                   <p className="text-gray-300 font-poppins capitalize">
                     Accounts Officer
