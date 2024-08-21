@@ -24,7 +24,7 @@ const markers: MarkerData[] = [
   {
     geocode: [-33.865143, 151.2099],
     popupText:
-      "Prabjyot Kaur leverages over 20 years of expertise in financial technologies and SaaS products to deliver cutting edge solutions for the banking and finance sector. Proficient in driving product development from ideation to implementation with rich user experience.She possesses strong leadership skills by leading team of various sized, handling multifunctional team collaboration and maintain strong relationship with key stakeholders.",
+      "Prabjyot-Prabjyot Kaur leverages over 20 years of expertise in financial technologies and SaaS products to deliver cutting-edge solutions for the banking and finance sector. She excels in driving product development from ideation to implementation, ensuring a rich user experience. Prabjyot demonstrates exceptional leadership by managing teams of varying sizes, fostering cross-functional collaboration, and maintaining strong relationships with key stakeholders.",
     title: "IT Technology Officer",
     place: "Prabjyot Kaur",
   },
@@ -81,17 +81,18 @@ const Map: React.FC = () => {
               <div>
                 <div>
                   <h1 className="text-2xl font-semibold font-montserrat capitalize">
-                    {/* Xavierich Castañeda */} Xave Castañeda
+                    {/* Xavierich Castañeda */} Xave 
                   </h1>
                   <p className="text-gray-300 font-poppins capitalize">
                     Accounts Officer
                   </p>
                   <p className="font-poppins">
-                    Xave is a Certified Public Accountant with over four years
-                    of experience in financial accounting and reporting,
-                    auditing, and process improvement for companies in US,
-                    Philippines and Australia. She has a strong focus on
-                    enhancing Workday end-user experience.
+                  Xave is a Certified Public Accountant with over four years of experience in financial accounting, reporting, auditing, and process improvement across diverse international markets,
+                   including the United States, Philippines, and Australia. 
+                   She excels in optimizing the Workday end-user experience, 
+                   delivering strategic insights and operational efficiencies. 
+                   Xave's expertise in financial management and her focus on innovation position her as a key driver of organizational
+                    success and transformation.
                   </p>
                 </div>
 

@@ -28,15 +28,8 @@ const FounderCard = () => {
       <div className="flex flex-col md:text-lg gap-10 text-black max-md:text-sm">
         <div className="flex flex-col gap-4">
           <p className="font-poppins">
-            Davinder is the founder of Zenith Solutions LLC. He has over 20
-            years of experience in finance, accounting and technology industry
-            in both US and Australia. He has been in Workday ecosystem more than
-            8 years. He started his Workday journey with Cushman and Wakefield
-            and worked for a Workday partner firm. <br /> <br /> He has
-            extensive experience in different Industries such as Retail,
-            Real-estate, Utilities, Healthcare and Higher Education. He enjoys
-            playing tennis and cricket. He is a great fan of Sachin Tendulkar,
-            Roger Federer and Michal Schumacher.
+          Davinder is the visionary founder of Zenith Solutions LLC, with over 20 years of distinguished experience in finance, accounting, and technology across the United States and Australia. A seasoned expert in the Workday ecosystem for more than eight years, he launched his Workday career with Cushman and Wakefield before advancing to a strategic role at a prominent Workday partner firm.
+           <br /> <br /> Davinder possesses a proven track record of success across diverse industries, including retail, real estate, utilities, healthcare, and higher education. He is recognized for his strategic insight and leadership in delivering innovative solutions. Outside of his professional endeavors, Davinder is passionate about tennis and cricket and is an enthusiastic supporter of sports legends Sachin Tendulkar, Roger Federer, and Michael Schumacher.
           </p>
         </div>
       </div>
