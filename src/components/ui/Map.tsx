@@ -21,14 +21,7 @@ type MarkerData = {
 };
 
 const markers: MarkerData[] = [
-  {
-    geocode: [-33.865143, 151.2099],
-    popupText:
-      "Prabjyot-Prabjyot Kaur leverages over 20 years of expertise in financial technologies and SaaS products to deliver cutting-edge solutions for the banking and finance sector. She excels in driving product development from ideation to implementation, ensuring a rich user experience. Prabjyot demonstrates exceptional leadership by managing teams of varying sizes, fostering cross-functional collaboration, and maintaining strong relationships with key stakeholders.",
-    title: "IT Technology Officer",
-    place: "Prabjyot Kaur",
-  },
-
+ 
   // {
   //   geocode: [7.1907, 125.4553],
   //   popupText: "Xave is a Certified Public Accountant with over four years of experience in financial accounting and reporting, auditing, and process improvement, with a strong focus on enhancing Workday end-user experience. She has a proven track record of identifying bottlenecks in processes and implementing effective solutions to overcome them. Xave is adept at streamlining workflows to increase efficiency and accuracy. In her spare time, she enjoys reading and cooking, which reflects her meticulous attention to detail and creativity both professionally and personally.",
@@ -106,6 +99,20 @@ const Map: React.FC = () => {
                   <p className="font-poppins">
                     As a Talent Associate, Anna plays a role in finding and
                     welcoming new talent to our team.
+                  </p>
+                </div>
+                <div>
+                  <h1 className="text-2xl font-semibold font-montserrat capitalize">
+                    Jan Patrick Matayabas
+                  </h1>
+                  <p className="text-gray-300 font-poppins capitalize">
+                    Senior IT Analyst
+                  </p>
+                  <p className="font-poppins">
+                    As an IT Analyst, Jan Patrick is responsible for analyzing and
+                    improving our company's technology systems and infrastructure.
+                    He works to ensure that our IT solutions are efficient,
+                    reliable, and aligned with our business goals.
                   </p>
                 </div>
               </div>
