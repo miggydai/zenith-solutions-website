@@ -8,6 +8,7 @@ import Button from "@/src/components/ui/Button";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import logo from "@/public/assets/images/OPTION 1 1.png";
+import salesPartnerLogo from "@/public/assets/images/salespartner.svg";
 
 type NavLinkType = {
   href: string;
@@ -103,6 +104,15 @@ const Navigation = () => {
             textColor="white"
             textFont="normal"
           />
+          {/* Sales Partner Logo */}
+          <Image
+            src={salesPartnerLogo}
+            alt="Sales Partner"
+            width={40}
+            height={40}
+            className="object-contain"
+            draggable={false}
+          />
           <motion.button
             initial="hide"
             animate={mobileNav ? "show" : "hide"}
@@ -112,36 +122,22 @@ const Navigation = () => {
           >
             <motion.span
               variants={{
-                hide: {
-                  rotate: 0,
-                },
-                show: {
-                  rotate: 45,
-                  y: 5,
-                },
+                hide: { rotate: 0 },
+                show: { rotate: 45, y: 5 },
               }}
               className="w-6 bg-skyBlue h-[1px] block"
             ></motion.span>
             <motion.span
               variants={{
-                hide: {
-                  opacity: 1,
-                },
-                show: {
-                  opacity: 0,
-                },
+                hide: { opacity: 1 },
+                show: { opacity: 0 },
               }}
               className="w-6 bg-skyBlue h-[1px] block"
             ></motion.span>
             <motion.span
               variants={{
-                hide: {
-                  rotate: 0,
-                },
-                show: {
-                  rotate: -45,
-                  y: -5,
-                },
+                hide: { rotate: 0 },
+                show: { rotate: -45, y: -5 },
               }}
               className="w-6 bg-skyBlue h-[1px] block"
             ></motion.span>
